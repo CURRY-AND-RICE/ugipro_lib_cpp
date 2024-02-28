@@ -1,5 +1,8 @@
 # mylib_cpp
+ [![Actions Status](https://github.com/CURRY-AND-RICE/ugipro_lib_cpp/workflows/verify/badge.svg)](https://github.com/CURRY-AND-RICE/ugipro_lib_cpp/actions)
+
 うぎプロライブラリ(C++)
+
 時間があれば追加予定
 
 # 実装アルゴリズム
