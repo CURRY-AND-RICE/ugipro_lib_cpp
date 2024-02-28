@@ -1,5 +1,6 @@
 # mylib_cpp
  [![Actions Status](https://github.com/CURRY-AND-RICE/ugipro_lib_cpp/workflows/verify/badge.svg)](https://github.com/CURRY-AND-RICE/ugipro_lib_cpp/actions)
+ [![GitHub Pages](https://img.shields.io/static/v1?label=GitHub+Pages&message=+&color=brightgreen&logo=github)](https://CURRY-AND-RICE.github.io/ugipro_lib_cpp/) 
 
 うぎプロライブラリ(C++)
 
