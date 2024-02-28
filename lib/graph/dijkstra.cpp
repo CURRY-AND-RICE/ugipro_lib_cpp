@@ -38,3 +38,4 @@ vector<weight_type> dijkstra(int n, int start, const vector<vector<pair<int, wei
     return costs;
 }
 /// cut end
+
