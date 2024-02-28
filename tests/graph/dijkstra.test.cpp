@@ -5,11 +5,6 @@
 
 using namespace std;
 
-// speed up
-#pragma GCC target("avx2")
-#pragma GCC optimize("O3")
-#pragma GCC optimize("unroll-loops")
-
 using ll = long long;
 using ull = unsigned long long;
 using ld = long double;
@@ -38,8 +33,8 @@ int main() {
 
     auto &&costs = dijkstra(V, r, graph);
     rep(i, V) {
-        if (costs[i] == INF) cout << "INF" << endl;
-        else cout << costs[i] << endl;
+        if (costs[i] == INF) cout << "INF\n";
+        else cout << costs[i] << '\n';
     }
 
     return 0;
