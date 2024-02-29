@@ -20,15 +20,3 @@ SetType set_intersection(const SetType& s1, const SetType& s2) {
     }
     return intersection;
 }
-
-// 差集合
-template <typename SetType>
-SetType set_difference(const SetType& s1, const SetType& s2) {
-    SetType difference;
-    for (const auto& e : s1) {
-        if (!s2.contains(e)) {
-            difference.insert(e);
-        }
-    }
-    return difference;
-}
