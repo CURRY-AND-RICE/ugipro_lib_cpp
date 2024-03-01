@@ -17,9 +17,20 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: '#line 2 "ugilib/base/constants.hpp"
+  bundledCode: '#line 2 "ugilib/base/definitions.hpp"
 
-    #include <ugilib/base/definitions.hpp>
+
+    using ll = long long;
+
+    using ull = unsigned long long;
+
+    using ld = long double;
+
+    #define rep(i, n) for(int i = 0; i < (int)(n); i++)  // rep macro
+
+    #define all(v) begin(v), end(v)  // all iterator
+
+    #line 3 "ugilib/base/constants.hpp"
 
 
     const ll INF = 1LL << 60;  // infinity
@@ -27,7 +38,7 @@ data:
     '
   code: '#pragma once
 
-    #include <ugilib/base/definitions.hpp>
+    #include "ugilib/base/definitions.hpp"
 
 
     const ll INF = 1LL << 60;  // infinity
@@ -39,7 +50,7 @@ data:
   path: ugilib/base/constants.hpp
   requiredBy:
   - ugilib/graph/dijkstra.hpp
-  timestamp: '2024-03-01 16:27:06+09:00'
+  timestamp: '2024-03-01 23:25:44+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/graph/dijkstra.test.cpp
