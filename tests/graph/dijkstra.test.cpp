@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "lib/graph/dijkstra.cpp"
+#include "ugilib/graph/dijkstra.cpp"
 
 #define PROBLEM "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=jp"
 
