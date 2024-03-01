@@ -2,18 +2,15 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: tests/graph/dijkstra.test.cpp
-    title: tests/graph/dijkstra.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
     links: []
-  bundledCode: "#line 1 \"lib/graph/dijkstra.cpp\"\n#include <bits/stdc++.h>\n\nusing\
-    \ namespace std;\nusing ll = long long;\n\nconst ll INF = 1LL << 60;  // infinity\n\
+  bundledCode: "#line 1 \"ugilib/graph/dijkstra.cpp\"\n#include <bits/stdc++.h>\n\n\
+    using namespace std;\nusing ll = long long;\n\nconst ll INF = 1LL << 60;  // infinity\n\
     \n/// cut begin\n/**\n * @brief \u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5\n *\
     \ @param n \u30B0\u30E9\u30D5\u306E\u9802\u70B9\u6570\n * @param start \u59CB\u70B9\
     \n * @param graph \u30B0\u30E9\u30D5. vector<pair<int, ll>> \u3067\u96A3\u63A5\
@@ -49,16 +46,15 @@ data:
     \            }\n        }\n    }\n\n    return costs;\n}\n/// cut end\n\n"
   dependsOn: []
   isVerificationFile: false
-  path: lib/graph/dijkstra.cpp
+  path: ugilib/graph/dijkstra.cpp
   requiredBy: []
-  timestamp: '2024-02-28 21:40:04+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - tests/graph/dijkstra.test.cpp
-documentation_of: lib/graph/dijkstra.cpp
+  timestamp: '2024-03-01 15:38:18+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
+documentation_of: ugilib/graph/dijkstra.cpp
 layout: document
 redirect_from:
-- /library/lib/graph/dijkstra.cpp
-- /library/lib/graph/dijkstra.cpp.html
+- /library/ugilib/graph/dijkstra.cpp
+- /library/ugilib/graph/dijkstra.cpp.html
 title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
 ---

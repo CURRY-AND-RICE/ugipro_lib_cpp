@@ -8,7 +8,7 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"lib/lazy_segtree/implementations.cpp\"\n#include <bits/stdc++.h>\n\
+  bundledCode: "#line 1 \"ugilib/lazy_segtree/implementations.cpp\"\n#include <bits/stdc++.h>\n\
     #include <atcoder/segtree>\n#include <atcoder/lazysegtree>\n\nusing namespace\
     \ std;\nusing namespace atcoder;\n\nusing ll = long long;\nconst ll INF = 1LL\
     \ << 60;\n\nnamespace segtree_min {\n    using S = ll;\n    S op(S a, S b) { return\
@@ -105,15 +105,15 @@ data:
     \ id> lst(ini);\n}\n"
   dependsOn: []
   isVerificationFile: false
-  path: lib/lazy_segtree/implementations.cpp
+  path: ugilib/lazy_segtree/implementations.cpp
   requiredBy: []
-  timestamp: '2024-02-28 21:40:04+09:00'
+  timestamp: '2024-03-01 15:38:18+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: lib/lazy_segtree/implementations.cpp
+documentation_of: ugilib/lazy_segtree/implementations.cpp
 layout: document
 redirect_from:
-- /library/lib/lazy_segtree/implementations.cpp
-- /library/lib/lazy_segtree/implementations.cpp.html
-title: lib/lazy_segtree/implementations.cpp
+- /library/ugilib/lazy_segtree/implementations.cpp
+- /library/ugilib/lazy_segtree/implementations.cpp.html
+title: ugilib/lazy_segtree/implementations.cpp
 ---
