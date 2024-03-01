@@ -1,10 +1,18 @@
 ---
 data:
   libraryCategories:
+  - name: ugilib/base
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: ugilib/base/constants.hpp
+      title: ugilib/base/constants.hpp
+    - icon: ':heavy_check_mark:'
+      path: ugilib/base/definitions.hpp
+      title: ugilib/base/definitions.hpp
   - name: ugilib/graph
     pages:
-    - icon: ':warning:'
-      path: ugilib/graph/dijkstra.cpp
+    - icon: ':heavy_check_mark:'
+      path: ugilib/graph/dijkstra.hpp
       title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
   - name: ugilib/lazy_segtree
     pages:
@@ -22,12 +30,15 @@ data:
   - name: ugilib/std_util
     pages:
     - icon: ':warning:'
+      path: ugilib/std_util/hashes.hpp
+      title: ugilib/std_util/hashes.hpp
+    - icon: ':warning:'
       path: ugilib/std_util/sets.cpp
       title: ugilib/std_util/sets.cpp
   verificationCategories:
   - name: tests/graph
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: tests/graph/dijkstra.test.cpp
       title: tests/graph/dijkstra.test.cpp
 layout: toppage
