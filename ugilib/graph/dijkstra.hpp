@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
+#include <ugilib/base/constants.hpp>
 
 using namespace std;
-using ll = long long;
 
-const ll INF = 1LL << 60;  // infinity
 
 /// cut begin
+namespace ugilib {
 /**
  * @brief ダイクストラ法
  * @param n グラフの頂点数
@@ -37,5 +37,5 @@ vector<weight_type> dijkstra(int n, int start, const vector<vector<pair<int, wei
 
     return costs;
 }
+} // namespace ugilib
 /// cut end
-
