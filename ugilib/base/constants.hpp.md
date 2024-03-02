@@ -5,6 +5,12 @@ data:
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy:
+  - icon: ':warning:'
+    path: ugilib/bits/bit_exhaustive_search.hpp
+    title: bit_exhaustive_search
+  - icon: ':warning:'
+    path: ugilib/bits/bit_util.hpp
+    title: num_to_bits
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/dijkstra.hpp
     title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
@@ -50,6 +56,8 @@ data:
   path: ugilib/base/constants.hpp
   requiredBy:
   - ugilib/graph/dijkstra.hpp
+  - ugilib/bits/bit_exhaustive_search.hpp
+  - ugilib/bits/bit_util.hpp
   timestamp: '2024-03-01 23:25:44+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:

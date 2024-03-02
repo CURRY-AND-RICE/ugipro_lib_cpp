@@ -9,6 +9,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: ugilib/base/definitions.hpp
       title: ugilib/base/definitions.hpp
+  - name: ugilib/bits
+    pages:
+    - icon: ':warning:'
+      path: ugilib/bits/bit_exhaustive_search.hpp
+      title: bit_exhaustive_search
+    - icon: ':warning:'
+      path: ugilib/bits/bit_util.hpp
+      title: num_to_bits
   - name: ugilib/graph
     pages:
     - icon: ':heavy_check_mark:'
