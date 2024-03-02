@@ -4,6 +4,7 @@
 
 using namespace std;
 
+namespace ugilib {
 /**
  * @brief num_to_bits
  * @param num an integer to be converted to bits
@@ -32,3 +33,4 @@ ll bits_to_num(const vector<bool> &bits) {
     }
     return num;
 }
+}  // namespace ugilib

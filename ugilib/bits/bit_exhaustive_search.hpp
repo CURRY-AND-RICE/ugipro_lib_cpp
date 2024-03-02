@@ -2,6 +2,7 @@
 #include <bits/stdc++.h>
 #include "ugilib/bits/bit_util.hpp"
 
+namespace ugilib {
 /**
  * @brief bit_exhaustive_search
  * @param digit the number of bits
@@ -25,3 +26,4 @@ void bit_exhaustive_search(const size_t &digit, Func f) {
         f(num_to_bits(i, digit));
     }
 }
+}  // namespace ugilib

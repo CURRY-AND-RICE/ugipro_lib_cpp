@@ -1,6 +1,6 @@
 # mylib_cpp
  [![Actions Status](https://github.com/CURRY-AND-RICE/ugipro_lib_cpp/workflows/verify/badge.svg)](https://github.com/CURRY-AND-RICE/ugipro_lib_cpp/actions)
- [![GitHub Pages](https://img.shields.io/static/v1?label=GitHub+Pages&message=+&color=brightgreen&logo=github)](https://CURRY-AND-RICE.github.io/ugipro_lib_cpp/) 
+ [![GitHub Pages](https://img.shields.io/static/v1?label=GitHub+Pages&message=+&color=brightgreen&logo=github)](https://CURRY-AND-RICE.github.io/ugipro_lib_cpp/)
 
 うぎプロライブラリ(C++)
 
@@ -19,6 +19,13 @@
 - primes.cpp
     - 素数列挙(エラトステネスの篩)
     - 素因数分解
+
+## bits
+### ビット演算アルゴリズムを実装
+- bit_util.cpp
+    - ビット演算のユーティリティ
+-bit_exhaustive_search.cpp
+    - ビット全探索
 
 ## std_util
 ### 標準ライブラリの拡張
