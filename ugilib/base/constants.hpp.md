@@ -23,33 +23,15 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: '#line 2 "ugilib/base/definitions.hpp"
-
-
-    using ll = long long;
-
-    using ull = unsigned long long;
-
-    using ld = long double;
-
-    #define rep(i, n) for(int i = 0; i < (int)(n); i++)  // rep macro
-
-    #define all(v) begin(v), end(v)  // all iterator
-
-    #line 3 "ugilib/base/constants.hpp"
-
-
-    const ll INF = 1LL << 60;  // infinity
-
-    '
-  code: '#pragma once
-
-    #include "ugilib/base/definitions.hpp"
-
-
-    const ll INF = 1LL << 60;  // infinity
-
-    '
+  bundledCode: "#line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\n\
+    using ull = unsigned long long;\nusing ld = long double;\n#define rep(i, n) for(int\
+    \ i = 0; i < (int)(n); i++)  // rep macro\n#define all(v) begin(v), end(v)  //\
+    \ all iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants\
+    \ {\n    template<typename T>\n    inline constexpr T INF = std::numeric_limits<T>::max()\
+    \ / 4;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n"
+  code: "#pragma once\n#include \"ugilib/base/definitions.hpp\"\n\nnamespace ugilib::constants\
+    \ {\n    template<typename T>\n    inline constexpr T INF = std::numeric_limits<T>::max()\
+    \ / 4;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n"
   dependsOn:
   - ugilib/base/definitions.hpp
   isVerificationFile: false
@@ -58,7 +40,7 @@ data:
   - ugilib/graph/dijkstra.hpp
   - ugilib/bits/bit_exhaustive_search.hpp
   - ugilib/bits/bit_util.hpp
-  timestamp: '2024-03-01 23:25:44+09:00'
+  timestamp: '2024-03-04 19:44:09+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/graph/dijkstra.test.cpp
