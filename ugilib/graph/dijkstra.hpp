@@ -14,12 +14,11 @@ namespace ugilib {
  * @return 始点から各頂点までの最短距離
  * @note O((E+V)logV)
 */
-template<typename weight_type>
-vector<weight_type> dijkstra(int n, int start, const vector<vector<pair<int, weight_type>>>& graph) {
-    vector<weight_type> costs(n, INF);
+vector<ll> dijkstra(int n, int start, const vector<vector<pair<int, ll>>>& graph) {
+    vector<ll> costs(n, INF);
     costs[start] = 0;
 
-    priority_queue<pair<weight_type, int>, vector<pair<weight_type, int>>, greater<>> next_nodes;
+    priority_queue<pair<ll, int>, vector<pair<ll, int>>, greater<>> next_nodes;
     next_nodes.push({0, start});
 
     while (!next_nodes.empty()) {
