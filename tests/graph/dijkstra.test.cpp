@@ -22,7 +22,7 @@ int main() {
         graph[s].push_back({t, d});
     }
 
-    auto &&costs = ugilib::dijkstra(V, r, graph);
+    auto &&costs = ugilib::dijkstra(V, r, graph, ugilib::constants::INF<ll>);
     rep(i, V) {
         if (costs[i] == INF) cout << "INF\n";
         else cout << costs[i] << '\n';

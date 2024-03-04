@@ -10,15 +10,17 @@ namespace ugilib {
  * @brief ダイクストラ法
  * @param n グラフの頂点数
  * @param start 始点
- * @param graph グラフ. vector<pair<int, ll>> で隣接頂点とコストを表す
+ * @param graph グラフ. vector<pair<int, weight_type>> で隣接頂点とコストを表す
+ * @param weight_inf 無限大の値. パスが存在しない場合のコスト
  * @return 始点から各頂点までの最短距離
  * @note O((E+V)logV)
 */
-vector<ll> dijkstra(int n, int start, const vector<vector<pair<int, ll>>>& graph) {
-    vector<ll> costs(n, INF);
+template<typename weight_type>
+vector<weight_type> dijkstra(int n, int start, const vector<vector<pair<int, weight_type>>>& graph, weight_type weight_inf = constants::INF<weight_type>) {
+    vector<weight_type> costs(n, weight_inf);
     costs[start] = 0;
 
-    priority_queue<pair<ll, int>, vector<pair<ll, int>>, greater<>> next_nodes;
+    priority_queue<pair<weight_type, int>, vector<pair<weight_type, int>>, greater<>> next_nodes;
     next_nodes.push({0, start});
 
     while (!next_nodes.empty()) {
