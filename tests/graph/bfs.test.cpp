@@ -109,7 +109,7 @@ int main() {
         }
     }
 
-    auto costs = ugilib::bfs(n, 0, graph);
+    auto costs = ugilib::bfs01(n, 0, graph);
     rep(i, n) {
         cout << i + 1 << " " << (costs[i] == ugilib::constants::INF<int> ? -1 : costs[i]) << endl;
     }
