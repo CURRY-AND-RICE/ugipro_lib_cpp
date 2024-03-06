@@ -7,10 +7,10 @@ data:
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
     path: ugilib/bits/bit_exhaustive_search.hpp
-    title: bit_exhaustive_search
+    title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
   - icon: ':heavy_check_mark:'
     path: ugilib/bits/bit_util.hpp
-    title: num_to_bits
+    title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/dijkstra.hpp
     title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
