@@ -5,16 +5,19 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/bits/bit_exhaustive_search.hpp
     title: bit_exhaustive_search
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/bits/bit_util.hpp
     title: num_to_bits
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/dijkstra.hpp
     title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/bits/bit_exhaustive_search.test.cpp
+    title: tests/bits/bit_exhaustive_search.test.cpp
   - icon: ':heavy_check_mark:'
     path: tests/graph/dijkstra.test.cpp
     title: tests/graph/dijkstra.test.cpp
@@ -63,6 +66,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/graph/dijkstra.test.cpp
+  - tests/bits/bit_exhaustive_search.test.cpp
 documentation_of: ugilib/base/definitions.hpp
 layout: document
 redirect_from:

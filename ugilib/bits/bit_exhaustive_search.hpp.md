@@ -7,14 +7,17 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/bits/bit_util.hpp
     title: num_to_bits
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/bits/bit_exhaustive_search.test.cpp
+    title: tests/bits/bit_exhaustive_search.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: bit_exhaustive_search
     links: []
@@ -40,20 +43,22 @@ data:
     \ f a function to be called with bits\n * @details exhaustive search for bits\n\
     \ *\n * @example\n * vector<int> ans;\n * auto f = [&](const auto &&bits) {\n\
     \ *    if (count(bits.begin(), bits.end(), true) == 2) {\n *        ans.push_back(bits_to_num(bits));\n\
-    \ *   }\n * };\n * bit_exhaustive_search(4, f);\n * // ans = {3, 5, 6, 9, 10,\
-    \ 12}\n *\n*/\ntemplate <typename Func>\nvoid bit_exhaustive_search(const size_t\
-    \ &digit, Func f) {\n    for (ll i = 0; i < (1 << digit); i++) {\n        f(num_to_bits(i,\
-    \ digit));\n    }\n}\n}  // namespace ugilib\n"
+    \ *    }\n *    return false;\n * };\n * bit_exhaustive_search(4, f);\n * // ans\
+    \ = {3, 5, 6, 9, 10, 12}\n *\n*/\ntemplate <typename Func>\nvoid bit_exhaustive_search(const\
+    \ size_t &digit, Func f) {\n    for (ll i = 0; i < (1 << digit); i++) {\n    \
+    \    bool will_break = f(num_to_bits(i, digit));\n        if (will_break) break;\n\
+    \    }\n}\n}  // namespace ugilib\n"
   code: "#pragma once\n#include <bits/stdc++.h>\n#include \"ugilib/bits/bit_util.hpp\"\
     \n\nnamespace ugilib {\n/**\n * @brief bit_exhaustive_search\n * @param digit\
     \ the number of bits\n * @param f a function to be called with bits\n * @details\
     \ exhaustive search for bits\n *\n * @example\n * vector<int> ans;\n * auto f\
     \ = [&](const auto &&bits) {\n *    if (count(bits.begin(), bits.end(), true)\
-    \ == 2) {\n *        ans.push_back(bits_to_num(bits));\n *   }\n * };\n * bit_exhaustive_search(4,\
-    \ f);\n * // ans = {3, 5, 6, 9, 10, 12}\n *\n*/\ntemplate <typename Func>\nvoid\
-    \ bit_exhaustive_search(const size_t &digit, Func f) {\n    for (ll i = 0; i <\
-    \ (1 << digit); i++) {\n        f(num_to_bits(i, digit));\n    }\n}\n}  // namespace\
-    \ ugilib\n"
+    \ == 2) {\n *        ans.push_back(bits_to_num(bits));\n *    }\n *    return\
+    \ false;\n * };\n * bit_exhaustive_search(4, f);\n * // ans = {3, 5, 6, 9, 10,\
+    \ 12}\n *\n*/\ntemplate <typename Func>\nvoid bit_exhaustive_search(const size_t\
+    \ &digit, Func f) {\n    for (ll i = 0; i < (1 << digit); i++) {\n        bool\
+    \ will_break = f(num_to_bits(i, digit));\n        if (will_break) break;\n   \
+    \ }\n}\n}  // namespace ugilib\n"
   dependsOn:
   - ugilib/bits/bit_util.hpp
   - ugilib/base/constants.hpp
@@ -61,9 +66,10 @@ data:
   isVerificationFile: false
   path: ugilib/bits/bit_exhaustive_search.hpp
   requiredBy: []
-  timestamp: '2024-03-04 19:44:09+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-03-06 18:21:02+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/bits/bit_exhaustive_search.test.cpp
 documentation_of: ugilib/bits/bit_exhaustive_search.hpp
 layout: document
 redirect_from:

@@ -8,13 +8,16 @@ data:
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/bits/bit_exhaustive_search.hpp
     title: bit_exhaustive_search
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/bits/bit_exhaustive_search.test.cpp
+    title: tests/bits/bit_exhaustive_search.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: num_to_bits
     links: []
@@ -54,8 +57,9 @@ data:
   requiredBy:
   - ugilib/bits/bit_exhaustive_search.hpp
   timestamp: '2024-03-04 19:44:09+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/bits/bit_exhaustive_search.test.cpp
 documentation_of: ugilib/bits/bit_util.hpp
 layout: document
 redirect_from:

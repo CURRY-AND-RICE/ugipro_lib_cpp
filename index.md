@@ -11,10 +11,10 @@ data:
       title: ugilib/base/definitions.hpp
   - name: ugilib/bits
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/bits/bit_exhaustive_search.hpp
       title: bit_exhaustive_search
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/bits/bit_util.hpp
       title: num_to_bits
   - name: ugilib/graph
@@ -44,6 +44,11 @@ data:
       path: ugilib/std_util/sets.cpp
       title: ugilib/std_util/sets.cpp
   verificationCategories:
+  - name: tests/bits
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: tests/bits/bit_exhaustive_search.test.cpp
+      title: tests/bits/bit_exhaustive_search.test.cpp
   - name: tests/graph
     pages:
     - icon: ':heavy_check_mark:'
