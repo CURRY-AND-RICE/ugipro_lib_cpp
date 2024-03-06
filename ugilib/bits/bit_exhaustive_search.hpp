@@ -4,10 +4,10 @@
 
 namespace ugilib {
 /**
- * @brief bit_exhaustive_search
- * @param digit the number of bits
- * @param f a function to be called with bits
- * @details exhaustive search for bits
+ * @brief ビット全探索
+ * @param digit ビット数
+ * @param f ビット配列を渡して、それに応じた処理を行う関数
+ * @details ラムダを受け取って、ビット全探索を行う
  *
  * @example
  * vector<int> ans;
