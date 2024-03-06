@@ -37,14 +37,14 @@ data:
     \u3089\u5404\u9802\u70B9\u307E\u3067\u306E\u6700\u77ED\u8DDD\u96E2\n * @note O((E+V)logV)\n\
     */\ntemplate<typename weight_type>\nvector<weight_type> dijkstra(int n, int start,\
     \ const vector<vector<pair<int, weight_type>>>& graph, weight_type weight_inf\
-    \ = constants::INF<weight_type>) {\n    vector<weight_type> costs(n, weight_inf);\n\
+    \ = ugilib::constants::INF<weight_type>) {\n    vector<weight_type> costs(n, weight_inf);\n\
     \    costs[start] = 0;\n\n    priority_queue<pair<weight_type, int>, vector<pair<weight_type,\
     \ int>>, greater<>> next_nodes;\n    next_nodes.push({0, start});\n\n    while\
     \ (!next_nodes.empty()) {\n        auto [cost, node] = next_nodes.top(); next_nodes.pop();\n\
-    \        if (cost > costs[node]) continue;\n\n        for (auto [next_node, next_cost]\
-    \ : graph[node]) {\n            auto new_cost = cost + next_cost;\n          \
-    \  if (new_cost < costs[next_node]) {\n                costs[next_node] = cost\
-    \ + next_cost;\n                next_nodes.push({costs[next_node], next_node});\n\
+    \        if (cost > costs[node]) continue;\n\n        for (const auto [next_node,\
+    \ next_cost] : graph[node]) {\n            auto new_cost = cost + next_cost;\n\
+    \            if (new_cost < costs[next_node]) {\n                costs[next_node]\
+    \ = new_cost;\n                next_nodes.push({costs[next_node], next_node});\n\
     \            }\n        }\n    }\n\n    return costs;\n}\n} // namespace ugilib\n\
     /// cut end\n#line 3 \"tests/graph/dijkstra.test.cpp\"\n\n#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=jp\"\
     \n\nusing namespace std;\n\nint main() {\n    // speed up io\n    cin.tie(nullptr);\n\
@@ -70,7 +70,7 @@ data:
   isVerificationFile: true
   path: tests/graph/dijkstra.test.cpp
   requiredBy: []
-  timestamp: '2024-03-04 19:44:09+09:00'
+  timestamp: '2024-03-07 03:32:02+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/graph/dijkstra.test.cpp

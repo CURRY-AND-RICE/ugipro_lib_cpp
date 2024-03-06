@@ -20,6 +20,9 @@ data:
   - name: ugilib/graph
     pages:
     - icon: ':heavy_check_mark:'
+      path: ugilib/graph/bfs.hpp
+      title: "\u5E45\u512A\u5148\u63A2\u7D22"
+    - icon: ':heavy_check_mark:'
       path: ugilib/graph/dijkstra.hpp
       title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
   - name: ugilib/lazy_segtree
@@ -51,6 +54,9 @@ data:
       title: tests/bits/bit_exhaustive_search.test.cpp
   - name: tests/graph
     pages:
+    - icon: ':heavy_check_mark:'
+      path: tests/graph/bfs.test.cpp
+      title: tests/graph/bfs.test.cpp
     - icon: ':heavy_check_mark:'
       path: tests/graph/dijkstra.test.cpp
       title: tests/graph/dijkstra.test.cpp
