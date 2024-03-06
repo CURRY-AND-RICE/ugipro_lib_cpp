@@ -13,7 +13,7 @@ data:
     title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/bfs.hpp
-    title: "\u5E45\u512A\u5148\u63A2\u7D22"
+    title: "0or1\u5E45\u512A\u5148\u63A2\u7D22. 01BFS"
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/dijkstra.hpp
     title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"

@@ -9,7 +9,7 @@ data:
     title: ugilib/base/definitions.hpp
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/bfs.hpp
-    title: "\u5E45\u512A\u5148\u63A2\u7D22"
+    title: "0or1\u5E45\u512A\u5148\u63A2\u7D22. 01BFS"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -29,21 +29,26 @@ data:
     \ T INF = std::numeric_limits<T>::max() / 4;\n} // namespace ugilib::constants\n\
     \nconst ll INF = ugilib::constants::INF<ll>;\n#line 3 \"ugilib/graph/bfs.hpp\"\
     \n\nusing namespace std;\n\n\n/// cut begin\nnamespace ugilib {\n/**\n * @brief\
-    \ \u5E45\u512A\u5148\u63A2\u7D22\n * @param n \u30B0\u30E9\u30D5\u306E\u9802\u70B9\
-    \u6570\n * @param start \u59CB\u70B9\n * @param graph \u30B0\u30E9\u30D5. vector<pair<int,\
-    \ weight_type>> \u3067\u96A3\u63A5\u9802\u70B9\u3068\u30B3\u30B9\u30C8\u3092\u8868\
-    \u3059\n * @param weight_inf \u7121\u9650\u5927\u306E\u5024. \u30D1\u30B9\u304C\
-    \u5B58\u5728\u3057\u306A\u3044\u5834\u5408\u306E\u30B3\u30B9\u30C8\n * @return\
-    \ \u59CB\u70B9\u304B\u3089\u5404\u9802\u70B9\u307E\u3067\u306E\u6700\u77ED\u8DDD\
-    \u96E2\n * @note O(E+V)\n*/\ntemplate <typename weight_type>\nvector<weight_type>\
-    \ bfs(int n, int start, const vector<vector<pair<int, weight_type>>> &graph, weight_type\
-    \ weight_inf = ugilib::constants::INF<weight_type>) {\n    vector<weight_type>\
-    \ costs(n, weight_inf);\n    costs[start] = 0;\n\n    queue<int> next_nodes;\n\
-    \    next_nodes.push(start);\n\n    while (!next_nodes.empty()) {\n        auto\
-    \ node = next_nodes.front(); next_nodes.pop();\n        auto cost = costs[node];\n\
-    \n        for (const auto [next_node, next_cost] : graph[node]) {\n          \
-    \  auto new_cost = cost + next_cost;\n            if (new_cost < costs[next_node])\
-    \ {\n                costs[next_node] = new_cost;\n                next_nodes.push(next_node);\n\
+    \ 0or1\u5E45\u512A\u5148\u63A2\u7D22. 01BFS\n * @param n \u30B0\u30E9\u30D5\u306E\
+    \u9802\u70B9\u6570\n * @param start \u59CB\u70B9\n * @param graph \u30B0\u30E9\
+    \u30D5. vector<pair<int, weight_type>> \u3067\u96A3\u63A5\u9802\u70B9\u3068\u30B3\
+    \u30B9\u30C8\u3092\u8868\u3059. \u30B3\u30B9\u30C8\u306F0 or 1\n * @param weight_inf\
+    \ \u7121\u9650\u5927\u306E\u5024. \u30D1\u30B9\u304C\u5B58\u5728\u3057\u306A\u3044\
+    \u5834\u5408\u306E\u30B3\u30B9\u30C8\n * @return \u59CB\u70B9\u304B\u3089\u5404\
+    \u9802\u70B9\u307E\u3067\u306E\u6700\u77ED\u8DDD\u96E2\n * @note O(E+V)\n * @todo\
+    \ 01BFS\u554F\u984C\u3067\u306E\u30C6\u30B9\u30C8\u3092\u66F8\u304F\n*/\ntemplate\
+    \ <typename weight_type>\nvector<weight_type> bfs01(int n, int start, const vector<vector<pair<int,\
+    \ weight_type>>> &graph, weight_type weight_inf = ugilib::constants::INF<weight_type>)\
+    \ {\n    vector<weight_type> costs(n, weight_inf);\n    costs[start] = 0;\n\n\
+    \    deque<int> next_nodes;\n    next_nodes.push_back(start);\n\n    while (!next_nodes.empty())\
+    \ {\n        auto node = next_nodes.front(); next_nodes.pop_front();\n       \
+    \ auto cost = costs[node];\n\n        for (const auto [next_node, next_cost] :\
+    \ graph[node]) {\n            auto new_cost = cost + next_cost;\n            if\
+    \ (new_cost < costs[next_node]) {\n                costs[next_node] = new_cost;\n\
+    \                // 0or1\u5E45\u512A\u5148\u63A2\u7D22\u306E\u5834\u5408, \u30B3\
+    \u30B9\u30C8\u304C0\u306E\u5834\u5408\u306F\u524D\u304B\u3089\u5165\u308C, 1\u306E\
+    \u5834\u5408\u306F\u5F8C\u308D\u306B\u5165\u308C\u308B\n                if (next_cost\
+    \ == 0) next_nodes.push_front(next_node);\n                else next_nodes.push_back(next_node);\n\
     \            }\n        }\n    }\n\n    return costs;\n}\n}  // namespace ugilib\n\
     #line 7 \"tests/graph/bfs.test.cpp\"\n\nusing namespace std;\n\n// debug settings\n\
     // #define DEBUG\n#ifdef DEBUG\n// debug input\nstring _INPUT = R\"(\n5\n1 2 3\
@@ -90,8 +95,8 @@ data:
     \n    // code\n    ll n = rd::i();\n    vector<vector<pair<int, int>>> graph(n);\n\
     \    rep(i, n) {\n        auto [u, k] = rd::t<int, int>();\n        rep(j, k)\
     \ {\n            auto v = rd::i();\n            graph[u - 1].emplace_back(v -\
-    \ 1, 1);\n        }\n    }\n\n    auto costs = ugilib::bfs(n, 0, graph);\n   \
-    \ rep(i, n) {\n        cout << i + 1 << \" \" << (costs[i] == ugilib::constants::INF<int>\
+    \ 1, 1);\n        }\n    }\n\n    auto costs = ugilib::bfs01(n, 0, graph);\n \
+    \   rep(i, n) {\n        cout << i + 1 << \" \" << (costs[i] == ugilib::constants::INF<int>\
     \ ? -1 : costs[i]) << endl;\n    }\n\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_C\"\
     \n\n#include <bits/stdc++.h>\n#include \"ugilib/base/constants.hpp\"\n#include\
@@ -140,8 +145,8 @@ data:
     \n    // code\n    ll n = rd::i();\n    vector<vector<pair<int, int>>> graph(n);\n\
     \    rep(i, n) {\n        auto [u, k] = rd::t<int, int>();\n        rep(j, k)\
     \ {\n            auto v = rd::i();\n            graph[u - 1].emplace_back(v -\
-    \ 1, 1);\n        }\n    }\n\n    auto costs = ugilib::bfs(n, 0, graph);\n   \
-    \ rep(i, n) {\n        cout << i + 1 << \" \" << (costs[i] == ugilib::constants::INF<int>\
+    \ 1, 1);\n        }\n    }\n\n    auto costs = ugilib::bfs01(n, 0, graph);\n \
+    \   rep(i, n) {\n        cout << i + 1 << \" \" << (costs[i] == ugilib::constants::INF<int>\
     \ ? -1 : costs[i]) << endl;\n    }\n\n    return 0;\n}\n"
   dependsOn:
   - ugilib/base/constants.hpp
@@ -150,7 +155,7 @@ data:
   isVerificationFile: true
   path: tests/graph/bfs.test.cpp
   requiredBy: []
-  timestamp: '2024-03-07 03:32:02+09:00'
+  timestamp: '2024-03-07 03:44:05+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/graph/bfs.test.cpp
