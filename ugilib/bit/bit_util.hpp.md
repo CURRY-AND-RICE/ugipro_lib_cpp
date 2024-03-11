@@ -7,11 +7,24 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
-  _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedRequiredBy:
+  - icon: ':heavy_check_mark:'
+    path: ugilib/bit/bit_exhaustive_search.hpp
+    title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
+  - icon: ':heavy_check_mark:'
+    path: ugilib/graph/tsp.hpp
+    title: "\u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\u984C\u3092\u89E3\
+      \u304FDP"
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/bit/bit_exhaustive_search.test.cpp
+    title: tests/bit/bit_exhaustive_search.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: tests/graph/tsp.test.cpp
+    title: tests/graph/tsp.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
     links: []
@@ -62,10 +75,14 @@ data:
   - ugilib/base/definitions.hpp
   isVerificationFile: false
   path: ugilib/bit/bit_util.hpp
-  requiredBy: []
+  requiredBy:
+  - ugilib/graph/tsp.hpp
+  - ugilib/bit/bit_exhaustive_search.hpp
   timestamp: '2024-03-11 22:33:39+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/graph/tsp.test.cpp
+  - tests/bit/bit_exhaustive_search.test.cpp
 documentation_of: ugilib/bit/bit_util.hpp
 layout: document
 redirect_from:
