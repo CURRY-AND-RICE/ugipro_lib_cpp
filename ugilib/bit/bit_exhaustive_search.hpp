@@ -1,6 +1,6 @@
 #pragma once
 #include <bits/stdc++.h>
-#include "ugilib/bits/bit_util.hpp"
+#include "ugilib/bit/bit_util.hpp"
 
 namespace ugilib {
 /**

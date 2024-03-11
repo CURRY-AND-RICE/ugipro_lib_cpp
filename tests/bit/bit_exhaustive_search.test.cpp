@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 #include "ugilib/base/constants.hpp"
 #include "ugilib/base/definitions.hpp"
-#include "ugilib/bits/bit_exhaustive_search.hpp"
+#include "ugilib/bit/bit_exhaustive_search.hpp"
 
 using namespace std;
 

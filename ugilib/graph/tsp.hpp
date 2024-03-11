@@ -1,7 +1,7 @@
 #pragma once
 #include <bits/stdc++.h>
 #include "ugilib/base/constants.hpp"
-#include "ugilib/bits/bit_util.hpp"
+#include "ugilib/bit/bit_util.hpp"
 
 using namespace std;
 
