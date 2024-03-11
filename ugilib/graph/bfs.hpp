@@ -1,8 +1,8 @@
+#pragma once
 #include <bits/stdc++.h>
 #include "ugilib/base/constants.hpp"
 
 using namespace std;
-
 
 /// cut begin
 namespace ugilib {

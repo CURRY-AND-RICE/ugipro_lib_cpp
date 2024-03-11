@@ -5,13 +5,11 @@
 うぎプロライブラリ(C++)
 
 時間があれば追加予定
+github-pages見ればよさそうなのでREADMEは適当で
 
+↓はライブラリ整備始める前に書いてたやつら
+ライブラリ化できてないものが残ってる
 # 実装アルゴリズム
-## graphs
-### グラフアルゴリズムを実装
-- dijkstra.py
-    - ダイクストラ法
-
 ## math
 ### 数学アルゴリズムを実装
 - enum_divisors.cpp
@@ -19,18 +17,6 @@
 - primes.cpp
     - 素数列挙(エラトステネスの篩)
     - 素因数分解
-
-## bits
-### ビット演算アルゴリズムを実装
-- bit_util.cpp
-    - ビット演算のユーティリティ
--bit_exhaustive_search.cpp
-    - ビット全探索
-
-## std_util
-### 標準ライブラリの拡張
-- sets.cpp
-    - 和/積/差集合の演算
 
 ## references
 ### lazy_segtree
