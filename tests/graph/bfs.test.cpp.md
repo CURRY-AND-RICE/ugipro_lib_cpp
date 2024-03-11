@@ -27,8 +27,8 @@ data:
     \ begin(v), end(v)  // all iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\n\
     namespace ugilib::constants {\n    template<typename T>\n    inline constexpr\
     \ T INF = std::numeric_limits<T>::max() / 4;\n} // namespace ugilib::constants\n\
-    \nconst ll INF = ugilib::constants::INF<ll>;\n#line 3 \"ugilib/graph/bfs.hpp\"\
-    \n\nusing namespace std;\n\n\n/// cut begin\nnamespace ugilib {\n/**\n * @brief\
+    \nconst ll INF = ugilib::constants::INF<ll>;\n#line 4 \"ugilib/graph/bfs.hpp\"\
+    \n\nusing namespace std;\n\n/// cut begin\nnamespace ugilib {\n/**\n * @brief\
     \ 0or1\u5E45\u512A\u5148\u63A2\u7D22. 01BFS\n * @param n \u30B0\u30E9\u30D5\u306E\
     \u9802\u70B9\u6570\n * @param start \u59CB\u70B9\n * @param graph \u30B0\u30E9\
     \u30D5. vector<pair<int, weight_type>> \u3067\u96A3\u63A5\u9802\u70B9\u3068\u30B3\
@@ -155,7 +155,7 @@ data:
   isVerificationFile: true
   path: tests/graph/bfs.test.cpp
   requiredBy: []
-  timestamp: '2024-03-07 03:44:05+09:00'
+  timestamp: '2024-03-11 22:33:39+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/graph/bfs.test.cpp

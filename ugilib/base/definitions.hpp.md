@@ -5,11 +5,8 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/bits/bit_exhaustive_search.hpp
-    title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
-  - icon: ':heavy_check_mark:'
-    path: ugilib/bits/bit_util.hpp
+  - icon: ':warning:'
+    path: ugilib/bit/bit_util.hpp
     title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/bfs.hpp
@@ -18,9 +15,6 @@ data:
     path: ugilib/graph/dijkstra.hpp
     title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: tests/bits/bit_exhaustive_search.test.cpp
-    title: tests/bits/bit_exhaustive_search.test.cpp
   - icon: ':heavy_check_mark:'
     path: tests/graph/bfs.test.cpp
     title: tests/graph/bfs.test.cpp
@@ -67,14 +61,12 @@ data:
   - ugilib/graph/bfs.hpp
   - ugilib/graph/dijkstra.hpp
   - ugilib/base/constants.hpp
-  - ugilib/bits/bit_exhaustive_search.hpp
-  - ugilib/bits/bit_util.hpp
+  - ugilib/bit/bit_util.hpp
   timestamp: '2024-03-01 16:27:06+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/graph/bfs.test.cpp
   - tests/graph/dijkstra.test.cpp
-  - tests/bits/bit_exhaustive_search.test.cpp
 documentation_of: ugilib/base/definitions.hpp
 layout: document
 redirect_from:

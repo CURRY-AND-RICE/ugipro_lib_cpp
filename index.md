@@ -9,13 +9,13 @@ data:
     - icon: ':heavy_check_mark:'
       path: ugilib/base/definitions.hpp
       title: ugilib/base/definitions.hpp
-  - name: ugilib/bits
+  - name: ugilib/bit
     pages:
-    - icon: ':heavy_check_mark:'
-      path: ugilib/bits/bit_exhaustive_search.hpp
+    - icon: ':warning:'
+      path: ugilib/bit/bit_exhaustive_search.hpp
       title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
-    - icon: ':heavy_check_mark:'
-      path: ugilib/bits/bit_util.hpp
+    - icon: ':warning:'
+      path: ugilib/bit/bit_util.hpp
       title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
   - name: ugilib/graph
     pages:
@@ -25,6 +25,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: ugilib/graph/dijkstra.hpp
       title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
+    - icon: ':warning:'
+      path: ugilib/graph/tsp.hpp
+      title: "\u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\u984C\u3092\u89E3\
+        \u304FDP"
   - name: ugilib/lazy_segtree
     pages:
     - icon: ':warning:'
@@ -47,11 +51,11 @@ data:
       path: ugilib/std_util/sets.cpp
       title: ugilib/std_util/sets.cpp
   verificationCategories:
-  - name: tests/bits
+  - name: tests/bit
     pages:
-    - icon: ':heavy_check_mark:'
-      path: tests/bits/bit_exhaustive_search.test.cpp
-      title: tests/bits/bit_exhaustive_search.test.cpp
+    - icon: ':x:'
+      path: tests/bit/bit_exhaustive_search.test.cpp
+      title: tests/bit/bit_exhaustive_search.test.cpp
   - name: tests/graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -60,5 +64,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/graph/dijkstra.test.cpp
       title: tests/graph/dijkstra.test.cpp
+    - icon: ':x:'
+      path: tests/graph/tsp.test.cpp
+      title: tests/graph/tsp.test.cpp
 layout: toppage
 ---

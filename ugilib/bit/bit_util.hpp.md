@@ -7,28 +7,22 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
-  _extendedRequiredBy:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/bits/bit_exhaustive_search.hpp
-    title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: tests/bits/bit_exhaustive_search.test.cpp
-    title: tests/bits/bit_exhaustive_search.test.cpp
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
     links: []
-  bundledCode: "#line 2 \"ugilib/bits/bit_util.hpp\"\n#include <bits/stdc++.h>\n#line\
+  bundledCode: "#line 2 \"ugilib/bit/bit_util.hpp\"\n#include <bits/stdc++.h>\n#line\
     \ 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\nusing ull = unsigned\
     \ long long;\nusing ld = long double;\n#define rep(i, n) for(int i = 0; i < (int)(n);\
     \ i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n#line\
     \ 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants {\n    template<typename\
     \ T>\n    inline constexpr T INF = std::numeric_limits<T>::max() / 4;\n} // namespace\
     \ ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n#line 4 \"\
-    ugilib/bits/bit_util.hpp\"\n\nusing namespace std;\n\nnamespace ugilib {\n/**\n\
+    ugilib/bit/bit_util.hpp\"\n\nusing namespace std;\n\nnamespace ugilib {\n/**\n\
     \ * @brief \u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217\n * @param num \u30D3\
     \u30C3\u30C8\u914D\u5217\u306B\u3059\u308B\u305F\u3081\u306E\u6570\u5024\n * @param\
     \ digit \u30D3\u30C3\u30C8\u6570\n * @return vector<bool> \u5909\u63DB\u3055\u308C\
@@ -67,17 +61,15 @@ data:
   - ugilib/base/constants.hpp
   - ugilib/base/definitions.hpp
   isVerificationFile: false
-  path: ugilib/bits/bit_util.hpp
-  requiredBy:
-  - ugilib/bits/bit_exhaustive_search.hpp
-  timestamp: '2024-03-06 18:30:59+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - tests/bits/bit_exhaustive_search.test.cpp
-documentation_of: ugilib/bits/bit_util.hpp
+  path: ugilib/bit/bit_util.hpp
+  requiredBy: []
+  timestamp: '2024-03-11 22:33:39+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
+documentation_of: ugilib/bit/bit_util.hpp
 layout: document
 redirect_from:
-- /library/ugilib/bits/bit_util.hpp
-- /library/ugilib/bits/bit_util.hpp.html
+- /library/ugilib/bit/bit_util.hpp
+- /library/ugilib/bit/bit_util.hpp.html
 title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
 ---

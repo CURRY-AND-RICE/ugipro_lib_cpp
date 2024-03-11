@@ -1,0 +1,50 @@
+---
+data:
+  _extendedDependsOn: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
+  _pathExtension: hpp
+  _verificationStatusIcon: ':warning:'
+  attributes:
+    document_title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
+    links: []
+  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/onlinejudge_verify/documentation/build.py\"\
+    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
+    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    \  File \"/opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/onlinejudge_verify/languages/cplusplus.py\"\
+    , line 187, in bundle\n    bundler.update(path)\n  File \"/opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
+    , line 401, in update\n    self.update(self._resolve(pathlib.Path(included), included_from=path))\n\
+    \                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
+    \ File \"/opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
+    , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: ugilib/bits/bit_util.hpp:\
+    \ line -1: no such header\n"
+  code: "#pragma once\n#include <bits/stdc++.h>\n#include \"ugilib/bits/bit_util.hpp\"\
+    \n\nnamespace ugilib {\n/**\n * @brief \u30D3\u30C3\u30C8\u5168\u63A2\u7D22\n\
+    \ * @param digit \u30D3\u30C3\u30C8\u6570\n * @param f \u30D3\u30C3\u30C8\u914D\
+    \u5217\u3092\u6E21\u3057\u3066\u3001\u305D\u308C\u306B\u5FDC\u3058\u305F\u51E6\
+    \u7406\u3092\u884C\u3046\u95A2\u6570\n * @details \u30E9\u30E0\u30C0\u3092\u53D7\
+    \u3051\u53D6\u3063\u3066\u3001\u30D3\u30C3\u30C8\u5168\u63A2\u7D22\u3092\u884C\
+    \u3046\n *\n * @example\n * vector<int> ans;\n * auto f = [&](const auto &&bits)\
+    \ {\n *    if (count(bits.begin(), bits.end(), true) == 2) {\n *        ans.push_back(bits_to_num(bits));\n\
+    \ *    }\n *    return false;\n * };\n * bit_exhaustive_search(4, f);\n * // ans\
+    \ = {3, 5, 6, 9, 10, 12}\n *\n*/\ntemplate <typename Func>\nvoid bit_exhaustive_search(const\
+    \ size_t &digit, Func f) {\n    for (ll i = 0; i < (1 << digit); i++) {\n    \
+    \    bool will_break = f(num_to_bits(i, digit));\n        if (will_break) break;\n\
+    \    }\n}\n}  // namespace ugilib\n"
+  dependsOn: []
+  isVerificationFile: false
+  path: ugilib/bit/bit_exhaustive_search.hpp
+  requiredBy: []
+  timestamp: '1970-01-01 00:00:00+00:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
+documentation_of: ugilib/bit/bit_exhaustive_search.hpp
+layout: document
+redirect_from:
+- /library/ugilib/bit/bit_exhaustive_search.hpp
+- /library/ugilib/bit/bit_exhaustive_search.hpp.html
+title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
+---
