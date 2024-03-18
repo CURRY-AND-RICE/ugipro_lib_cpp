@@ -8,7 +8,6 @@ namespace ugilib {
  * @param digit ビット数
  * @param f ビット配列を渡して、それに応じた処理を行う関数
  * @details ラムダを受け取って、ビット全探索を行う
- *
  * @example
  * vector<int> ans;
  * auto f = [&](const auto &&bits) {
