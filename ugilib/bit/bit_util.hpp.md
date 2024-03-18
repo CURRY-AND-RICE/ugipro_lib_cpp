@@ -76,13 +76,13 @@ data:
   isVerificationFile: false
   path: ugilib/bit/bit_util.hpp
   requiredBy:
-  - ugilib/graph/tsp.hpp
   - ugilib/bit/bit_exhaustive_search.hpp
+  - ugilib/graph/tsp.hpp
   timestamp: '2024-03-11 22:33:39+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - tests/graph/tsp.test.cpp
   - tests/bit/bit_exhaustive_search.test.cpp
+  - tests/graph/tsp.test.cpp
 documentation_of: ugilib/bit/bit_util.hpp
 layout: document
 redirect_from:

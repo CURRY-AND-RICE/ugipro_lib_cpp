@@ -53,7 +53,7 @@ data:
     \u6570\n * @param f \u30D3\u30C3\u30C8\u914D\u5217\u3092\u6E21\u3057\u3066\u3001\
     \u305D\u308C\u306B\u5FDC\u3058\u305F\u51E6\u7406\u3092\u884C\u3046\u95A2\u6570\
     \n * @details \u30E9\u30E0\u30C0\u3092\u53D7\u3051\u53D6\u3063\u3066\u3001\u30D3\
-    \u30C3\u30C8\u5168\u63A2\u7D22\u3092\u884C\u3046\n *\n * @example\n * vector<int>\
+    \u30C3\u30C8\u5168\u63A2\u7D22\u3092\u884C\u3046\n * @example\n * vector<int>\
     \ ans;\n * auto f = [&](const auto &&bits) {\n *    if (count(bits.begin(), bits.end(),\
     \ true) == 2) {\n *        ans.push_back(bits_to_num(bits));\n *    }\n *    return\
     \ false;\n * };\n * bit_exhaustive_search(4, f);\n * // ans = {3, 5, 6, 9, 10,\
@@ -162,7 +162,7 @@ data:
   isVerificationFile: true
   path: tests/bit/bit_exhaustive_search.test.cpp
   requiredBy: []
-  timestamp: '2024-03-12 02:42:58+09:00'
+  timestamp: '2024-03-18 13:48:37+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/bit/bit_exhaustive_search.test.cpp

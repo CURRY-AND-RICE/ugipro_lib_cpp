@@ -17,6 +17,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: ugilib/bit/bit_util.hpp
       title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
+  - name: ugilib/geometry
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: ugilib/geometry/rectangle_overlap.hpp
+      title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\u5224\
+        \u5B9A"
   - name: ugilib/graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -56,6 +62,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/bit/bit_exhaustive_search.test.cpp
       title: tests/bit/bit_exhaustive_search.test.cpp
+  - name: tests/geometry
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: tests/geometry/rectangle_overlap.test.cpp
+      title: tests/geometry/rectangle_overlap.test.cpp
   - name: tests/graph
     pages:
     - icon: ':heavy_check_mark:'
