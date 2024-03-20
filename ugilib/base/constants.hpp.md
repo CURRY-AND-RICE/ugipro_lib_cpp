@@ -37,6 +37,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/graph/tsp.test.cpp
     title: tests/graph/tsp.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: tests/math/pow.test.cpp
+    title: tests/math/pow.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -64,6 +67,7 @@ data:
   timestamp: '2024-03-04 19:44:09+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - tests/math/pow.test.cpp
   - tests/bit/bit_exhaustive_search.test.cpp
   - tests/geometry/rectangle_overlap.test.cpp
   - tests/graph/tsp.test.cpp

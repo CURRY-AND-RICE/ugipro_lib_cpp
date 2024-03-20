@@ -45,6 +45,9 @@ data:
     - icon: ':warning:'
       path: ugilib/math/enum_divisors.cpp
       title: ugilib/math/enum_divisors.cpp
+    - icon: ':heavy_check_mark:'
+      path: ugilib/math/pow.hpp
+      title: "\u7E70\u308A\u8FD4\u3057\u4E8C\u4E57\u6CD5"
     - icon: ':warning:'
       path: ugilib/math/primes.cpp
       title: ugilib/math/primes.cpp
@@ -78,5 +81,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/graph/tsp.test.cpp
       title: tests/graph/tsp.test.cpp
+  - name: tests/math
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: tests/math/pow.test.cpp
+      title: tests/math/pow.test.cpp
 layout: toppage
 ---
