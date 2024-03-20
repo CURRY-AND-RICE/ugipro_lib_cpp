@@ -4,5 +4,5 @@
 "tests/graph/bfs.test.cpp": "2024-03-11 22:33:39 +0900",
 "tests/graph/dijkstra.test.cpp": "2024-03-11 22:33:39 +0900",
 "tests/graph/tsp.test.cpp": "2024-03-12 02:42:58 +0900",
-"tests/math/pow.test.cpp": "2024-03-20 17:55:10 +0900"
+"tests/math/pow.test.cpp": "2024-03-20 18:03:51 +0900"
 }
