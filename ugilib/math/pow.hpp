@@ -12,7 +12,7 @@ namespace ugilib {
  * @note O(log n)
 */
 template <typename T>
-T fast_pow(T x, ll n, ll mod = ugilib::constants::INF<ll>) {
+T fast_pow(T x, ll n, T mod = ugilib::constants::INF<T>) {
     assert(n >= 0);
     T res = 1;
     while (n) {
