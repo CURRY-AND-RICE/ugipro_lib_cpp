@@ -22,7 +22,7 @@ data:
     \ 4 \"ugilib/math/pow.hpp\"\n\nnamespace ugilib {\n/**\n * @brief \u7E70\u308A\
     \u8FD4\u3057\u4E8C\u4E57\u6CD5\n * @param x \u57FA\u6570\n * @param n \u6307\u6570\
     \n * @param mod mod\n * @return x^n % mod\n * @note O(log n)\n*/\ntemplate <typename\
-    \ T>\nT fast_pow(T x, ll n, ll mod = ugilib::constants::INF<ll>) {\n    assert(n\
+    \ T>\nT fast_pow(T x, ll n, T mod = ugilib::constants::INF<T>) {\n    assert(n\
     \ >= 0);\n    T res = 1;\n    while (n) {\n        if (n & 1) res = res*x%mod;\n\
     \        x = x*x%mod;\n        n >>= 1;\n    }\n    return res;\n}\n}  // namespace\
     \ ugilib\n"
@@ -30,15 +30,15 @@ data:
     \n\nnamespace ugilib {\n/**\n * @brief \u7E70\u308A\u8FD4\u3057\u4E8C\u4E57\u6CD5\
     \n * @param x \u57FA\u6570\n * @param n \u6307\u6570\n * @param mod mod\n * @return\
     \ x^n % mod\n * @note O(log n)\n*/\ntemplate <typename T>\nT fast_pow(T x, ll\
-    \ n, ll mod = ugilib::constants::INF<ll>) {\n    assert(n >= 0);\n    T res =\
-    \ 1;\n    while (n) {\n        if (n & 1) res = res*x%mod;\n        x = x*x%mod;\n\
+    \ n, T mod = ugilib::constants::INF<T>) {\n    assert(n >= 0);\n    T res = 1;\n\
+    \    while (n) {\n        if (n & 1) res = res*x%mod;\n        x = x*x%mod;\n\
     \        n >>= 1;\n    }\n    return res;\n}\n}  // namespace ugilib\n"
   dependsOn:
   - ugilib/base/definitions.hpp
   isVerificationFile: false
   path: ugilib/math/pow.hpp
   requiredBy: []
-  timestamp: '2024-03-20 17:55:10+09:00'
+  timestamp: '2024-03-20 18:03:51+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/math/pow.test.cpp

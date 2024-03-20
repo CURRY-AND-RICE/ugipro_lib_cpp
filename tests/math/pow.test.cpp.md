@@ -31,8 +31,8 @@ data:
     \nnamespace ugilib {\n/**\n * @brief \u7E70\u308A\u8FD4\u3057\u4E8C\u4E57\u6CD5\
     \n * @param x \u57FA\u6570\n * @param n \u6307\u6570\n * @param mod mod\n * @return\
     \ x^n % mod\n * @note O(log n)\n*/\ntemplate <typename T>\nT fast_pow(T x, ll\
-    \ n, ll mod = ugilib::constants::INF<ll>) {\n    assert(n >= 0);\n    T res =\
-    \ 1;\n    while (n) {\n        if (n & 1) res = res*x%mod;\n        x = x*x%mod;\n\
+    \ n, T mod = ugilib::constants::INF<T>) {\n    assert(n >= 0);\n    T res = 1;\n\
+    \    while (n) {\n        if (n & 1) res = res*x%mod;\n        x = x*x%mod;\n\
     \        n >>= 1;\n    }\n    return res;\n}\n}  // namespace ugilib\n#line 7\
     \ \"tests/math/pow.test.cpp\"\n\nusing namespace std;\n\n// debug settings\n//\
     \ #define DEBUG\n#ifdef DEBUG\n// debug input\nstring _INPUT = R\"(\n5\n1 2 3\
@@ -77,7 +77,7 @@ data:
   isVerificationFile: true
   path: tests/math/pow.test.cpp
   requiredBy: []
-  timestamp: '2024-03-20 17:55:10+09:00'
+  timestamp: '2024-03-20 18:03:51+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/math/pow.test.cpp
