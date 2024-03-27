@@ -16,8 +16,8 @@ T fast_pow(T x, ll n, T mod = ugilib::constants::INF<T>) {
     assert(n >= 0);
     T res = 1;
     while (n) {
-        if (n & 1) res = res*x%mod;
-        x = x*x%mod;
+        if (n & 1) res = res*x % mod;
+        x = x*x % mod;
         n >>= 1;
     }
     return res;

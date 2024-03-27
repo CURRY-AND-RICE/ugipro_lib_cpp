@@ -44,7 +44,7 @@ bool next_combination(vector<size_t> &indices, const size_t &num_items) {
  * };
  * exec_all_combination(5, 3, f);
 */
-template<typename Func>
+template <typename Func>
 void exec_all_combinations(const size_t &num_items, const size_t &num_pick, Func f) {
     vector<size_t> indices(num_pick);
     iota(indices.begin(), indices.end(), 0);
