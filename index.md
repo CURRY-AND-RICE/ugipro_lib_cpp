@@ -47,15 +47,16 @@ data:
       title: ugilib/lazy_segtree/implementations.cpp
   - name: ugilib/math
     pages:
-    - icon: ':warning:'
-      path: ugilib/math/enum_divisors.cpp
-      title: ugilib/math/enum_divisors.cpp
+    - icon: ':heavy_check_mark:'
+      path: ugilib/math/enum_divisors.hpp
+      title: "\u7D04\u6570\u5217\u6319. \u7D50\u679C\u306F\u30BD\u30FC\u30C8\u6E08\
+        \u307F"
     - icon: ':heavy_check_mark:'
       path: ugilib/math/pow.hpp
       title: "\u7E70\u308A\u8FD4\u3057\u4E8C\u4E57\u6CD5"
-    - icon: ':warning:'
-      path: ugilib/math/primes.cpp
-      title: ugilib/math/primes.cpp
+    - icon: ':heavy_check_mark:'
+      path: ugilib/math/primes.hpp
+      title: "\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9"
   - name: ugilib/std_util
     pages:
     - icon: ':warning:'
@@ -94,7 +95,16 @@ data:
   - name: tests/math
     pages:
     - icon: ':heavy_check_mark:'
+      path: tests/math/enum_divisors.test.cpp
+      title: tests/math/enum_divisors.test.cpp
+    - icon: ':heavy_check_mark:'
       path: tests/math/pow.test.cpp
       title: tests/math/pow.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: tests/math/prime_enumerate.test.cpp
+      title: tests/math/prime_enumerate.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: tests/math/prime_fuctorization.test.cpp
+      title: tests/math/prime_fuctorization.test.cpp
 layout: toppage
 ---

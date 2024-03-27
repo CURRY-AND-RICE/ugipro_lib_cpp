@@ -53,7 +53,7 @@ data:
     \u30F3\u30C7\u30C3\u30AF\u30B9\u304C\u6607\u9806\u3067\u6E21\u3055\u308C\u308B\
     \n * @example\n * auto f = [&](const vector<size_t> &indices) {\n *    for (const\
     \ auto &i : indices) {\n *       cout << i << \" \";\n *   }\n *  cout << endl;\n\
-    \ * return false;\n * };\n * exec_all_combination(5, 3, f);\n*/\ntemplate<typename\
+    \ * return false;\n * };\n * exec_all_combination(5, 3, f);\n*/\ntemplate <typename\
     \ Func>\nvoid exec_all_combinations(const size_t &num_items, const size_t &num_pick,\
     \ Func f) {\n    vector<size_t> indices(num_pick);\n    iota(indices.begin(),\
     \ indices.end(), 0);\n    do {\n        bool will_break = f(indices);\n      \
@@ -165,7 +165,7 @@ data:
   isVerificationFile: true
   path: tests/iteration/combinations.test.cpp
   requiredBy: []
-  timestamp: '2024-03-27 16:32:32+09:00'
+  timestamp: '2024-03-27 18:24:41+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/iteration/combinations.test.cpp

@@ -10,14 +10,6 @@ github-pages見ればよさそうなのでREADMEは適当で
 ↓はライブラリ整備始める前に書いてたやつら
 ライブラリ化できてないものが残ってる
 # 実装アルゴリズム
-## math
-### 数学アルゴリズムを実装
-- enum_divisors.cpp
-    - 約数列挙
-- primes.cpp
-    - 素数列挙(エラトステネスの篩)
-    - 素因数分解
-
 ## references
 ### lazy_segtree
 - implementations.cpp

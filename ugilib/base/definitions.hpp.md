@@ -51,8 +51,17 @@ data:
     path: tests/iteration/combinations.test.cpp
     title: tests/iteration/combinations.test.cpp
   - icon: ':heavy_check_mark:'
+    path: tests/math/enum_divisors.test.cpp
+    title: tests/math/enum_divisors.test.cpp
+  - icon: ':heavy_check_mark:'
     path: tests/math/pow.test.cpp
     title: tests/math/pow.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: tests/math/prime_enumerate.test.cpp
+    title: tests/math/prime_enumerate.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: tests/math/prime_fuctorization.test.cpp
+    title: tests/math/prime_fuctorization.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -103,7 +112,10 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/iteration/combinations.test.cpp
+  - tests/math/enum_divisors.test.cpp
+  - tests/math/prime_fuctorization.test.cpp
   - tests/math/pow.test.cpp
+  - tests/math/prime_enumerate.test.cpp
   - tests/bit/bit_exhaustive_search.test.cpp
   - tests/geometry/rectangle_overlap.test.cpp
   - tests/graph/tsp.test.cpp
