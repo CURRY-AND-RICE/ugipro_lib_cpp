@@ -35,6 +35,11 @@ data:
       path: ugilib/graph/tsp.hpp
       title: "\u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\u984C\u3092\u89E3\
         \u304FDP"
+  - name: ugilib/iteration
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: ugilib/iteration/combinations.hpp
+      title: "\u6B21\u306E\u7D44\u307F\u5408\u308F\u305B\u3092\u751F\u6210\u3059\u308B"
   - name: ugilib/lazy_segtree
     pages:
     - icon: ':warning:'
@@ -81,6 +86,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/graph/tsp.test.cpp
       title: tests/graph/tsp.test.cpp
+  - name: tests/iteration
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: tests/iteration/combinations.test.cpp
+      title: tests/iteration/combinations.test.cpp
   - name: tests/math
     pages:
     - icon: ':heavy_check_mark:'
