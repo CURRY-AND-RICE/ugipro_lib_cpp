@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 #include "ugilib/base/constants.hpp"
 #include "ugilib/base/definitions.hpp"
-#include "ugilib/iteration/combinations.hpp"
+#include "ugilib/iteration/all_combinations.hpp"
 
 using namespace std;
 
