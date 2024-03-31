@@ -28,6 +28,11 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/iteration/combinations.hpp
     title: "\u6B21\u306E\u7D44\u307F\u5408\u308F\u305B\u3092\u751F\u6210\u3059\u308B"
+  - icon: ':warning:'
+    path: ugilib/iteration/counter.hpp
+    title: "\u30A4\u30C6\u30EC\u30FC\u30BF\u306E\u7BC4\u56F2\u306B\u542B\u307E\u308C\
+      \u308B\u8981\u7D20\u306E\u51FA\u73FE\u56DE\u6570\u3092\u30AB\u30A6\u30F3\u30C8\
+      \u3059\u308B"
   - icon: ':heavy_check_mark:'
     path: ugilib/math/pow.hpp
     title: "\u7E70\u308A\u8FD4\u3057\u4E8C\u4E57\u6CD5"
@@ -99,6 +104,7 @@ data:
   isVerificationFile: false
   path: ugilib/base/definitions.hpp
   requiredBy:
+  - ugilib/iteration/counter.hpp
   - ugilib/iteration/combinations.hpp
   - ugilib/math/pow.hpp
   - ugilib/base/constants.hpp
