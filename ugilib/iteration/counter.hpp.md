@@ -5,10 +5,13 @@ data:
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/iteration/counter.test.cpp
+    title: tests/iteration/counter.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u30A4\u30C6\u30EC\u30FC\u30BF\u306E\u7BC4\u56F2\u306B\u542B\u307E\
       \u308C\u308B\u8981\u7D20\u306E\u51FA\u73FE\u56DE\u6570\u3092\u30AB\u30A6\u30F3\
@@ -78,8 +81,9 @@ data:
   path: ugilib/iteration/counter.hpp
   requiredBy: []
   timestamp: '2024-03-31 15:45:48+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/iteration/counter.test.cpp
 documentation_of: ugilib/iteration/counter.hpp
 layout: document
 redirect_from:

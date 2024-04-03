@@ -47,6 +47,9 @@ data:
     path: tests/iteration/combinations.test.cpp
     title: tests/iteration/combinations.test.cpp
   - icon: ':heavy_check_mark:'
+    path: tests/iteration/counter.test.cpp
+    title: tests/iteration/counter.test.cpp
+  - icon: ':heavy_check_mark:'
     path: tests/math/enum_divisors.test.cpp
     title: tests/math/enum_divisors.test.cpp
   - icon: ':heavy_check_mark:'
@@ -77,23 +80,24 @@ data:
   isVerificationFile: false
   path: ugilib/base/constants.hpp
   requiredBy:
-  - ugilib/bit/bit_util.hpp
-  - ugilib/bit/bit_exhaustive_search.hpp
   - ugilib/dp/edit_distance.hpp
-  - ugilib/graph/bfs.hpp
+  - ugilib/bit/bit_exhaustive_search.hpp
+  - ugilib/bit/bit_util.hpp
   - ugilib/graph/tsp.hpp
+  - ugilib/graph/bfs.hpp
   - ugilib/graph/dijkstra.hpp
   timestamp: '2024-03-04 19:44:09+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - tests/iteration/counter.test.cpp
   - tests/iteration/combinations.test.cpp
-  - tests/math/enum_divisors.test.cpp
-  - tests/math/prime_fuctorization.test.cpp
-  - tests/math/pow.test.cpp
-  - tests/math/prime_enumerate.test.cpp
-  - tests/bit/bit_exhaustive_search.test.cpp
-  - tests/geometry/rectangle_overlap.test.cpp
   - tests/dp/edit_distance.test.cpp
+  - tests/geometry/rectangle_overlap.test.cpp
+  - tests/bit/bit_exhaustive_search.test.cpp
+  - tests/math/prime_enumerate.test.cpp
+  - tests/math/pow.test.cpp
+  - tests/math/prime_fuctorization.test.cpp
+  - tests/math/enum_divisors.test.cpp
   - tests/graph/tsp.test.cpp
   - tests/graph/dijkstra.test.cpp
   - tests/graph/bfs.test.cpp
