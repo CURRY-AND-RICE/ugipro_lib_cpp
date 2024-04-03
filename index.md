@@ -47,9 +47,8 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: ugilib/iteration/all_combinations.hpp
-      title: "num_items\u500B\u306E\u4E2D\u304B\u3089num_pick\u500B\u9078\u3076\u7D44\
-        \u307F\u5408\u308F\u305B\u3092\u5168\u63A2\u7D22\u3057, \u305D\u308C\u305E\
-        \u308C\u306B\u5BFE\u3057\u3066\u95A2\u6570f\u3092\u5B9F\u884C\u3059\u308B"
+      title: "\u5168\u3066\u306ECombination\u306B\u5BFE\u3057\u3066\u95A2\u6570\u3092\
+        \u5B9F\u884C\u3059\u308B"
     - icon: ':heavy_check_mark:'
       path: ugilib/iteration/counter.hpp
       title: "\u30A4\u30C6\u30EC\u30FC\u30BF\u306E\u7BC4\u56F2\u306B\u542B\u307E\u308C\

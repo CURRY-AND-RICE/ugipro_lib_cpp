@@ -17,8 +17,8 @@ data:
     links: []
   bundledCode: "#line 2 \"ugilib/math/pow.hpp\"\n#include <bits/stdc++.h>\n#line 2\
     \ \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\nusing ull = unsigned\
-    \ long long;\nusing ld = long double;\n#define rep(i, n) for(int i = 0; i < (int)(n);\
-    \ i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n#line\
+    \ long long;\nusing ld = long double;\n#define rep(i, n) for(size_t i = 0; i <\
+    \ n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n#line\
     \ 4 \"ugilib/math/pow.hpp\"\n\nnamespace ugilib {\n    /**\n     * @brief \u7E70\
     \u308A\u8FD4\u3057\u4E8C\u4E57\u6CD5\n     * @param x \u57FA\u6570\n     * @param\
     \ n \u6307\u6570\n     * @param mod mod\n     * @return x^n % mod\n     * @note\
@@ -40,7 +40,7 @@ data:
   isVerificationFile: false
   path: ugilib/math/pow.hpp
   requiredBy: []
-  timestamp: '2024-03-31 15:45:48+09:00'
+  timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/math/pow.test.cpp

@@ -20,13 +20,13 @@ data:
     links: []
   bundledCode: "#line 2 \"ugilib/dp/edit_distance.hpp\"\n#include <bits/stdc++.h>\n\
     #line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\nusing ull =\
-    \ unsigned long long;\nusing ld = long double;\n#define rep(i, n) for(int i =\
-    \ 0; i < (int)(n); i++)  // rep macro\n#define all(v) begin(v), end(v)  // all\
-    \ iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants\
-    \ {\n    template<typename T>\n    inline constexpr T INF = std::numeric_limits<T>::max()\
-    \ / 2;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n\
-    #line 4 \"ugilib/dp/edit_distance.hpp\"\n\nusing namespace std;\n\nnamespace ugilib\
-    \ {\n    /**\n     * @brief \u7DE8\u96C6\u8DDD\u96E2\n     * @tparam T vector\u306E\
+    \ unsigned long long;\nusing ld = long double;\n#define rep(i, n) for(size_t i\
+    \ = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n\
+    #line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants {\n    template<typename\
+    \ T>\n    inline constexpr T INF = std::numeric_limits<T>::max() / 2;\n} // namespace\
+    \ ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n#line 4 \"\
+    ugilib/dp/edit_distance.hpp\"\n\nusing namespace std;\n\nnamespace ugilib {\n\
+    \    /**\n     * @brief \u7DE8\u96C6\u8DDD\u96E2\n     * @tparam T vector\u306E\
     \u8981\u7D20\u306E\u578B. string\u3060\u3063\u305F\u3089vector<char>\u3067\u6E21\
     \u3059\n     * @param v1 vector1\n     * @param v2 vector2\n     * @return vector<vector<ll>>\
     \ dp[i][j]: v1\u306Ei\u6587\u5B57\u76EE\u307E\u3067\u3068v2\u306Ej\u6587\u5B57\
@@ -78,7 +78,7 @@ data:
   isVerificationFile: false
   path: ugilib/dp/edit_distance.hpp
   requiredBy: []
-  timestamp: '2024-04-03 22:40:41+09:00'
+  timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/dp/edit_distance.test.cpp

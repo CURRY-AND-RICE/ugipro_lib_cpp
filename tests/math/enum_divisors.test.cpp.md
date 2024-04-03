@@ -26,35 +26,35 @@ data:
   bundledCode: "#line 1 \"tests/math/enum_divisors.test.cpp\"\n#define PROBLEM \"\
     https://onlinejudge.u-aizu.ac.jp/problems/ITP1_3_D\"\n\n#include <bits/stdc++.h>\n\
     #line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\nusing ull =\
-    \ unsigned long long;\nusing ld = long double;\n#define rep(i, n) for(int i =\
-    \ 0; i < (int)(n); i++)  // rep macro\n#define all(v) begin(v), end(v)  // all\
-    \ iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants\
-    \ {\n    template<typename T>\n    inline constexpr T INF = std::numeric_limits<T>::max()\
-    \ / 2;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n\
-    #line 3 \"ugilib/math/enum_divisors.hpp\"\nusing namespace std;\n\nnamespace ugilib\
-    \ {\n    /**\n     * @brief \u7D04\u6570\u5217\u6319. \u7D50\u679C\u306F\u30BD\
-    \u30FC\u30C8\u6E08\u307F\n     * @tparam T \u6574\u6570\u578B\n     * @param n\
-    \ \u7D04\u6570\u5217\u6319\u3059\u308B\u6570\n     * @return vector<T> \u7D04\u6570\
-    \u30EA\u30B9\u30C8\n     * @note O(sqrt(n))\n    */\n    template <typename T>\n\
-    \    vector<T> enum_divisors(T n) {\n        vector<T> divisors_front;\n     \
-    \   deque<T> divisors_back;\n        for (T i = 1; i * i <= n; i++) {\n      \
-    \      if (n % i == 0) {\n                divisors_front.push_back(i);\n     \
-    \           if (i * i != n) divisors_back.push_front(n / i);\n            }\n\
-    \        }\n        divisors_front.insert(divisors_front.end(), divisors_back.begin(),\
-    \ divisors_back.end());\n        return divisors_front;\n    }\n\n    /**\n  \
-    \   * @brief \u7D04\u6570\u5217\u6319. \u7D20\u56E0\u6570\u5206\u89E3\u306E\u7D50\
-    \u679C\u3092\u7528\u3044\u308B. \u7D50\u679C\u306F\u30BD\u30FC\u30C8\u3055\u308C\
-    \u3066\u3044\u306A\u3044\n     * @tparam T \u6574\u6570\u578B\n     * @param n\
-    \ \u7D04\u6570\u5217\u6319\u3059\u308B\u6570\n     * @param factors \u7D20\u56E0\
-    \u6570\u5206\u89E3\u306E\u7D50\u679C\n     * @return vector<T> \u7D04\u6570\u30EA\
-    \u30B9\u30C8\n     * @note O(\u03A0c_i) (c_i\u306F\u7D20\u56E0\u6570\u5206\u89E3\
-    \u306E\u6307\u6570)\n     * @note \u7D50\u679C\u304C\u30BD\u30FC\u30C8\u3055\u308C\
-    \u3066\u3044\u306A\u3044\u3053\u3068\u306B\u6CE8\u610F\n     */\n    template\
-    \ <typename T>\n    vector<T> enum_divisors_with_prime_factors(T n, const vector<pair<T,\
-    \ int>>& factors) {\n        vector<T> divisors = {1};\n        for (const auto&\
-    \ [p, c] : factors) {\n            vector<T> new_divisors;\n            for (T\
-    \ d : divisors) {\n                T mul = 1;\n                for (int i = 0;\
-    \ i < c; i++) {\n                    mul *= p;\n                    new_divisors.push_back(d\
+    \ unsigned long long;\nusing ld = long double;\n#define rep(i, n) for(size_t i\
+    \ = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n\
+    #line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants {\n    template<typename\
+    \ T>\n    inline constexpr T INF = std::numeric_limits<T>::max() / 2;\n} // namespace\
+    \ ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n#line 3 \"\
+    ugilib/math/enum_divisors.hpp\"\nusing namespace std;\n\nnamespace ugilib {\n\
+    \    /**\n     * @brief \u7D04\u6570\u5217\u6319. \u7D50\u679C\u306F\u30BD\u30FC\
+    \u30C8\u6E08\u307F\n     * @tparam T \u6574\u6570\u578B\n     * @param n \u7D04\
+    \u6570\u5217\u6319\u3059\u308B\u6570\n     * @return vector<T> \u7D04\u6570\u30EA\
+    \u30B9\u30C8\n     * @note O(sqrt(n))\n    */\n    template <typename T>\n   \
+    \ vector<T> enum_divisors(T n) {\n        vector<T> divisors_front;\n        deque<T>\
+    \ divisors_back;\n        for (T i = 1; i * i <= n; i++) {\n            if (n\
+    \ % i == 0) {\n                divisors_front.push_back(i);\n                if\
+    \ (i * i != n) divisors_back.push_front(n / i);\n            }\n        }\n  \
+    \      divisors_front.insert(divisors_front.end(), divisors_back.begin(), divisors_back.end());\n\
+    \        return divisors_front;\n    }\n\n    /**\n     * @brief \u7D04\u6570\u5217\
+    \u6319. \u7D20\u56E0\u6570\u5206\u89E3\u306E\u7D50\u679C\u3092\u7528\u3044\u308B\
+    . \u7D50\u679C\u306F\u30BD\u30FC\u30C8\u3055\u308C\u3066\u3044\u306A\u3044\n \
+    \    * @tparam T \u6574\u6570\u578B\n     * @param n \u7D04\u6570\u5217\u6319\u3059\
+    \u308B\u6570\n     * @param factors \u7D20\u56E0\u6570\u5206\u89E3\u306E\u7D50\
+    \u679C\n     * @return vector<T> \u7D04\u6570\u30EA\u30B9\u30C8\n     * @note\
+    \ O(\u03A0c_i) (c_i\u306F\u7D20\u56E0\u6570\u5206\u89E3\u306E\u6307\u6570)\n \
+    \    * @note \u7D50\u679C\u304C\u30BD\u30FC\u30C8\u3055\u308C\u3066\u3044\u306A\
+    \u3044\u3053\u3068\u306B\u6CE8\u610F\n     */\n    template <typename T>\n   \
+    \ vector<T> enum_divisors_with_prime_factors(T n, const vector<pair<T, int>>&\
+    \ factors) {\n        vector<T> divisors = {1};\n        for (const auto& [p,\
+    \ c] : factors) {\n            vector<T> new_divisors;\n            for (T d :\
+    \ divisors) {\n                T mul = 1;\n                for (int i = 0; i <\
+    \ c; i++) {\n                    mul *= p;\n                    new_divisors.push_back(d\
     \ * mul);\n                }\n            }\n            divisors.insert(divisors.end(),\
     \ new_divisors.begin(), new_divisors.end());\n        }\n        return divisors;\n\
     \    }\n} // namespace ugilib\n#line 3 \"ugilib/math/primes.hpp\"\nusing namespace\
@@ -202,7 +202,7 @@ data:
   isVerificationFile: true
   path: tests/math/enum_divisors.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:40:41+09:00'
+  timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/math/enum_divisors.test.cpp

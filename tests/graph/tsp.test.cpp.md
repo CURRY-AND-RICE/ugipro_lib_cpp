@@ -26,8 +26,8 @@ data:
     - https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A
   bundledCode: "#line 1 \"tests/graph/tsp.test.cpp\"\n#include <bits/stdc++.h>\n#line\
     \ 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\nusing ull = unsigned\
-    \ long long;\nusing ld = long double;\n#define rep(i, n) for(int i = 0; i < (int)(n);\
-    \ i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n#line\
+    \ long long;\nusing ld = long double;\n#define rep(i, n) for(size_t i = 0; i <\
+    \ n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n#line\
     \ 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants {\n    template<typename\
     \ T>\n    inline constexpr T INF = std::numeric_limits<T>::max() / 2;\n} // namespace\
     \ ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n#line 4 \"\
@@ -187,7 +187,7 @@ data:
   isVerificationFile: true
   path: tests/graph/tsp.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:40:41+09:00'
+  timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/graph/tsp.test.cpp
