@@ -12,6 +12,9 @@ data:
     path: ugilib/bit/bit_util.hpp
     title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
   - icon: ':heavy_check_mark:'
+    path: ugilib/dp/edit_distance.hpp
+    title: "\u7DE8\u96C6\u8DDD\u96E2\u3092\u6C42\u3081\u308B"
+  - icon: ':heavy_check_mark:'
     path: ugilib/geometry/rectangle_overlap.hpp
     title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\u5224\
       \u5B9A"
@@ -45,6 +48,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/bit/bit_exhaustive_search.test.cpp
     title: tests/bit/bit_exhaustive_search.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: tests/dp/edit_distance.test.cpp
+    title: tests/dp/edit_distance.test.cpp
   - icon: ':heavy_check_mark:'
     path: tests/geometry/rectangle_overlap.test.cpp
     title: tests/geometry/rectangle_overlap.test.cpp
@@ -117,6 +123,7 @@ data:
   - ugilib/bit/bit_util.hpp
   - ugilib/bit/bit_exhaustive_search.hpp
   - ugilib/geometry/rectangle_overlap.hpp
+  - ugilib/dp/edit_distance.hpp
   - ugilib/graph/bfs.hpp
   - ugilib/graph/tsp.hpp
   - ugilib/graph/dijkstra.hpp
@@ -130,6 +137,7 @@ data:
   - tests/math/prime_enumerate.test.cpp
   - tests/bit/bit_exhaustive_search.test.cpp
   - tests/geometry/rectangle_overlap.test.cpp
+  - tests/dp/edit_distance.test.cpp
   - tests/graph/tsp.test.cpp
   - tests/graph/dijkstra.test.cpp
   - tests/graph/bfs.test.cpp

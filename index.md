@@ -17,6 +17,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: ugilib/bit/bit_util.hpp
       title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
+  - name: ugilib/dp
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: ugilib/dp/edit_distance.hpp
+      title: "\u7DE8\u96C6\u8DDD\u96E2\u3092\u6C42\u3081\u308B"
   - name: ugilib/geometry
     pages:
     - icon: ':heavy_check_mark:'
@@ -78,6 +83,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/bit/bit_exhaustive_search.test.cpp
       title: tests/bit/bit_exhaustive_search.test.cpp
+  - name: tests/dp
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: tests/dp/edit_distance.test.cpp
+      title: tests/dp/edit_distance.test.cpp
   - name: tests/geometry
     pages:
     - icon: ':heavy_check_mark:'

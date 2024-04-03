@@ -47,14 +47,14 @@ data:
     \u3066\u3044\u306A\u3044\n     * @tparam T \u6574\u6570\u578B\n     * @param n\
     \ \u7D04\u6570\u5217\u6319\u3059\u308B\u6570\n     * @param factors \u7D20\u56E0\
     \u6570\u5206\u89E3\u306E\u7D50\u679C\n     * @return vector<T> \u7D04\u6570\u30EA\
-    \u30B9\u30C8\n     * @note O(k) k\u306F\u7D20\u56E0\u6570\u306E\u500B\u6570\n\
-    \     * @note \u7D50\u679C\u304C\u30BD\u30FC\u30C8\u3055\u308C\u3066\u3044\u306A\
-    \u3044\u3053\u3068\u306B\u6CE8\u610F\n     */\n    template <typename T>\n   \
-    \ vector<T> enum_divisors_with_prime_factors(T n, const vector<pair<T, int>>&\
-    \ factors) {\n        vector<T> divisors = {1};\n        for (const auto& [p,\
-    \ c] : factors) {\n            vector<T> new_divisors;\n            for (T d :\
-    \ divisors) {\n                T mul = 1;\n                for (int i = 0; i <\
-    \ c; i++) {\n                    mul *= p;\n                    new_divisors.push_back(d\
+    \u30B9\u30C8\n     * @note O(\u03A0c_i) (c_i\u306F\u7D20\u56E0\u6570\u5206\u89E3\
+    \u306E\u6307\u6570)\n     * @note \u7D50\u679C\u304C\u30BD\u30FC\u30C8\u3055\u308C\
+    \u3066\u3044\u306A\u3044\u3053\u3068\u306B\u6CE8\u610F\n     */\n    template\
+    \ <typename T>\n    vector<T> enum_divisors_with_prime_factors(T n, const vector<pair<T,\
+    \ int>>& factors) {\n        vector<T> divisors = {1};\n        for (const auto&\
+    \ [p, c] : factors) {\n            vector<T> new_divisors;\n            for (T\
+    \ d : divisors) {\n                T mul = 1;\n                for (int i = 0;\
+    \ i < c; i++) {\n                    mul *= p;\n                    new_divisors.push_back(d\
     \ * mul);\n                }\n            }\n            divisors.insert(divisors.end(),\
     \ new_divisors.begin(), new_divisors.end());\n        }\n        return divisors;\n\
     \    }\n} // namespace ugilib\n#line 3 \"ugilib/math/primes.hpp\"\nusing namespace\
@@ -202,7 +202,7 @@ data:
   isVerificationFile: true
   path: tests/math/enum_divisors.test.cpp
   requiredBy: []
-  timestamp: '2024-03-31 15:45:48+09:00'
+  timestamp: '2024-04-03 18:17:59+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/math/enum_divisors.test.cpp
