@@ -104,9 +104,9 @@ data:
   timestamp: '2024-03-31 15:45:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - tests/math/prime_enumerate.test.cpp
-  - tests/math/prime_fuctorization.test.cpp
   - tests/math/enum_divisors.test.cpp
+  - tests/math/prime_fuctorization.test.cpp
+  - tests/math/prime_enumerate.test.cpp
 documentation_of: ugilib/math/primes.hpp
 layout: document
 redirect_from:

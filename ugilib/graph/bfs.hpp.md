@@ -23,7 +23,7 @@ data:
     \ long long;\nusing ld = long double;\n#define rep(i, n) for(int i = 0; i < (int)(n);\
     \ i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n#line\
     \ 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants {\n    template<typename\
-    \ T>\n    inline constexpr T INF = std::numeric_limits<T>::max() / 4;\n} // namespace\
+    \ T>\n    inline constexpr T INF = std::numeric_limits<T>::max() / 2;\n} // namespace\
     \ ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n#line 4 \"\
     ugilib/graph/bfs.hpp\"\n\nusing namespace std;\n\nnamespace ugilib {\n    /**\n\
     \     * @brief 0or1\u5E45\u512A\u5148\u63A2\u7D22. 01BFS\n     * @param n \u30B0\
@@ -81,7 +81,7 @@ data:
   isVerificationFile: false
   path: ugilib/graph/bfs.hpp
   requiredBy: []
-  timestamp: '2024-03-31 15:45:48+09:00'
+  timestamp: '2024-04-03 22:40:41+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/graph/bfs.test.cpp

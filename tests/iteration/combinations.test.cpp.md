@@ -32,7 +32,7 @@ data:
     \ 0; i < (int)(n); i++)  // rep macro\n#define all(v) begin(v), end(v)  // all\
     \ iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants\
     \ {\n    template<typename T>\n    inline constexpr T INF = std::numeric_limits<T>::max()\
-    \ / 4;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n\
+    \ / 2;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n\
     #line 4 \"ugilib/iteration/next_combination.hpp\"\n\nusing namespace std;\n\n\
     namespace ugilib {\n    /**\n     * @brief \u6B21\u306E\u7D44\u307F\u5408\u308F\
     \u305B\u3092\u751F\u6210\u3059\u308B\n     * @param indices \u73FE\u5728\u306E\
@@ -175,7 +175,7 @@ data:
   isVerificationFile: true
   path: tests/iteration/combinations.test.cpp
   requiredBy: []
-  timestamp: '2024-03-31 15:54:43+09:00'
+  timestamp: '2024-04-03 22:40:41+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/iteration/combinations.test.cpp

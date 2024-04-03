@@ -26,7 +26,7 @@ data:
     #define rep(i, n) for(int i = 0; i < (int)(n); i++)  // rep macro\n#define all(v)\
     \ begin(v), end(v)  // all iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\n\
     namespace ugilib::constants {\n    template<typename T>\n    inline constexpr\
-    \ T INF = std::numeric_limits<T>::max() / 4;\n} // namespace ugilib::constants\n\
+    \ T INF = std::numeric_limits<T>::max() / 2;\n} // namespace ugilib::constants\n\
     \nconst ll INF = ugilib::constants::INF<ll>;\n#line 4 \"ugilib/math/pow.hpp\"\n\
     \nnamespace ugilib {\n    /**\n     * @brief \u7E70\u308A\u8FD4\u3057\u4E8C\u4E57\
     \u6CD5\n     * @param x \u57FA\u6570\n     * @param n \u6307\u6570\n     * @param\
@@ -78,7 +78,7 @@ data:
   isVerificationFile: true
   path: tests/math/pow.test.cpp
   requiredBy: []
-  timestamp: '2024-03-31 15:45:48+09:00'
+  timestamp: '2024-04-03 22:40:41+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/math/pow.test.cpp

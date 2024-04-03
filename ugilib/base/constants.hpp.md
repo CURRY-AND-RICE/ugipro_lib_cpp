@@ -13,7 +13,10 @@ data:
     title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
   - icon: ':heavy_check_mark:'
     path: ugilib/dp/edit_distance.hpp
-    title: "\u7DE8\u96C6\u8DDD\u96E2\u3092\u6C42\u3081\u308B"
+    title: "\u7DE8\u96C6\u8DDD\u96E2"
+  - icon: ':heavy_check_mark:'
+    path: ugilib/dp/lis.hpp
+    title: "\u6700\u9577\u5897\u52A0\u90E8\u5206\u5217"
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/bfs.hpp
     title: "0or1\u5E45\u512A\u5148\u63A2\u7D22. 01BFS"
@@ -31,6 +34,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/dp/edit_distance.test.cpp
     title: tests/dp/edit_distance.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: tests/dp/lis.test.cpp
+    title: tests/dp/lis.test.cpp
   - icon: ':heavy_check_mark:'
     path: tests/geometry/rectangle_overlap.test.cpp
     title: tests/geometry/rectangle_overlap.test.cpp
@@ -71,33 +77,35 @@ data:
     \ i = 0; i < (int)(n); i++)  // rep macro\n#define all(v) begin(v), end(v)  //\
     \ all iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants\
     \ {\n    template<typename T>\n    inline constexpr T INF = std::numeric_limits<T>::max()\
-    \ / 4;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n"
+    \ / 2;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n"
   code: "#pragma once\n#include \"ugilib/base/definitions.hpp\"\n\nnamespace ugilib::constants\
     \ {\n    template<typename T>\n    inline constexpr T INF = std::numeric_limits<T>::max()\
-    \ / 4;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n"
+    \ / 2;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n"
   dependsOn:
   - ugilib/base/definitions.hpp
   isVerificationFile: false
   path: ugilib/base/constants.hpp
   requiredBy:
-  - ugilib/dp/edit_distance.hpp
-  - ugilib/bit/bit_exhaustive_search.hpp
   - ugilib/bit/bit_util.hpp
-  - ugilib/graph/tsp.hpp
+  - ugilib/bit/bit_exhaustive_search.hpp
+  - ugilib/dp/edit_distance.hpp
+  - ugilib/dp/lis.hpp
   - ugilib/graph/bfs.hpp
+  - ugilib/graph/tsp.hpp
   - ugilib/graph/dijkstra.hpp
-  timestamp: '2024-03-04 19:44:09+09:00'
+  timestamp: '2024-04-03 22:40:41+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - tests/iteration/counter.test.cpp
   - tests/iteration/combinations.test.cpp
-  - tests/dp/edit_distance.test.cpp
-  - tests/geometry/rectangle_overlap.test.cpp
-  - tests/bit/bit_exhaustive_search.test.cpp
-  - tests/math/prime_enumerate.test.cpp
-  - tests/math/pow.test.cpp
-  - tests/math/prime_fuctorization.test.cpp
+  - tests/iteration/counter.test.cpp
   - tests/math/enum_divisors.test.cpp
+  - tests/math/prime_fuctorization.test.cpp
+  - tests/math/pow.test.cpp
+  - tests/math/prime_enumerate.test.cpp
+  - tests/bit/bit_exhaustive_search.test.cpp
+  - tests/geometry/rectangle_overlap.test.cpp
+  - tests/dp/edit_distance.test.cpp
+  - tests/dp/lis.test.cpp
   - tests/graph/tsp.test.cpp
   - tests/graph/dijkstra.test.cpp
   - tests/graph/bfs.test.cpp

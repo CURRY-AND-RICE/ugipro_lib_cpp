@@ -13,7 +13,10 @@ data:
     title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
   - icon: ':heavy_check_mark:'
     path: ugilib/dp/edit_distance.hpp
-    title: "\u7DE8\u96C6\u8DDD\u96E2\u3092\u6C42\u3081\u308B"
+    title: "\u7DE8\u96C6\u8DDD\u96E2"
+  - icon: ':heavy_check_mark:'
+    path: ugilib/dp/lis.hpp
+    title: "\u6700\u9577\u5897\u52A0\u90E8\u5206\u5217"
   - icon: ':heavy_check_mark:'
     path: ugilib/geometry/rectangle_overlap.hpp
     title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\u5224\
@@ -51,6 +54,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/dp/edit_distance.test.cpp
     title: tests/dp/edit_distance.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: tests/dp/lis.test.cpp
+    title: tests/dp/lis.test.cpp
   - icon: ':heavy_check_mark:'
     path: tests/geometry/rectangle_overlap.test.cpp
     title: tests/geometry/rectangle_overlap.test.cpp
@@ -118,30 +124,32 @@ data:
   isVerificationFile: false
   path: ugilib/base/definitions.hpp
   requiredBy:
+  - ugilib/iteration/counter.hpp
   - ugilib/iteration/all_combinations.hpp
   - ugilib/iteration/next_combination.hpp
-  - ugilib/iteration/counter.hpp
-  - ugilib/dp/edit_distance.hpp
-  - ugilib/geometry/rectangle_overlap.hpp
-  - ugilib/bit/bit_exhaustive_search.hpp
-  - ugilib/bit/bit_util.hpp
-  - ugilib/base/constants.hpp
   - ugilib/math/pow.hpp
-  - ugilib/graph/tsp.hpp
+  - ugilib/base/constants.hpp
+  - ugilib/bit/bit_util.hpp
+  - ugilib/bit/bit_exhaustive_search.hpp
+  - ugilib/geometry/rectangle_overlap.hpp
+  - ugilib/dp/edit_distance.hpp
+  - ugilib/dp/lis.hpp
   - ugilib/graph/bfs.hpp
+  - ugilib/graph/tsp.hpp
   - ugilib/graph/dijkstra.hpp
   timestamp: '2024-03-01 16:27:06+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - tests/iteration/counter.test.cpp
   - tests/iteration/combinations.test.cpp
-  - tests/dp/edit_distance.test.cpp
-  - tests/geometry/rectangle_overlap.test.cpp
-  - tests/bit/bit_exhaustive_search.test.cpp
-  - tests/math/prime_enumerate.test.cpp
-  - tests/math/pow.test.cpp
-  - tests/math/prime_fuctorization.test.cpp
+  - tests/iteration/counter.test.cpp
   - tests/math/enum_divisors.test.cpp
+  - tests/math/prime_fuctorization.test.cpp
+  - tests/math/pow.test.cpp
+  - tests/math/prime_enumerate.test.cpp
+  - tests/bit/bit_exhaustive_search.test.cpp
+  - tests/geometry/rectangle_overlap.test.cpp
+  - tests/dp/edit_distance.test.cpp
+  - tests/dp/lis.test.cpp
   - tests/graph/tsp.test.cpp
   - tests/graph/dijkstra.test.cpp
   - tests/graph/bfs.test.cpp

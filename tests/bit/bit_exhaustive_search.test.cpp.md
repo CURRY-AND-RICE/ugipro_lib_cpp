@@ -30,7 +30,7 @@ data:
     \ rep(i, n) for(int i = 0; i < (int)(n); i++)  // rep macro\n#define all(v) begin(v),\
     \ end(v)  // all iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\nnamespace\
     \ ugilib::constants {\n    template<typename T>\n    inline constexpr T INF =\
-    \ std::numeric_limits<T>::max() / 4;\n} // namespace ugilib::constants\n\nconst\
+    \ std::numeric_limits<T>::max() / 2;\n} // namespace ugilib::constants\n\nconst\
     \ ll INF = ugilib::constants::INF<ll>;\n#line 4 \"ugilib/bit/bit_util.hpp\"\n\n\
     using namespace std;\n\nnamespace ugilib {\n    /**\n     * @brief \u6570\u5024\
     \ -> \u30D3\u30C3\u30C8\u914D\u5217\n     * @param num \u30D3\u30C3\u30C8\u914D\
@@ -165,7 +165,7 @@ data:
   isVerificationFile: true
   path: tests/bit/bit_exhaustive_search.test.cpp
   requiredBy: []
-  timestamp: '2024-03-31 15:45:48+09:00'
+  timestamp: '2024-04-03 22:40:41+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/bit/bit_exhaustive_search.test.cpp

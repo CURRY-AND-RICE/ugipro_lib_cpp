@@ -26,7 +26,7 @@ data:
     \ 0; i < (int)(n); i++)  // rep macro\n#define all(v) begin(v), end(v)  // all\
     \ iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants\
     \ {\n    template<typename T>\n    inline constexpr T INF = std::numeric_limits<T>::max()\
-    \ / 4;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n\
+    \ / 2;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n\
     #line 4 \"ugilib/graph/dijkstra.hpp\"\n\nusing namespace std;\n\nnamespace ugilib\
     \ {\n    /**\n     * @brief \u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5\n     *\
     \ @param n \u30B0\u30E9\u30D5\u306E\u9802\u70B9\u6570\n     * @param start \u59CB\
@@ -71,7 +71,7 @@ data:
   isVerificationFile: true
   path: tests/graph/dijkstra.test.cpp
   requiredBy: []
-  timestamp: '2024-03-31 15:45:48+09:00'
+  timestamp: '2024-04-03 22:40:41+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/graph/dijkstra.test.cpp

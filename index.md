@@ -21,7 +21,10 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: ugilib/dp/edit_distance.hpp
-      title: "\u7DE8\u96C6\u8DDD\u96E2\u3092\u6C42\u3081\u308B"
+      title: "\u7DE8\u96C6\u8DDD\u96E2"
+    - icon: ':heavy_check_mark:'
+      path: ugilib/dp/lis.hpp
+      title: "\u6700\u9577\u5897\u52A0\u90E8\u5206\u5217"
   - name: ugilib/geometry
     pages:
     - icon: ':heavy_check_mark:'
@@ -88,6 +91,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/dp/edit_distance.test.cpp
       title: tests/dp/edit_distance.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: tests/dp/lis.test.cpp
+      title: tests/dp/lis.test.cpp
   - name: tests/geometry
     pages:
     - icon: ':heavy_check_mark:'
