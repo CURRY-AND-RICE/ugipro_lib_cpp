@@ -6,7 +6,7 @@ using namespace std;
 
 namespace ugilib {
     /**
-     * @brief 編集距離を求める
+     * @brief 編集距離
      * @tparam T vectorの要素の型. stringだったらvector<char>で渡す
      * @param v1 vector1
      * @param v2 vector2
