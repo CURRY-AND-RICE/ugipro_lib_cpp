@@ -7,12 +7,13 @@ using namespace std;
 
 namespace ugilib {
     /**
-     * @brief num_items個の中からnum_pick個選ぶ組み合わせを全探索し, それぞれに対して関数fを実行する
+     * @brief 全てのCombinationに対して関数を実行する
      * @tparam Func ラムダ式
      * @param num_items 選択対象全体の要素数
      * @param num_pick 選択する要素数
      * @param f 実行する関数. trueを返すと探索を打ち切る
      * @details ラムダ式には選択した要素のインデックスが昇順で渡される
+     * @details num_items個の中からnum_pick個選ぶ組み合わせを全探索し, それぞれに対して関数fを実行する
      * @example
      * auto f = [&](const vector<size_t> &indices) {
      *    for (const auto &i : indices) {
