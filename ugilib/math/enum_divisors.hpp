@@ -30,7 +30,7 @@ namespace ugilib {
      * @param n 約数列挙する数
      * @param factors 素因数分解の結果
      * @return vector<T> 約数リスト
-     * @note O(k) kは素因数の個数
+     * @note O(Πc_i) (c_iは素因数分解の指数)
      * @note 結果がソートされていないことに注意
      */
     template <typename T>
