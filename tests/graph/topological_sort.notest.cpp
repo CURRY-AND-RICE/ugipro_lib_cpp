@@ -1,4 +1,5 @@
-#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/GRL_4_B"
+// 結果が一意でないため、テストは行わない
+// #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/GRL_4_B"
 
 #include <bits/stdc++.h>
 #include "ugilib/base/constants.hpp"
