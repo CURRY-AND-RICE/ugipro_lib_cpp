@@ -7,51 +7,64 @@ data:
   - icon: ':question:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/dp/edit_distance.hpp
-    title: "\u7DE8\u96C6\u8DDD\u96E2"
+  - icon: ':x:'
+    path: ugilib/graph/topological_sort.hpp
+    title: "\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8\uFF0C\u5165\u6B21\
+      \u6570\u8A08\u7B97\u95A2\u6570\u306E\u5B9A\u7FA9"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/DPL_1_E
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/GRL_4_B
     links:
-    - https://onlinejudge.u-aizu.ac.jp/problems/DPL_1_E
-  bundledCode: "#line 1 \"tests/dp/edit_distance.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DPL_1_E\"\
-    \n\n#include <bits/stdc++.h>\n#line 2 \"ugilib/base/definitions.hpp\"\n\nusing\
-    \ ll = long long;\nusing ull = unsigned long long;\nusing ld = long double;\n\
-    #define rep(i, n) for(size_t i = 0; i < n; i++)  // rep macro\n#define all(v)\
-    \ begin(v), end(v)  // all iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\n\
-    namespace ugilib::constants {\n    template<typename T>\n    inline constexpr\
-    \ T INF = std::numeric_limits<T>::max() / 2;\n} // namespace ugilib::constants\n\
-    \nconst ll INF = ugilib::constants::INF<ll>;\n#line 4 \"ugilib/dp/edit_distance.hpp\"\
-    \n\nusing namespace std;\n\nnamespace ugilib {\n    /**\n     * @brief \u7DE8\u96C6\
-    \u8DDD\u96E2\n     * @tparam T vector\u306E\u8981\u7D20\u306E\u578B. string\u3060\
-    \u3063\u305F\u3089vector<char>\u3067\u6E21\u3059\n     * @param v1 vector1\n \
-    \    * @param v2 vector2\n     * @return vector<vector<ll>> dp[i][j]: v1\u306E\
-    i\u6587\u5B57\u76EE\u307E\u3067\u3068v2\u306Ej\u6587\u5B57\u76EE\u307E\u3067\u306E\
-    \u7DE8\u96C6\u8DDD\u96E2\n     * @note O(nm). n = v1.size(), m = v2.size()\n \
-    \    * @details\n     * auto dp = edit_distance(v1, v2);\n     * cout << dp[v1.size()][v2.size()]\
-    \ << endl;\n     * cout << dp.back().back() << endl;\n    */\n    template <typename\
-    \ T>\n    vector<vector<ll>> edit_distance(const vector<T>& v1, const vector<T>&\
-    \ v2) {\n        int n = v1.size();\n        int m = v2.size();\n        // dp[i][j]:\
-    \ v1\u306Ei\u6587\u5B57\u76EE\u307E\u3067\u3068v2\u306Ej\u6587\u5B57\u76EE\u307E\
-    \u3067\u306E\u7DE8\u96C6\u8DDD\u96E2\n        vector<vector<ll>> dp(n+1, vector<ll>(m+1,\
-    \ INF));\n\n        // \u7A7A\u6587\u5B57\u5217\u3068\u306E\u7DE8\u96C6\u8DDD\u96E2\
-    \n        for (int i = 0; i <= n; i++) dp[i][0] = i;\n        for (int j = 0;\
-    \ j <= m; j++) dp[0][j] = j;\n\n        for (int i = 0; i < n; i++) {\n      \
-    \      for (int j = 0; j < m; j++) {\n                dp[i+1][j+1] = min(dp[i][j+1]\
-    \ + 1, dp[i+1][j] + 1);  // v1 or v2\u3069\u3061\u3089\u304B1\u6587\u5B57\u8FFD\
-    \u52A0\n                if (v1[i] == v2[j]) dp[i+1][j+1] = min(dp[i+1][j+1], dp[i][j]);\
-    \  // v1 and v2\u4E21\u65B9\u304B\u30891\u6587\u5B57\u8FFD\u52A0\n           \
-    \     else dp[i+1][j+1] = min(dp[i+1][j+1], dp[i][j] + 1);  // v1 and v2\u4E21\
-    \u65B9\u304B\u30891\u6587\u5B57\u8FFD\u52A0\u3057, \u7247\u65B9\u3092\u5909\u66F4\
-    \u3059\u308B\n            }\n        }\n\n        return dp;\n    }\n}  // namespace\
-    \ ugilib\n#line 7 \"tests/dp/edit_distance.test.cpp\"\n\nusing namespace std;\n\
-    \n// debug settings\n// #define DEBUG\n#ifdef DEBUG\n// debug input\nstring _INPUT\
+    - https://onlinejudge.u-aizu.ac.jp/problems/GRL_4_B
+  bundledCode: "#line 1 \"tests/graph/topological_sort.test.cpp\"\n#define PROBLEM\
+    \ \"https://onlinejudge.u-aizu.ac.jp/problems/GRL_4_B\"\n\n#include <bits/stdc++.h>\n\
+    #line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\nusing ull =\
+    \ unsigned long long;\nusing ld = long double;\n#define rep(i, n) for(size_t i\
+    \ = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n\
+    #line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants {\n    template<typename\
+    \ T>\n    inline constexpr T INF = std::numeric_limits<T>::max() / 2;\n} // namespace\
+    \ ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n#line 2 \"\
+    ugilib/graph/topological_sort.hpp\"\n\n/**\n * @file topological_sort.hpp\n *\
+    \ @brief \u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8\uFF0C\u5165\u6B21\
+    \u6570\u8A08\u7B97\u95A2\u6570\u306E\u5B9A\u7FA9\n*/\n\n#line 9 \"ugilib/graph/topological_sort.hpp\"\
+    \nusing namespace std;\n\nnamespace ugilib {\n    /**\n     * @brief DAG\u306E\
+    \u5404\u9802\u70B9\u306E\u5165\u6B21\u6570\u3092\u8A08\u7B97\u3059\u308B\n   \
+    \  * @tparam T \u6574\u6570\u578B\n     * @param g \u6709\u5411\u30B0\u30E9\u30D5\
+    \n     * @return vector<T> \u5165\u6B21\u6570\u30EA\u30B9\u30C8\n     * @note\
+    \ O(V + E)\n     */\n    template <typename T>\n    vector<T> calc_indegrees(const\
+    \ vector<vector<T>> &g) {\n        static_assert(is_integral<T>::value, \"T must\
+    \ be integral type\");\n        vector<T> indeg(g.size(), 0);\n        for (const\
+    \ vector<T> &edges_from_u : g) {\n            for (const T &v : edges_from_u)\
+    \ {\n                indeg[v]++;\n            }\n        }\n        return indeg;\n\
+    \    }\n\n    /**\n     * @brief DAG\u306E\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\
+    \u30BD\u30FC\u30C8\n     * @tparam T \u6574\u6570\u578B\n     * @param g DAG\n\
+    \     * @return vector<T> \u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8\
+    \u7D50\u679C\n     * @note O(V + E)\n    */\n    template <typename T>\n    vector<T>\
+    \ topological_sort(const vector<vector<T>> &g) {\n        static_assert(is_integral<T>::value,\
+    \ \"T must be integral type\");\n        // \u5165\u6B21\u6570\u306E\u8A08\u7B97\
+    \n        vector<T> indegs = ugilib::calc_indegrees(g);\n\n        // \u30C8\u30DD\
+    \u30ED\u30B8\u30AB\u30EB\u9806\u5E8F\u3092\u6C7A\u5B9A\u3059\u308B\n        vector<T>\
+    \ topology;\n        queue<T> start_nodes;\n        for (size_t i = 0; i < indegs.size();\
+    \ i++) {\n            if (indegs[i] == 0) start_nodes.push(i);\n        }\n  \
+    \      while (!start_nodes.empty()) {\n            // \u5165\u6B21\u65700\u306E\
+    \u9802\u70B9\u306E\u9806\u5E8F\u3092\u78BA\u5B9A\n            T node = start_nodes.front();\
+    \ start_nodes.pop();\n            topology.push_back(node);\n\n            //\
+    \ \u9802\u70B9\u30FB\u8FBA\u3092\u524A\u9664\u3059\u308B\n            for (const\
+    \ T &next : g[node]) {  // \u3053\u306E\u9802\u70B9\u304B\u3089\u51FA\u308B\u5168\
+    \u3066\u306E\u8FBA\u3092\u524A\u9664\n                if (--indegs[next] == 0)\
+    \ {  // \u305D\u308C\u306B\u3088\u3063\u3066\u5165\u6B21\u6570\u304C0\u306B\u306A\
+    \u3063\u305F\u3089\n                    start_nodes.push(next);  // \u9806\u5E8F\
+    \u3092\u78BA\u5B9A\u3067\u304D\u308B\n                }\n            }\n     \
+    \   }\n\n        assert(topology.size() == g.size());  // DAG\u3067\u306A\u3044\
+    \u5834\u5408\u306F\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8\u3067\
+    \u304D\u306A\u3044\n        return topology;\n    }\n}  // namespace ugilib\n\
+    #line 7 \"tests/graph/topological_sort.test.cpp\"\n\nusing namespace std;\n\n\
+    // debug settings\n// #define DEBUG\n#ifdef DEBUG\n// debug input\nstring _INPUT\
     \ = R\"(\n5\n1 2 3 4 5\n)\";\nauto _cin = stringstream(_INPUT.substr(1)); // remove\
     \ '\\n' at _INPUT[0]\n#else\n// standard input\nauto& _cin = cin;\n#endif\n\n\
     // speed up\n#pragma GCC target(\"avx2\")\n#pragma GCC optimize(\"O3\")\n#pragma\
@@ -92,15 +105,15 @@ data:
     \           }\n            if constexpr (isArithmeticContainer<T>()) cout << endl;\n\
     \        }\n    }\n};  // namespace deb\n\nint main() {\n    auto& cin = _cin;\n\
     \    // speed up io\n    cin.tie(nullptr);\n    ios::sync_with_stdio(false);\n\
-    \n    // code\n    string s1 = rd::i<string>();\n    string s2 = rd::i<string>();\n\
-    \n    vector<char> v1(all(s1)), v2(all(s2));\n    auto dp = ugilib::edit_distance(v1,\
-    \ v2);\n    cout << dp.back().back() << endl;\n\n    // deb::p(dp);\n\n    return\
-    \ 0;\n}\n"
-  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DPL_1_E\"\n\n\
+    \n    // code\n    auto [N, M] = rd::t<ll, ll>();\n    vector<vector<int>> g(N);\n\
+    \    rep(i, M) {\n        auto [x, y] = rd::t<int, int>();\n        g[x].push_back(y);\n\
+    \    }\n\n    vector<int> topology = ugilib::topological_sort(g);\n    for (int\
+    \ node : topology) cout << node << endl;\n\n    return 0;\n}\n"
+  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/GRL_4_B\"\n\n\
     #include <bits/stdc++.h>\n#include \"ugilib/base/constants.hpp\"\n#include \"\
-    ugilib/base/definitions.hpp\"\n#include \"ugilib/dp/edit_distance.hpp\"\n\nusing\
-    \ namespace std;\n\n// debug settings\n// #define DEBUG\n#ifdef DEBUG\n// debug\
-    \ input\nstring _INPUT = R\"(\n5\n1 2 3 4 5\n)\";\nauto _cin = stringstream(_INPUT.substr(1));\
+    ugilib/base/definitions.hpp\"\n#include \"ugilib/graph/topological_sort.hpp\"\n\
+    \nusing namespace std;\n\n// debug settings\n// #define DEBUG\n#ifdef DEBUG\n\
+    // debug input\nstring _INPUT = R\"(\n5\n1 2 3 4 5\n)\";\nauto _cin = stringstream(_INPUT.substr(1));\
     \ // remove '\\n' at _INPUT[0]\n#else\n// standard input\nauto& _cin = cin;\n\
     #endif\n\n// speed up\n#pragma GCC target(\"avx2\")\n#pragma GCC optimize(\"O3\"\
     )\n#pragma GCC optimize(\"unroll-loops\")\n\n// reader\nstruct rd {\n    // T\n\
@@ -140,24 +153,24 @@ data:
     \ ++it) {\n                p(*it);\n            }\n            if constexpr (isArithmeticContainer<T>())\
     \ cout << endl;\n        }\n    }\n};  // namespace deb\n\nint main() {\n    auto&\
     \ cin = _cin;\n    // speed up io\n    cin.tie(nullptr);\n    ios::sync_with_stdio(false);\n\
-    \n    // code\n    string s1 = rd::i<string>();\n    string s2 = rd::i<string>();\n\
-    \n    vector<char> v1(all(s1)), v2(all(s2));\n    auto dp = ugilib::edit_distance(v1,\
-    \ v2);\n    cout << dp.back().back() << endl;\n\n    // deb::p(dp);\n\n    return\
-    \ 0;\n}\n"
+    \n    // code\n    auto [N, M] = rd::t<ll, ll>();\n    vector<vector<int>> g(N);\n\
+    \    rep(i, M) {\n        auto [x, y] = rd::t<int, int>();\n        g[x].push_back(y);\n\
+    \    }\n\n    vector<int> topology = ugilib::topological_sort(g);\n    for (int\
+    \ node : topology) cout << node << endl;\n\n    return 0;\n}\n"
   dependsOn:
   - ugilib/base/constants.hpp
   - ugilib/base/definitions.hpp
-  - ugilib/dp/edit_distance.hpp
+  - ugilib/graph/topological_sort.hpp
   isVerificationFile: true
-  path: tests/dp/edit_distance.test.cpp
+  path: tests/graph/topological_sort.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2024-04-04 16:03:12+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: tests/dp/edit_distance.test.cpp
+documentation_of: tests/graph/topological_sort.test.cpp
 layout: document
 redirect_from:
-- /verify/tests/dp/edit_distance.test.cpp
-- /verify/tests/dp/edit_distance.test.cpp.html
-title: tests/dp/edit_distance.test.cpp
+- /verify/tests/graph/topological_sort.test.cpp
+- /verify/tests/graph/topological_sort.test.cpp.html
+title: tests/graph/topological_sort.test.cpp
 ---
