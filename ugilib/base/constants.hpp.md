@@ -1,10 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy:
+  - icon: ':warning:'
+    path: tests/graph/topological_sort.notest.cpp
+    title: tests/graph/topological_sort.notest.cpp
   - icon: ':heavy_check_mark:'
     path: ugilib/bit/bit_exhaustive_search.hpp
     title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
@@ -46,9 +49,6 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/graph/dijkstra.test.cpp
     title: tests/graph/dijkstra.test.cpp
-  - icon: ':x:'
-    path: tests/graph/topological_sort.test.cpp
-    title: tests/graph/topological_sort.test.cpp
   - icon: ':heavy_check_mark:'
     path: tests/graph/tsp.test.cpp
     title: tests/graph/tsp.test.cpp
@@ -70,9 +70,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/math/prime_fuctorization.test.cpp
     title: tests/math/prime_fuctorization.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\n\
@@ -96,8 +96,9 @@ data:
   - ugilib/graph/bfs.hpp
   - ugilib/graph/tsp.hpp
   - ugilib/graph/dijkstra.hpp
+  - tests/graph/topological_sort.notest.cpp
   timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/iteration/combinations.test.cpp
   - tests/iteration/counter.test.cpp
@@ -111,7 +112,6 @@ data:
   - tests/dp/lis.test.cpp
   - tests/graph/tsp.test.cpp
   - tests/graph/dijkstra.test.cpp
-  - tests/graph/topological_sort.test.cpp
   - tests/graph/bfs.test.cpp
 documentation_of: ugilib/base/constants.hpp
 layout: document

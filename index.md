@@ -1,12 +1,17 @@
 ---
 data:
   libraryCategories:
+  - name: tests/graph
+    pages:
+    - icon: ':warning:'
+      path: tests/graph/topological_sort.notest.cpp
+      title: tests/graph/topological_sort.notest.cpp
   - name: ugilib/base
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/base/constants.hpp
       title: ugilib/base/constants.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/base/definitions.hpp
       title: ugilib/base/definitions.hpp
   - name: ugilib/bit
@@ -43,7 +48,7 @@ data:
       path: ugilib/graph/longest_path.hpp
       title: "DAG\u306E\u6700\u9577\u30D1\u30B9\u9577\u3092\u6C42\u3081\u308B\u95A2\
         \u6570\u306E\u5B9A\u7FA9"
-    - icon: ':x:'
+    - icon: ':warning:'
       path: ugilib/graph/topological_sort.hpp
       title: "\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8\uFF0C\u5165\u6B21\
         \u6570\u8A08\u7B97\u95A2\u6570\u306E\u5B9A\u7FA9"
@@ -114,9 +119,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/graph/dijkstra.test.cpp
       title: tests/graph/dijkstra.test.cpp
-    - icon: ':x:'
-      path: tests/graph/topological_sort.test.cpp
-      title: tests/graph/topological_sort.test.cpp
     - icon: ':heavy_check_mark:'
       path: tests/graph/tsp.test.cpp
       title: tests/graph/tsp.test.cpp

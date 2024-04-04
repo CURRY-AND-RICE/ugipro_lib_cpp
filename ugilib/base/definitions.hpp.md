@@ -2,7 +2,10 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':question:'
+  - icon: ':warning:'
+    path: tests/graph/topological_sort.notest.cpp
+    title: tests/graph/topological_sort.notest.cpp
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
   - icon: ':heavy_check_mark:'
@@ -65,9 +68,6 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/graph/dijkstra.test.cpp
     title: tests/graph/dijkstra.test.cpp
-  - icon: ':x:'
-    path: tests/graph/topological_sort.test.cpp
-    title: tests/graph/topological_sort.test.cpp
   - icon: ':heavy_check_mark:'
     path: tests/graph/tsp.test.cpp
     title: tests/graph/tsp.test.cpp
@@ -89,9 +89,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/math/prime_fuctorization.test.cpp
     title: tests/math/prime_fuctorization.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 2 "ugilib/base/definitions.hpp"
@@ -139,8 +139,9 @@ data:
   - ugilib/graph/bfs.hpp
   - ugilib/graph/tsp.hpp
   - ugilib/graph/dijkstra.hpp
+  - tests/graph/topological_sort.notest.cpp
   timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/iteration/combinations.test.cpp
   - tests/iteration/counter.test.cpp
@@ -154,7 +155,6 @@ data:
   - tests/dp/lis.test.cpp
   - tests/graph/tsp.test.cpp
   - tests/graph/dijkstra.test.cpp
-  - tests/graph/topological_sort.test.cpp
   - tests/graph/bfs.test.cpp
 documentation_of: ugilib/base/definitions.hpp
 layout: document

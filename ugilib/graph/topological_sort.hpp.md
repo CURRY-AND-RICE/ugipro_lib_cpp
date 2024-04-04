@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':x:'
-    path: tests/graph/topological_sort.test.cpp
-    title: tests/graph/topological_sort.test.cpp
-  _isVerificationFailed: true
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: tests/graph/topological_sort.notest.cpp
+    title: tests/graph/topological_sort.notest.cpp
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8\uFF0C\u5165\
       \u6B21\u6570\u8A08\u7B97\u95A2\u6570\u306E\u5B9A\u7FA9"
@@ -84,11 +84,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: ugilib/graph/topological_sort.hpp
-  requiredBy: []
+  requiredBy:
+  - tests/graph/topological_sort.notest.cpp
   timestamp: '2024-04-04 16:03:12+09:00'
-  verificationStatus: LIBRARY_ALL_WA
-  verifiedWith:
-  - tests/graph/topological_sort.test.cpp
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: ugilib/graph/topological_sort.hpp
 layout: document
 redirect_from:
