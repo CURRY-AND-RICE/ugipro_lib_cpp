@@ -30,6 +30,13 @@ data:
     path: ugilib/graph/tsp.hpp
     title: "\u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\u984C\u3092\u89E3\
       \u304FDP"
+  - icon: ':warning:'
+    path: ugilib/math/combinatorics.hpp
+    title: "\u7D44\u307F\u5408\u308F\u305B\u8A08\u7B97\u306E\u95A2\u6570\u306E\u5B9A\
+      \u7FA9. perm(), comb(), fact()."
+  - icon: ':warning:'
+    path: ugilib/math/invmod.hpp
+    title: "\u9006\u5143\u8A08\u7B97\u306E\u95A2\u6570\u306E\u5B9A\u7FA9. invmod()."
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: tests/bit/bit_exhaustive_search.test.cpp
@@ -89,30 +96,32 @@ data:
   isVerificationFile: false
   path: ugilib/base/constants.hpp
   requiredBy:
-  - ugilib/bit/bit_util.hpp
-  - ugilib/bit/bit_exhaustive_search.hpp
-  - ugilib/dp/edit_distance.hpp
   - ugilib/dp/lis.hpp
+  - ugilib/dp/edit_distance.hpp
+  - ugilib/graph/dijkstra.hpp
   - ugilib/graph/bfs.hpp
   - ugilib/graph/tsp.hpp
-  - ugilib/graph/dijkstra.hpp
+  - ugilib/math/invmod.hpp
+  - ugilib/math/combinatorics.hpp
+  - ugilib/bit/bit_exhaustive_search.hpp
+  - ugilib/bit/bit_util.hpp
   - tests/graph/topological_sort.notest.cpp
   timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/iteration/combinations.test.cpp
   - tests/iteration/counter.test.cpp
-  - tests/math/enum_divisors.test.cpp
-  - tests/math/prime_fuctorization.test.cpp
-  - tests/math/pow.test.cpp
-  - tests/math/prime_enumerate.test.cpp
-  - tests/bit/bit_exhaustive_search.test.cpp
-  - tests/geometry/rectangle_overlap.test.cpp
   - tests/dp/edit_distance.test.cpp
   - tests/dp/lis.test.cpp
-  - tests/graph/tsp.test.cpp
-  - tests/graph/dijkstra.test.cpp
   - tests/graph/bfs.test.cpp
+  - tests/graph/dijkstra.test.cpp
+  - tests/graph/tsp.test.cpp
+  - tests/math/pow.test.cpp
+  - tests/math/prime_fuctorization.test.cpp
+  - tests/math/enum_divisors.test.cpp
+  - tests/math/prime_enumerate.test.cpp
+  - tests/geometry/rectangle_overlap.test.cpp
+  - tests/bit/bit_exhaustive_search.test.cpp
 documentation_of: ugilib/base/constants.hpp
 layout: document
 redirect_from:

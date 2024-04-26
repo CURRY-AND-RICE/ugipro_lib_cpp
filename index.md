@@ -77,10 +77,17 @@ data:
       title: ugilib/lazy_segtree/implementations.cpp
   - name: ugilib/math
     pages:
+    - icon: ':warning:'
+      path: ugilib/math/combinatorics.hpp
+      title: "\u7D44\u307F\u5408\u308F\u305B\u8A08\u7B97\u306E\u95A2\u6570\u306E\u5B9A\
+        \u7FA9. perm(), comb(), fact()."
     - icon: ':heavy_check_mark:'
       path: ugilib/math/enum_divisors.hpp
       title: "\u7D04\u6570\u5217\u6319. \u7D50\u679C\u306F\u30BD\u30FC\u30C8\u6E08\
         \u307F"
+    - icon: ':warning:'
+      path: ugilib/math/invmod.hpp
+      title: "\u9006\u5143\u8A08\u7B97\u306E\u95A2\u6570\u306E\u5B9A\u7FA9. invmod()."
     - icon: ':heavy_check_mark:'
       path: ugilib/math/pow.hpp
       title: "\u7E70\u308A\u8FD4\u3057\u4E8C\u4E57\u6CD5"
