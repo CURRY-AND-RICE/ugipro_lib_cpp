@@ -97,8 +97,11 @@ data:
   - name: ugilib/std_util
     pages:
     - icon: ':warning:'
+      path: ugilib/std_util/coord_compress.hpp
+      title: "\u5EA7\u6A19\u5727\u7E2E\u306E\u5B9F\u88C5"
+    - icon: ':warning:'
       path: ugilib/std_util/hashes.hpp
-      title: ugilib/std_util/hashes.hpp
+      title: "\u30CF\u30C3\u30B7\u30E5\u69CB\u9020\u4F53\u306E\u5B9A\u7FA9"
   verificationCategories:
   - name: tests/bit
     pages:
