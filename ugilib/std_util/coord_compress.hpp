@@ -19,17 +19,17 @@ namespace ugilib {
      * @note O(NlogN)
     */
     template <typename T>
-    unordered_map<T, int> compress(vector<T>& v, bool descending = false) {
-        // ユニークにする
-        vector<T> sorted_unique_v(v.begin(), v.end());  // コピー
-        auto end_unique = unique(sorted_unique_v.begin(), sorted_unique_v.end());  // ユニーク要素を前に詰める
-        sorted_unique_v.erase(end_unique, sorted_unique_v.end());  // 重複要素を削除
+    unordered_map<T, int> compress(const vector<T>& v, const bool descending = false) {
         // ソート
+        vector<T> sorted_unique_v(v.begin(), v.end());  // コピー
         if (descending) {
             sort(sorted_unique_v.rbegin(), sorted_unique_v.rend());
         } else {
             sort(sorted_unique_v.begin(), sorted_unique_v.end());
         }
+        // ユニークにする. ソート済みが前提
+        auto end_unique = unique(sorted_unique_v.begin(), sorted_unique_v.end());  // ユニーク要素を前に詰める
+        sorted_unique_v.erase(end_unique, sorted_unique_v.end());  // 重複要素を削除
         // 圧縮
         unordered_map<T, int> compressed;
         rep(i, sorted_unique_v.size()) {
