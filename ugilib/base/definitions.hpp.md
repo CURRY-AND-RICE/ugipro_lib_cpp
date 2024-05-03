@@ -36,8 +36,8 @@ data:
       \u304FDP"
   - icon: ':heavy_check_mark:'
     path: ugilib/iteration/all_combinations.hpp
-    title: "\u5168\u3066\u306ECombination\u306B\u5BFE\u3057\u3066\u95A2\u6570\u3092\
-      \u5B9F\u884C\u3059\u308B"
+    title: "\u5168\u3066\u306E\u9806\u5217/\u7D44\u307F\u5408\u308F\u305B\u306B\u5BFE\
+      \u3059\u308B\u51E6\u7406\u3092\u7C21\u7565\u5316\u3059\u308B\u95A2\u6570"
   - icon: ':heavy_check_mark:'
     path: ugilib/iteration/counter.hpp
     title: "\u30A4\u30C6\u30EC\u30FC\u30BF\u306E\u7BC4\u56F2\u306B\u542B\u307E\u308C\
