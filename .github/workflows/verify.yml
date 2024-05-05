@@ -29,7 +29,7 @@ jobs:
       with:
         repository: atcoder/ac-library
         path: ac-library
-        sparse-checkout: ac-library
+        sparse-checkout: atcoder
 
     - name: Run tests
       working-directory: main
