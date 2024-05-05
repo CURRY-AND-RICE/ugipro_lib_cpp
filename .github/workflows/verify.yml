@@ -30,18 +30,9 @@ jobs:
         path: ac-library
         sparse-checkout: ac-library
 
-    - name: Set CPLUS_INCLUDE_PATH
-      run: |
-        echo "Current directory: $(pwd)"
-        echo "CPLUS_INCLUDE_PATH will be set to: $CPLUS_INCLUDE_PATH:$(pwd)/ac-library"
-        echo "CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$(pwd)/ac-library" >> $GITHUB_ENV
-
-    - name: Debug environment variables
-      run: |
-        echo "CPLUS_INCLUDE_PATH: $CPLUS_INCLUDE_PATH"
-
     - name: Run tests
       env:
+        CPLUS_INCLUDE_PATH: ${{ github.workspace }}/ac-library
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         YUKICODER_TOKEN: ${{ secrets.YUKICODER_TOKEN }}
         GH_PAT: ${{ secrets.GH_PAT }}
