@@ -1,23 +1,11 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/bit/bit_util.hpp
-    title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: tests/graph/tsp.test.cpp
-    title: tests/graph/tsp.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\u984C\u3092\
       \u89E3\u304FDP"
@@ -76,7 +64,7 @@ data:
     \               dest = min(dest, dp[i][j] + cost);\n                    bits[node]\
     \ = false;\n                }\n            }\n        }\n\n        return dp[num_states-1][start];\
     \  // \u5168\u72B6\u614B\u8A2A\u554F\u5F8C\u306Bstart\u306B\u623B\u3063\u3066\u6765\
-    \u308B\u6700\u5C0F\u30B3\u30B9\u30C8\n    }\n    }  // namespace ugilib\n"
+    \u308B\u6700\u5C0F\u30B3\u30B9\u30C8\n    }\n}  // namespace ugilib\n"
   code: "#pragma once\n#include <bits/stdc++.h>\n#include \"ugilib/base/constants.hpp\"\
     \n#include \"ugilib/bit/bit_util.hpp\"\n\nusing namespace std;\n\nnamespace ugilib\
     \ {\n    /**\n     * @brief \u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\
@@ -107,18 +95,14 @@ data:
     \                    dest = min(dest, dp[i][j] + cost);\n                    bits[node]\
     \ = false;\n                }\n            }\n        }\n\n        return dp[num_states-1][start];\
     \  // \u5168\u72B6\u614B\u8A2A\u554F\u5F8C\u306Bstart\u306B\u623B\u3063\u3066\u6765\
-    \u308B\u6700\u5C0F\u30B3\u30B9\u30C8\n    }\n    }  // namespace ugilib\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
-  - ugilib/bit/bit_util.hpp
+    \u308B\u6700\u5C0F\u30B3\u30B9\u30C8\n    }\n}  // namespace ugilib\n"
+  dependsOn: []
   isVerificationFile: false
   path: ugilib/graph/tsp.hpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - tests/graph/tsp.test.cpp
+  timestamp: '2024-05-05 21:37:18+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: ugilib/graph/tsp.hpp
 layout: document
 redirect_from:

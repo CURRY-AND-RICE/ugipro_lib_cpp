@@ -1,17 +1,6 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/iteration/counter.hpp
-    title: "\u30A4\u30C6\u30EC\u30FC\u30BF\u306E\u7BC4\u56F2\u306B\u542B\u307E\u308C\
-      \u308B\u8981\u7D20\u306E\u51FA\u73FE\u56DE\u6570\u3092\u30AB\u30A6\u30F3\u30C8\
-      \u3059\u308B"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -157,14 +146,11 @@ data:
     \  assert(count1 == count2_converted);\n\n    for (int i = 0; i < 26; i++) {\n\
     \        char c = 'a' + i;\n        cout << c << \" : \" << count1[c] << endl;\n\
     \    }\n\n    return 0;\n}\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
-  - ugilib/iteration/counter.hpp
+  dependsOn: []
   isVerificationFile: true
   path: tests/iteration/counter.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
+  timestamp: '2024-04-03 21:32:56+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/iteration/counter.test.cpp

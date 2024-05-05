@@ -1,21 +1,11 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  _extendedRequiredBy:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/iteration/all_combinations.hpp
-    title: "\u5168\u3066\u306E\u9806\u5217/\u7D44\u307F\u5408\u308F\u305B\u306B\u5BFE\
-      \u3059\u308B\u51E6\u7406\u3092\u7C21\u7565\u5316\u3059\u308B\u95A2\u6570"
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: tests/iteration/combinations.test.cpp
-    title: tests/iteration/combinations.test.cpp
+  _extendedDependsOn: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u6B21\u306E\u7D44\u307F\u5408\u308F\u305B\u3092\u751F\u6210\u3059\
       \u308B"
@@ -56,16 +46,13 @@ data:
     \   for (size_t j = i + 1; j < num_pick; j++) {\n                    indices[j]\
     \ = indices[j - 1] + 1;\n                }\n                return true;\n   \
     \         }\n        }\n        return false;\n    }\n} // namespace ugilib"
-  dependsOn:
-  - ugilib/base/definitions.hpp
+  dependsOn: []
   isVerificationFile: false
   path: ugilib/iteration/next_combination.hpp
-  requiredBy:
-  - ugilib/iteration/all_combinations.hpp
-  timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - tests/iteration/combinations.test.cpp
+  requiredBy: []
+  timestamp: '2024-03-31 15:54:43+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: ugilib/iteration/next_combination.hpp
 layout: document
 redirect_from:

@@ -1,19 +1,6 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/iteration/all_combinations.hpp
-    title: "\u5168\u3066\u306E\u9806\u5217/\u7D44\u307F\u5408\u308F\u305B\u306B\u5BFE\
-      \u3059\u308B\u51E6\u7406\u3092\u7C21\u7565\u5316\u3059\u308B\u95A2\u6570"
-  - icon: ':heavy_check_mark:'
-    path: ugilib/iteration/next_combination.hpp
-    title: "\u6B21\u306E\u7D44\u307F\u5408\u308F\u305B\u3092\u751F\u6210\u3059\u308B"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -217,15 +204,11 @@ data:
     \u308C1\u3092\u8DB3\u3057\u3066[1, n]\u306B\u3059\u308B\n            if (y ==\
     \ x) ans += 1;\n            return false;\n        };\n        ugilib::exec_all_combinations(n,\
     \ 3, f);\n        cout << ans << endl;\n    }\n\n    return 0;\n}\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
-  - ugilib/iteration/all_combinations.hpp
-  - ugilib/iteration/next_combination.hpp
+  dependsOn: []
   isVerificationFile: true
   path: tests/iteration/combinations.test.cpp
   requiredBy: []
-  timestamp: '2024-05-03 21:18:09+09:00'
+  timestamp: '2024-03-31 15:54:43+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/iteration/combinations.test.cpp

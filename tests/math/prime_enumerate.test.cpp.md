@@ -1,15 +1,6 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/math/primes.hpp
-    title: "\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -168,14 +159,11 @@ data:
     \ = false;\n                    break;\n                }\n            }\n   \
     \         if (is_prime) ans++;\n        }\n    }\n\n    cout << ans << endl;\n\
     \n    return 0;\n}\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
-  - ugilib/math/primes.hpp
+  dependsOn: []
   isVerificationFile: true
   path: tests/math/prime_enumerate.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
+  timestamp: '2024-03-27 18:24:41+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/math/prime_enumerate.test.cpp

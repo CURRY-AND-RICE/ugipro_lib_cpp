@@ -1,15 +1,6 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/math/pow.hpp
-    title: "\u7E70\u308A\u8FD4\u3057\u4E8C\u4E57\u6CD5"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -71,14 +62,11 @@ data:
     \ {\n    auto& cin = _cin;\n    // speed up io\n    cin.tie(nullptr);\n    ios::sync_with_stdio(false);\n\
     \n    // code\n    auto [m, n] = rd::t<ll, ll>();\n    cout << ugilib::fast_pow(m,\
     \ n, ll(1e9)+7) << endl;;\n\n    return 0;\n}\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
-  - ugilib/math/pow.hpp
+  dependsOn: []
   isVerificationFile: true
   path: tests/math/pow.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
+  timestamp: '2024-03-20 17:55:10+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/math/pow.test.cpp

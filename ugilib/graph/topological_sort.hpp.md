@@ -1,10 +1,7 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: tests/graph/topological_sort.notest.cpp
-    title: tests/graph/topological_sort.notest.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -84,8 +81,7 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: ugilib/graph/topological_sort.hpp
-  requiredBy:
-  - tests/graph/topological_sort.notest.cpp
+  requiredBy: []
   timestamp: '2024-04-04 16:03:12+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []

@@ -1,15 +1,6 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/dp/lis.hpp
-    title: "\u6700\u9577\u5897\u52A0\u90E8\u5206\u5217"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -142,14 +133,11 @@ data:
     \n    // code\n    int n = rd::i<int>();\n    vector<int> A = rd::v<int>(n);\n\
     \n    auto [ans, lis] = ugilib::longest_increasing_subsequence(A);\n    // deb::p(lis);\n\
     \n    cout << ans << endl;\n\n    return 0;\n}\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
-  - ugilib/dp/lis.hpp
+  dependsOn: []
   isVerificationFile: true
   path: tests/dp/lis.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
+  timestamp: '2024-04-03 22:40:41+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/dp/lis.test.cpp

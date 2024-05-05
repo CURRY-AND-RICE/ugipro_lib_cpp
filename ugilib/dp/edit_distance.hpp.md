@@ -1,20 +1,11 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
+  _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: tests/dp/edit_distance.test.cpp
-    title: tests/dp/edit_distance.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u7DE8\u96C6\u8DDD\u96E2"
     links: []
@@ -72,16 +63,13 @@ data:
     \u65B9\u304B\u30891\u6587\u5B57\u8FFD\u52A0\u3057, \u7247\u65B9\u3092\u5909\u66F4\
     \u3059\u308B\n            }\n        }\n\n        return dp;\n    }\n}  // namespace\
     \ ugilib\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
+  dependsOn: []
   isVerificationFile: false
   path: ugilib/dp/edit_distance.hpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - tests/dp/edit_distance.test.cpp
+  timestamp: '2024-04-03 22:40:41+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: ugilib/dp/edit_distance.hpp
 layout: document
 redirect_from:

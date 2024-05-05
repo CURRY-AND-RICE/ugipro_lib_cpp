@@ -1,19 +1,6 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/bit/bit_util.hpp
-    title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
-  - icon: ':heavy_check_mark:'
-    path: ugilib/graph/tsp.hpp
-    title: "\u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\u984C\u3092\u89E3\
-      \u304FDP"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -78,8 +65,8 @@ data:
     \               dest = min(dest, dp[i][j] + cost);\n                    bits[node]\
     \ = false;\n                }\n            }\n        }\n\n        return dp[num_states-1][start];\
     \  // \u5168\u72B6\u614B\u8A2A\u554F\u5F8C\u306Bstart\u306B\u623B\u3063\u3066\u6765\
-    \u308B\u6700\u5C0F\u30B3\u30B9\u30C8\n    }\n    }  // namespace ugilib\n#line\
-    \ 5 \"tests/graph/tsp.test.cpp\"\n\n#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A\"\
+    \u308B\u6700\u5C0F\u30B3\u30B9\u30C8\n    }\n}  // namespace ugilib\n#line 5 \"\
+    tests/graph/tsp.test.cpp\"\n\n#define PROBLEM \"https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A\"\
     \n\nusing namespace std;\n\n// debug settings\n// #define DEBUG\n#ifdef DEBUG\n\
     // debug input\nstring _INPUT = R\"(\n5\n1 2 3 4 5\n)\";\nauto _cin = stringstream(_INPUT.substr(1));\
     \ // remove '\\n' at _INPUT[0]\n#else\n// standard input\nauto& _cin = cin;\n\
@@ -179,15 +166,11 @@ data:
     \ < V; i++) {\n        int another_ans = ugilib::tsp_bitDP(V, i, graph);\n   \
     \     assert(ans == another_ans);\n    }\n\n    if (ans == ugilib::constants::INF<int>)\
     \ cout << -1 << endl;\n    else cout << ans << endl;\n\n    return 0;\n}\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
-  - ugilib/graph/tsp.hpp
-  - ugilib/bit/bit_util.hpp
+  dependsOn: []
   isVerificationFile: true
   path: tests/graph/tsp.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
+  timestamp: '2024-03-11 22:33:39+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/graph/tsp.test.cpp

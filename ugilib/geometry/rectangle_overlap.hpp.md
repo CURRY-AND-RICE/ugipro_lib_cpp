@@ -1,17 +1,11 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
+  _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: tests/geometry/rectangle_overlap.test.cpp
-    title: tests/geometry/rectangle_overlap.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\
       \u5224\u5B9A"
@@ -46,15 +40,13 @@ data:
     \ 4> &b) {\n        auto [ymin1, xmin1, ymax1, xmax1] = a;\n        auto [ymin2,\
     \ xmin2, ymax2, xmax2] = b;\n        return (xmin1 <= xmax2 && xmax1 >= xmin2\
     \ && ymin1 <= ymax2 && ymax1 >= ymin2);\n    }\n} // namespace ugilib\n"
-  dependsOn:
-  - ugilib/base/definitions.hpp
+  dependsOn: []
   isVerificationFile: false
   path: ugilib/geometry/rectangle_overlap.hpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - tests/geometry/rectangle_overlap.test.cpp
+  timestamp: '2024-03-31 15:45:48+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: ugilib/geometry/rectangle_overlap.hpp
 layout: document
 redirect_from:

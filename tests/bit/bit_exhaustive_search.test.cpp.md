@@ -1,18 +1,6 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/bit/bit_exhaustive_search.hpp
-    title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
-  - icon: ':heavy_check_mark:'
-    path: ugilib/bit/bit_util.hpp
-    title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -157,15 +145,11 @@ data:
     \        return false;\n    };\n    ugilib::bit_exhaustive_search(n, f);\n\n \
     \   rep(i, q) {\n        if (numbers.find(m[i]) != numbers.end()) cout << \"yes\"\
     \ << endl;\n        else cout << \"no\" << endl;\n    }\n\n    return 0;\n}\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
-  - ugilib/bit/bit_exhaustive_search.hpp
-  - ugilib/bit/bit_util.hpp
+  dependsOn: []
   isVerificationFile: true
   path: tests/bit/bit_exhaustive_search.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
+  timestamp: '2024-03-12 02:42:58+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/bit/bit_exhaustive_search.test.cpp

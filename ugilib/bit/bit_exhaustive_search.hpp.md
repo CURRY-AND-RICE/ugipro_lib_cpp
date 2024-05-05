@@ -1,23 +1,11 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/bit/bit_util.hpp
-    title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: tests/bit/bit_exhaustive_search.test.cpp
-    title: tests/bit/bit_exhaustive_search.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
     links: []
@@ -75,17 +63,13 @@ data:
     \ i = 0; i < (1 << digit); i++) {\n            bool will_break = f(num_to_bits(i,\
     \ digit));\n            if (will_break) break;\n        }\n    }\n}  // namespace\
     \ ugilib\n"
-  dependsOn:
-  - ugilib/bit/bit_util.hpp
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
+  dependsOn: []
   isVerificationFile: false
   path: ugilib/bit/bit_exhaustive_search.hpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - tests/bit/bit_exhaustive_search.test.cpp
+  timestamp: '2024-03-31 15:45:48+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: ugilib/bit/bit_exhaustive_search.hpp
 layout: document
 redirect_from:

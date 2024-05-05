@@ -1,20 +1,11 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
+  _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: tests/graph/bfs.test.cpp
-    title: tests/graph/bfs.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "0or1\u5E45\u512A\u5148\u63A2\u7D22. 01BFS"
     links: []
@@ -75,16 +66,13 @@ data:
     \                    if (next_cost == 0) next_nodes.push_front(next_node);\n \
     \                   else next_nodes.push_back(next_node);\n                }\n\
     \            }\n        }\n\n        return costs;\n    }\n}  // namespace ugilib\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
+  dependsOn: []
   isVerificationFile: false
   path: ugilib/graph/bfs.hpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - tests/graph/bfs.test.cpp
+  timestamp: '2024-03-31 15:45:48+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: ugilib/graph/bfs.hpp
 layout: document
 redirect_from:

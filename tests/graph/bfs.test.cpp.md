@@ -1,15 +1,6 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/graph/bfs.hpp
-    title: "0or1\u5E45\u512A\u5148\u63A2\u7D22. 01BFS"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -150,14 +141,11 @@ data:
     \ 1, 1);\n        }\n    }\n\n    auto costs = ugilib::bfs01(n, 0, graph);\n \
     \   rep(i, n) {\n        cout << i + 1 << \" \" << (costs[i] == ugilib::constants::INF<int>\
     \ ? -1 : costs[i]) << endl;\n    }\n\n    return 0;\n}\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
-  - ugilib/graph/bfs.hpp
+  dependsOn: []
   isVerificationFile: true
   path: tests/graph/bfs.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
+  timestamp: '2024-03-07 03:44:05+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/graph/bfs.test.cpp

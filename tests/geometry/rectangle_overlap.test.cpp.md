@@ -1,16 +1,6 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/constants.hpp
-    title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/base/definitions.hpp
-    title: ugilib/base/definitions.hpp
-  - icon: ':heavy_check_mark:'
-    path: ugilib/geometry/rectangle_overlap.hpp
-    title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\u5224\
-      \u5B9A"
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -142,14 +132,11 @@ data:
     \   rep(i, 3) cin >> a[i + 1];\n        rep(i, 4) cin >> b[i];\n\n        cout\
     \ << (ugilib::is_overlapping(a, b) ? \"YES\" : \"NO\") << endl;\n    }\n\n   \
     \ return 0;\n}\n"
-  dependsOn:
-  - ugilib/base/constants.hpp
-  - ugilib/base/definitions.hpp
-  - ugilib/geometry/rectangle_overlap.hpp
+  dependsOn: []
   isVerificationFile: true
   path: tests/geometry/rectangle_overlap.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
+  timestamp: '2024-03-18 13:48:37+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/geometry/rectangle_overlap.test.cpp

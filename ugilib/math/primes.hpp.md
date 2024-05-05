@@ -2,19 +2,10 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: tests/math/enum_divisors.test.cpp
-    title: tests/math/enum_divisors.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: tests/math/prime_enumerate.test.cpp
-    title: tests/math/prime_enumerate.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: tests/math/prime_fuctorization.test.cpp
-    title: tests/math/prime_fuctorization.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9"
     links: []
@@ -102,11 +93,8 @@ data:
   path: ugilib/math/primes.hpp
   requiredBy: []
   timestamp: '2024-03-31 15:45:48+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - tests/math/prime_fuctorization.test.cpp
-  - tests/math/enum_divisors.test.cpp
-  - tests/math/prime_enumerate.test.cpp
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: ugilib/math/primes.hpp
 layout: document
 redirect_from:
