@@ -43,4 +43,4 @@ namespace ugilib {
 
         return dp[num_states-1][start];  // 全状態訪問後にstartに戻って来る最小コスト
     }
-    }  // namespace ugilib
+}  // namespace ugilib

@@ -23,6 +23,14 @@ jobs:
     - name: Install dependencies
       run: pip3 install -U online-judge-verify-helper
 
+    - name: Clone AC-library
+      uses: actions/checkout@v3
+      with:
+        repository: atcoder/ac-library
+        path: ac-library
+        sparse-checkout: ac-library
+      run: export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$(pwd)/ac-library
+
     - name: Run tests
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
