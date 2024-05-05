@@ -1,11 +1,6 @@
 ---
 data:
   libraryCategories:
-  - name: ac-library
-    pages:
-    - icon: ':warning:'
-      path: ac-library/expander.py
-      title: ac-library/expander.py
   - name: tests/graph
     pages:
     - icon: ':warning:'
