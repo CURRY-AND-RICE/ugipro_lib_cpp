@@ -1,6 +1,15 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  - icon: ':warning:'
+    path: ugilib/math/invmod.hpp
+    title: "\u9006\u5143\u8A08\u7B97\u306E\u95A2\u6570\u306E\u5B9A\u7FA9. invmod()."
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -80,7 +89,10 @@ data:
     \   r = min(r, n-r);\n        if (r == 0) return 1;\n\n        T numer = perm(n,\
     \ r, mod);\n        T denom = fact(r, mod);\n\n        assert(denom != 0);\n\n\
     \        return (numer * invmod(denom, mod)) % mod;\n    }\n}"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/definitions.hpp
+  - ugilib/base/constants.hpp
+  - ugilib/math/invmod.hpp
   isVerificationFile: false
   path: ugilib/math/combinatorics.hpp
   requiredBy: []

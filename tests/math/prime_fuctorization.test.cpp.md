@@ -1,6 +1,15 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  - icon: ':heavy_check_mark:'
+    path: ugilib/math/primes.hpp
+    title: "\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -157,11 +166,14 @@ data:
     \    cout << n << \": \";\n    rep(i, ans.size()) {\n        cout << ans[i];\n\
     \        if (i != ans.size()-1) cout << \" \";\n    }\n    cout << endl;\n\n \
     \   return 0;\n}\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
+  - ugilib/math/primes.hpp
   isVerificationFile: true
   path: tests/math/prime_fuctorization.test.cpp
   requiredBy: []
-  timestamp: '2024-03-27 18:24:41+09:00'
+  timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/math/prime_fuctorization.test.cpp

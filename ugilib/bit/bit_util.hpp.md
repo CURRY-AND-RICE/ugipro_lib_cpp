@@ -1,11 +1,30 @@
 ---
 data:
-  _extendedDependsOn: []
-  _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  _extendedRequiredBy:
+  - icon: ':heavy_check_mark:'
+    path: ugilib/bit/bit_exhaustive_search.hpp
+    title: "\u30D3\u30C3\u30C8\u5168\u63A2\u7D22"
+  - icon: ':heavy_check_mark:'
+    path: ugilib/graph/tsp.hpp
+    title: "\u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\u984C\u3092\u89E3\
+      \u304FDP"
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/bit/bit_exhaustive_search.test.cpp
+    title: tests/bit/bit_exhaustive_search.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: tests/graph/tsp.test.cpp
+    title: tests/graph/tsp.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
     links: []
@@ -53,13 +72,19 @@ data:
     \ vector<bool> &bits) {\n        ll num = 0;\n        for (int i = 0; i < bits.size();\
     \ i++) {\n            num += bits[i] << i;\n        }\n        return num;\n \
     \   }\n}  // namespace ugilib\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
   isVerificationFile: false
   path: ugilib/bit/bit_util.hpp
-  requiredBy: []
-  timestamp: '2024-03-31 15:45:48+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  requiredBy:
+  - ugilib/graph/tsp.hpp
+  - ugilib/bit/bit_exhaustive_search.hpp
+  timestamp: '2024-04-03 22:46:30+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/graph/tsp.test.cpp
+  - tests/bit/bit_exhaustive_search.test.cpp
 documentation_of: ugilib/bit/bit_util.hpp
 layout: document
 redirect_from:

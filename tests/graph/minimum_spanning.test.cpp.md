@@ -1,6 +1,16 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  - icon: ':x:'
+    path: ugilib/graph/minimum_spanning.hpp
+    title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\u3092\
+      \u63D0\u4F9B"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -59,7 +69,10 @@ data:
     \ < E; i++) {\n        int s, t, w;\n        cin >> s >> t >> w;\n        edges.push_back({w,\
     \ {s, t}});\n    }\n\n    auto [res, mst_edges] = ugilib::kruskal(V, edges);\n\
     \    cout << res << endl;\n\n    return 0;\n}\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/graph/minimum_spanning.hpp
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
   isVerificationFile: true
   path: tests/graph/minimum_spanning.test.cpp
   requiredBy: []

@@ -1,7 +1,17 @@
 ---
 data:
-  _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: ugilib/math/combinatorics.hpp
+    title: "\u7D44\u307F\u5408\u308F\u305B\u8A08\u7B97\u306E\u95A2\u6570\u306E\u5B9A\
+      \u7FA9. perm(), comb(), fact()."
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -56,10 +66,13 @@ data:
     \u524D\u63D0\n    */\n    template <typename T>\n    T invmod(T a, T mod) {\n\
     \        T x, y;\n        T gcd = extended_gcd(a, mod, x, y);\n        assert(gcd\
     \ == 1);\n        return (x % mod + mod) % mod;\n    }\n}\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/definitions.hpp
+  - ugilib/base/constants.hpp
   isVerificationFile: false
   path: ugilib/math/invmod.hpp
-  requiredBy: []
+  requiredBy:
+  - ugilib/math/combinatorics.hpp
   timestamp: '2024-04-26 23:52:15+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []

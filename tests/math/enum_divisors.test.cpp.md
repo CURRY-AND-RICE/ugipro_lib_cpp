@@ -1,6 +1,18 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  - icon: ':heavy_check_mark:'
+    path: ugilib/math/enum_divisors.hpp
+    title: "\u7D04\u6570\u5217\u6319. \u7D50\u679C\u306F\u30BD\u30FC\u30C8\u6E08\u307F"
+  - icon: ':heavy_check_mark:'
+    path: ugilib/math/primes.hpp
+    title: "\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -182,11 +194,15 @@ data:
     \ it_b = lower_bound(all(divisors1), b);\n    if (it_b != divisors1.end() && *it_b\
     \ == b) it_b++;\n    ll ans = distance(it_a, it_b);\n\n    cout << ans << endl;\n\
     \n    return 0;\n}\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
+  - ugilib/math/enum_divisors.hpp
+  - ugilib/math/primes.hpp
   isVerificationFile: true
   path: tests/math/enum_divisors.test.cpp
   requiredBy: []
-  timestamp: '2024-03-27 18:24:41+09:00'
+  timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/math/enum_divisors.test.cpp

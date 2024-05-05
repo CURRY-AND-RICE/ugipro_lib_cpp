@@ -1,11 +1,20 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/graph/dijkstra.test.cpp
+    title: tests/graph/dijkstra.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
     links: []
@@ -57,13 +66,16 @@ data:
     \ = new_cost;\n                    next_nodes.push({costs[next_node], next_node});\n\
     \                }\n            }\n        }\n\n        return costs;\n    }\n\
     } // namespace ugilib\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
   isVerificationFile: false
   path: ugilib/graph/dijkstra.hpp
   requiredBy: []
-  timestamp: '2024-03-31 15:45:48+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-04-03 22:46:30+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/graph/dijkstra.test.cpp
 documentation_of: ugilib/graph/dijkstra.hpp
 layout: document
 redirect_from:

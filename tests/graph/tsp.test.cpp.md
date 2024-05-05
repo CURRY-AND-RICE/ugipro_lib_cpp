@@ -1,6 +1,19 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  - icon: ':heavy_check_mark:'
+    path: ugilib/bit/bit_util.hpp
+    title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
+  - icon: ':heavy_check_mark:'
+    path: ugilib/graph/tsp.hpp
+    title: "\u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\u984C\u3092\u89E3\
+      \u304FDP"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -166,11 +179,15 @@ data:
     \ < V; i++) {\n        int another_ans = ugilib::tsp_bitDP(V, i, graph);\n   \
     \     assert(ans == another_ans);\n    }\n\n    if (ans == ugilib::constants::INF<int>)\
     \ cout << -1 << endl;\n    else cout << ans << endl;\n\n    return 0;\n}\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
+  - ugilib/graph/tsp.hpp
+  - ugilib/bit/bit_util.hpp
   isVerificationFile: true
   path: tests/graph/tsp.test.cpp
   requiredBy: []
-  timestamp: '2024-03-11 22:33:39+09:00'
+  timestamp: '2024-05-05 21:37:18+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/graph/tsp.test.cpp

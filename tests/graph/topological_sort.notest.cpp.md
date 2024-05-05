@@ -1,6 +1,16 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  - icon: ':warning:'
+    path: ugilib/graph/topological_sort.hpp
+    title: "\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8\uFF0C\u5165\u6B21\
+      \u6570\u8A08\u7B97\u95A2\u6570\u306E\u5B9A\u7FA9"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -148,7 +158,10 @@ data:
     \    rep(i, M) {\n        auto [x, y] = rd::t<int, int>();\n        g[x].push_back(y);\n\
     \    }\n\n    vector<int> topology = ugilib::topological_sort(g);\n    for (int\
     \ node : topology) cout << node << endl;\n\n    return 0;\n}\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
+  - ugilib/graph/topological_sort.hpp
   isVerificationFile: false
   path: tests/graph/topological_sort.notest.cpp
   requiredBy: []

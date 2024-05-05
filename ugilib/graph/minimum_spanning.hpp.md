@@ -1,11 +1,20 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: tests/graph/minimum_spanning.test.cpp
+    title: tests/graph/minimum_spanning.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     document_title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\
       \u3092\u63D0\u4F9B"
@@ -76,13 +85,16 @@ data:
     \        if (uf.size(0) != n) return {-1, {}};\n        // \u6700\u5C0F\u5168\u57DF\
     \u6728\u306E\u91CD\u307F\u3068\u8FBA\u306E\u30EA\u30B9\u30C8\u3092\u8FD4\u3059\
     \n        return {res, mst_edges};\n    }\n}"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
   isVerificationFile: false
   path: ugilib/graph/minimum_spanning.hpp
   requiredBy: []
   timestamp: '2024-05-05 21:37:18+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - tests/graph/minimum_spanning.test.cpp
 documentation_of: ugilib/graph/minimum_spanning.hpp
 layout: document
 redirect_from:

@@ -1,11 +1,17 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/math/pow.test.cpp
+    title: tests/math/pow.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u7E70\u308A\u8FD4\u3057\u4E8C\u4E57\u6CD5"
     links: []
@@ -29,13 +35,15 @@ data:
     \        assert(n >= 0);\n        T res = 1;\n        while (n) {\n          \
     \  if (n & 1) res = res*x % mod;\n            x = x*x % mod;\n            n >>=\
     \ 1;\n        }\n        return res;\n    }\n}  // namespace ugilib\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/definitions.hpp
   isVerificationFile: false
   path: ugilib/math/pow.hpp
   requiredBy: []
-  timestamp: '2024-03-31 15:45:48+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-04-03 22:46:30+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/math/pow.test.cpp
 documentation_of: ugilib/math/pow.hpp
 layout: document
 redirect_from:

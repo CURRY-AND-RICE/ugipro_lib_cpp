@@ -1,6 +1,15 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  - icon: ':heavy_check_mark:'
+    path: ugilib/graph/dijkstra.hpp
+    title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -55,11 +64,14 @@ data:
     \ d});\n    }\n\n    auto &&costs = ugilib::dijkstra(V, r, graph, ugilib::constants::INF<ll>);\n\
     \    rep(i, V) {\n        if (costs[i] == INF) cout << \"INF\\n\";\n        else\
     \ cout << costs[i] << '\\n';\n    }\n\n    return 0;\n}\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/graph/dijkstra.hpp
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
   isVerificationFile: true
   path: tests/graph/dijkstra.test.cpp
   requiredBy: []
-  timestamp: '2024-03-04 19:44:09+09:00'
+  timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/graph/dijkstra.test.cpp

@@ -1,6 +1,15 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  - icon: ':heavy_check_mark:'
+    path: ugilib/dp/edit_distance.hpp
+    title: "\u7DE8\u96C6\u8DDD\u96E2"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -135,11 +144,14 @@ data:
     \n    vector<char> v1(all(s1)), v2(all(s2));\n    auto dp = ugilib::edit_distance(v1,\
     \ v2);\n    cout << dp.back().back() << endl;\n\n    // deb::p(dp);\n\n    return\
     \ 0;\n}\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
+  - ugilib/dp/edit_distance.hpp
   isVerificationFile: true
   path: tests/dp/edit_distance.test.cpp
   requiredBy: []
-  timestamp: '2024-04-03 18:17:59+09:00'
+  timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/dp/edit_distance.test.cpp

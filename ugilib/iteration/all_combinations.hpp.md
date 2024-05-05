@@ -1,11 +1,20 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  - icon: ':heavy_check_mark:'
+    path: ugilib/iteration/next_combination.hpp
+    title: "\u6B21\u306E\u7D44\u307F\u5408\u308F\u305B\u3092\u751F\u6210\u3059\u308B"
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/iteration/combinations.test.cpp
+    title: tests/iteration/combinations.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u5168\u3066\u306E\u9806\u5217/\u7D44\u307F\u5408\u308F\u305B\
       \u306B\u5BFE\u3059\u308B\u51E6\u7406\u3092\u7C21\u7565\u5316\u3059\u308B\u95A2\
@@ -171,13 +180,16 @@ data:
     \ permutation.end()));\n        } while (prev_permutation(mask.begin(), mask.end()));\n\
     \n        return false;  // \u5168\u63A2\u7D22\u7D42\u4E86\n    }\n}  // namespace\
     \ ugilib\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/definitions.hpp
+  - ugilib/iteration/next_combination.hpp
   isVerificationFile: false
   path: ugilib/iteration/all_combinations.hpp
   requiredBy: []
   timestamp: '2024-05-03 21:18:09+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/iteration/combinations.test.cpp
 documentation_of: ugilib/iteration/all_combinations.hpp
 layout: document
 redirect_from:

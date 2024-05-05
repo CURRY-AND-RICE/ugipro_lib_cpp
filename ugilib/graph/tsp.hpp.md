@@ -1,11 +1,23 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
+  - icon: ':heavy_check_mark:'
+    path: ugilib/bit/bit_util.hpp
+    title: "\u6570\u5024 -> \u30D3\u30C3\u30C8\u914D\u5217"
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/graph/tsp.test.cpp
+    title: tests/graph/tsp.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\u984C\u3092\
       \u89E3\u304FDP"
@@ -96,13 +108,17 @@ data:
     \ = false;\n                }\n            }\n        }\n\n        return dp[num_states-1][start];\
     \  // \u5168\u72B6\u614B\u8A2A\u554F\u5F8C\u306Bstart\u306B\u623B\u3063\u3066\u6765\
     \u308B\u6700\u5C0F\u30B3\u30B9\u30C8\n    }\n}  // namespace ugilib\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
+  - ugilib/bit/bit_util.hpp
   isVerificationFile: false
   path: ugilib/graph/tsp.hpp
   requiredBy: []
   timestamp: '2024-05-05 21:37:18+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/graph/tsp.test.cpp
 documentation_of: ugilib/graph/tsp.hpp
 layout: document
 redirect_from:

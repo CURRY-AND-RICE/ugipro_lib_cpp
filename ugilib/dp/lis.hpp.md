@@ -1,11 +1,20 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: ugilib/base/constants.hpp
+    title: ugilib/base/constants.hpp
+  - icon: ':question:'
+    path: ugilib/base/definitions.hpp
+    title: ugilib/base/definitions.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/dp/lis.test.cpp
+    title: tests/dp/lis.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u6700\u9577\u5897\u52A0\u90E8\u5206\u5217"
     links: []
@@ -63,13 +72,16 @@ data:
     \ lis(lis_length);\n        size_t target = lis_length;\n        for (int i =\
     \ A.size() - 1; i >= 0; i--) if (indices[i] == target) lis[--target] = A[i];\n\
     \n        return {lis_length, lis};\n    }\n}  // namespace ugilib\n"
-  dependsOn: []
+  dependsOn:
+  - ugilib/base/constants.hpp
+  - ugilib/base/definitions.hpp
   isVerificationFile: false
   path: ugilib/dp/lis.hpp
   requiredBy: []
-  timestamp: '2024-04-03 22:40:41+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-04-03 22:46:30+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/dp/lis.test.cpp
 documentation_of: ugilib/dp/lis.hpp
 layout: document
 redirect_from:

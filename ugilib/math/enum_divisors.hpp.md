@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/math/enum_divisors.test.cpp
+    title: tests/math/enum_divisors.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u7D04\u6570\u5217\u6319. \u7D50\u679C\u306F\u30BD\u30FC\u30C8\
       \u6E08\u307F"
@@ -69,8 +72,9 @@ data:
   path: ugilib/math/enum_divisors.hpp
   requiredBy: []
   timestamp: '2024-04-03 18:17:59+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/math/enum_divisors.test.cpp
 documentation_of: ugilib/math/enum_divisors.hpp
 layout: document
 redirect_from:
