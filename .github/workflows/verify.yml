@@ -38,7 +38,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         YUKICODER_TOKEN: ${{ secrets.YUKICODER_TOKEN }}
         GH_PAT: ${{ secrets.GH_PAT }}
-      run: |
-        echo "CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH"
-        ls $CPLUS_INCLUDE_PATH
-        oj-verify all
+      run: oj-verify all
