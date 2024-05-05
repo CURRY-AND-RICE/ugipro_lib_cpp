@@ -8,10 +8,10 @@ data:
       title: tests/graph/topological_sort.notest.cpp
   - name: ugilib/base
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/base/constants.hpp
       title: ugilib/base/constants.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/base/definitions.hpp
       title: ugilib/base/definitions.hpp
   - name: ugilib/bit
@@ -48,7 +48,7 @@ data:
       path: ugilib/graph/longest_path.hpp
       title: "DAG\u306E\u6700\u9577\u30D1\u30B9\u9577\u3092\u6C42\u3081\u308B\u95A2\
         \u6570\u306E\u5B9A\u7FA9"
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/graph/minimum_spanning.hpp
       title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\u3092\
         \u63D0\u4F9B"
@@ -133,7 +133,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/graph/dijkstra.test.cpp
       title: tests/graph/dijkstra.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: tests/graph/minimum_spanning.test.cpp
       title: tests/graph/minimum_spanning.test.cpp
     - icon: ':heavy_check_mark:'

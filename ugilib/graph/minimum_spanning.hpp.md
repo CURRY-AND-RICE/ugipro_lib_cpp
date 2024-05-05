@@ -1,20 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: tests/graph/minimum_spanning.test.cpp
     title: tests/graph/minimum_spanning.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\
       \u3092\u63D0\u4F9B"
@@ -92,7 +92,7 @@ data:
   path: ugilib/graph/minimum_spanning.hpp
   requiredBy: []
   timestamp: '2024-05-05 21:37:18+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/graph/minimum_spanning.test.cpp
 documentation_of: ugilib/graph/minimum_spanning.hpp

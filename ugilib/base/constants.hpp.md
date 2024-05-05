@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy:
@@ -26,7 +26,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/dijkstra.hpp
     title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/graph/minimum_spanning.hpp
     title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\u3092\
       \u63D0\u4F9B"
@@ -60,7 +60,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/graph/dijkstra.test.cpp
     title: tests/graph/dijkstra.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: tests/graph/minimum_spanning.test.cpp
     title: tests/graph/minimum_spanning.test.cpp
   - icon: ':heavy_check_mark:'
@@ -84,9 +84,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/math/prime_fuctorization.test.cpp
     title: tests/math/prime_fuctorization.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\n\
@@ -115,7 +115,7 @@ data:
   - ugilib/bit/bit_util.hpp
   - tests/graph/topological_sort.notest.cpp
   timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/iteration/combinations.test.cpp
   - tests/iteration/counter.test.cpp
