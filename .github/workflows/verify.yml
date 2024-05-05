@@ -29,7 +29,9 @@ jobs:
         repository: atcoder/ac-library
         path: ac-library
         sparse-checkout: ac-library
-      run: export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$(pwd)/ac-library
+
+    - name: Set CPLUS_INCLUDE_PATH
+      run: echo "CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$(pwd)/ac-library" >> $GITHUB_ENV
 
     - name: Run tests
       env:
