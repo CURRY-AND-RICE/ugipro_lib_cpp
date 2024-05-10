@@ -103,7 +103,7 @@ data:
     - icon: ':warning:'
       path: ugilib/std_util/coord_compress.hpp
       title: "\u5EA7\u6A19\u5727\u7E2E\u306E\u5B9F\u88C5"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/std_util/hashes.hpp
       title: "\u30CF\u30C3\u30B7\u30E5\u69CB\u9020\u4F53\u306E\u5B9A\u7FA9"
   verificationCategories:
@@ -161,5 +161,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/math/prime_fuctorization.test.cpp
       title: tests/math/prime_fuctorization.test.cpp
+  - name: tests/std_util
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: tests/std_util/array_hash.test.cpp
+      title: tests/std_util/array_hash.test.cpp
 layout: toppage
 ---

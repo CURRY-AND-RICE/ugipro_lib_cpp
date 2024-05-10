@@ -103,6 +103,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/math/prime_fuctorization.test.cpp
     title: tests/math/prime_fuctorization.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: tests/std_util/array_hash.test.cpp
+    title: tests/std_util/array_hash.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -162,6 +165,7 @@ data:
   verifiedWith:
   - tests/iteration/combinations.test.cpp
   - tests/iteration/counter.test.cpp
+  - tests/std_util/array_hash.test.cpp
   - tests/dp/edit_distance.test.cpp
   - tests/dp/lis.test.cpp
   - tests/graph/bfs.test.cpp
