@@ -12,5 +12,6 @@
 "tests/math/enum_divisors.test.cpp": "2024-04-03 22:46:30 +0900",
 "tests/math/pow.test.cpp": "2024-04-03 22:46:30 +0900",
 "tests/math/prime_enumerate.test.cpp": "2024-04-03 22:46:30 +0900",
-"tests/math/prime_fuctorization.test.cpp": "2024-04-03 22:46:30 +0900"
+"tests/math/prime_fuctorization.test.cpp": "2024-04-03 22:46:30 +0900",
+"tests/std_util/array_hash.test.cpp": "2024-05-11 00:20:01 +0900"
 }
