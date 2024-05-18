@@ -1,15 +1,6 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':warning:'
-    path: ac-library/atcoder/internal_bit.hpp
-    title: ac-library/atcoder/internal_bit.hpp
-  - icon: ':warning:'
-    path: ac-library/atcoder/lazysegtree.hpp
-    title: ac-library/atcoder/lazysegtree.hpp
-  - icon: ':warning:'
-    path: ac-library/atcoder/segtree.hpp
-    title: ac-library/atcoder/segtree.hpp
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -112,10 +103,7 @@ data:
     \ : f; }\n    F id() { return ID; }\n\n    vector<S> initializer{{0, 1}, {0, 1},\
     \ {0, 1}, {0, 1}, {0, 1}};\n    lazy_segtree<S, op, e, F, mapping, composition,\
     \ id> lst(ini);\n}\n"
-  dependsOn:
-  - ac-library/atcoder/segtree.hpp
-  - ac-library/atcoder/internal_bit.hpp
-  - ac-library/atcoder/lazysegtree.hpp
+  dependsOn: []
   isVerificationFile: false
   path: ugilib/lazy_segtree/implementations.cpp
   requiredBy: []

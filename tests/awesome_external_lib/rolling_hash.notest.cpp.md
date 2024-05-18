@@ -1,12 +1,6 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
-    path: ac-library/atcoder/internal_bit.hpp
-    title: ac-library/atcoder/internal_bit.hpp
-  - icon: ':warning:'
-    path: ac-library/atcoder/segtree.hpp
-    title: ac-library/atcoder/segtree.hpp
   - icon: ':heavy_check_mark:'
     path: ugilib/awesome_external_lib/rainbou-kpr/rolling-hash.hpp
     title: "\u30ED\u30FC\u30EA\u30F3\u30B0\u30CF\u30C3\u30B7\u30E5\u3092\u6271\u3046\
@@ -296,8 +290,6 @@ data:
   - ugilib/base/definitions.hpp
   - ugilib/awesome_external_lib/rainbou-kpr/rolling-hash.hpp
   - ugilib/awesome_external_lib/rainbou-kpr/traits.hpp
-  - ac-library/atcoder/segtree.hpp
-  - ac-library/atcoder/internal_bit.hpp
   isVerificationFile: false
   path: tests/awesome_external_lib/rolling_hash.notest.cpp
   requiredBy: []
