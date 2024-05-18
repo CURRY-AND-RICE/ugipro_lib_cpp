@@ -2,6 +2,9 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
+    path: ac-library/atcoder/dsu.hpp
+    title: ac-library/atcoder/dsu.hpp
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
   - icon: ':heavy_check_mark:'
@@ -88,6 +91,7 @@ data:
   dependsOn:
   - ugilib/base/constants.hpp
   - ugilib/base/definitions.hpp
+  - ac-library/atcoder/dsu.hpp
   isVerificationFile: false
   path: ugilib/graph/minimum_spanning.hpp
   requiredBy: []
