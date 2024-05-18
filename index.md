@@ -73,6 +73,9 @@ data:
     - icon: ':warning:'
       path: ac-library/test/benchmark/benchmark/bindings/python/google_benchmark/example.py
       title: ac-library/test/benchmark/benchmark/bindings/python/google_benchmark/example.py
+    - icon: ':warning:'
+      path: ac-library/test/benchmark/benchmark/bindings/python/google_benchmark/version.py
+      title: ac-library/test/benchmark/benchmark/bindings/python/google_benchmark/version.py
   - name: ac-library/test/benchmark/benchmark/cmake
     pages:
     - icon: ':warning:'
@@ -81,6 +84,9 @@ data:
     - icon: ':warning:'
       path: ac-library/test/benchmark/benchmark/cmake/posix_regex.cpp
       title: ac-library/test/benchmark/benchmark/cmake/posix_regex.cpp
+    - icon: ':warning:'
+      path: ac-library/test/benchmark/benchmark/cmake/pthread_affinity.cpp
+      title: ac-library/test/benchmark/benchmark/cmake/pthread_affinity.cpp
     - icon: ':warning:'
       path: ac-library/test/benchmark/benchmark/cmake/std_regex.cpp
       title: ac-library/test/benchmark/benchmark/cmake/std_regex.cpp
@@ -199,12 +205,6 @@ data:
       path: ac-library/test/benchmark/benchmark/src/reporter.cc
       title: ac-library/test/benchmark/benchmark/src/reporter.cc
     - icon: ':warning:'
-      path: ac-library/test/benchmark/benchmark/src/sleep.cc
-      title: ac-library/test/benchmark/benchmark/src/sleep.cc
-    - icon: ':warning:'
-      path: ac-library/test/benchmark/benchmark/src/sleep.h
-      title: ac-library/test/benchmark/benchmark/src/sleep.h
-    - icon: ':warning:'
       path: ac-library/test/benchmark/benchmark/src/statistics.cc
       title: ac-library/test/benchmark/benchmark/src/statistics.cc
     - icon: ':warning:'
@@ -242,6 +242,12 @@ data:
     - icon: ':warning:'
       path: ac-library/test/benchmark/benchmark/test/benchmark_gtest.cc
       title: ac-library/test/benchmark/benchmark/test/benchmark_gtest.cc
+    - icon: ':warning:'
+      path: ac-library/test/benchmark/benchmark/test/benchmark_min_time_flag_iters_test.cc
+      title: ac-library/test/benchmark/benchmark/test/benchmark_min_time_flag_iters_test.cc
+    - icon: ':warning:'
+      path: ac-library/test/benchmark/benchmark/test/benchmark_min_time_flag_time_test.cc
+      title: ac-library/test/benchmark/benchmark/test/benchmark_min_time_flag_time_test.cc
     - icon: ':warning:'
       path: ac-library/test/benchmark/benchmark/test/benchmark_name_gtest.cc
       title: ac-library/test/benchmark/benchmark/test/benchmark_name_gtest.cc
@@ -296,6 +302,9 @@ data:
     - icon: ':warning:'
       path: ac-library/test/benchmark/benchmark/test/memory_manager_test.cc
       title: ac-library/test/benchmark/benchmark/test/memory_manager_test.cc
+    - icon: ':warning:'
+      path: ac-library/test/benchmark/benchmark/test/min_time_parse_gtest.cc
+      title: ac-library/test/benchmark/benchmark/test/min_time_parse_gtest.cc
     - icon: ':warning:'
       path: ac-library/test/benchmark/benchmark/test/multiple_ranges_test.cc
       title: ac-library/test/benchmark/benchmark/test/multiple_ranges_test.cc
