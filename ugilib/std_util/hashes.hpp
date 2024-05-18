@@ -68,7 +68,7 @@ namespace ugilib {
          * @note 再帰的呼び出しを行い、多次元コンテナに対してもハッシュ可能
         */
         template <typename Iterable, std::enable_if_t<!std::is_arithmetic_v<Iterable> &&
-                                                    std::is_same_v<typename std::iterator_traits<typename Iterable::iterator>::iterator_category, std::input_iterator_tag>, int> = 0>
+                                                    std::is_base_of_v<std::input_iterator_tag, typename std::iterator_traits<typename Iterable::iterator>::iterator_category>, int> = 0>
         size_t operator() (const Iterable &iterable) const {
             size_t hash = 0;
             for (const auto &item : iterable) {
