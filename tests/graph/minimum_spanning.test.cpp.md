@@ -16,7 +16,11 @@ data:
   _isVerificationFailed: false
   _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
-  attributes: {}
+  attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/2/GRL_2_A
+    links:
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/2/GRL_2_A
   bundledCode: "#line 1 \"tests/graph/minimum_spanning.test.cpp\"\n#include <bits/stdc++.h>\n\
     #line 2 \"ugilib/graph/minimum_spanning.hpp\"\n\n/**\n * @file minimum_spanning.hpp\n\
     \ * @brief \u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\u3092\
