@@ -52,8 +52,8 @@ data:
     \u3073\u51FA\u3057\u3092\u884C\u3044\u3001\u591A\u6B21\u5143\u30B3\u30F3\u30C6\
     \u30CA\u306B\u5BFE\u3057\u3066\u3082\u30CF\u30C3\u30B7\u30E5\u53EF\u80FD\n   \
     \     */\n        template <typename Iterable, std::enable_if_t<!std::is_arithmetic_v<Iterable>\
-    \ &&\n                                                    std::is_base_of_v<std::input_iterator_tag,\
-    \ typename std::iterator_traits<typename Iterable::iterator>::iterator_category>,\
+    \ &&\n                                                    std::is_same_v<typename\
+    \ std::iterator_traits<typename Iterable::iterator>::iterator_category, std::input_iterator_tag>,\
     \ int> = 0>\n        size_t operator() (const Iterable &iterable) const {\n  \
     \          size_t hash = 0;\n            for (const auto &item : iterable) {\n\
     \                hash ^= (*this)(item) + 0x9e3779b9 + (hash << 6) + (hash >> 2);\n\
@@ -98,17 +98,17 @@ data:
     \u884C\u3044\u3001\u591A\u6B21\u5143\u30B3\u30F3\u30C6\u30CA\u306B\u5BFE\u3057\
     \u3066\u3082\u30CF\u30C3\u30B7\u30E5\u53EF\u80FD\n        */\n        template\
     \ <typename Iterable, std::enable_if_t<!std::is_arithmetic_v<Iterable> &&\n  \
-    \                                                  std::is_base_of_v<std::input_iterator_tag,\
-    \ typename std::iterator_traits<typename Iterable::iterator>::iterator_category>,\
-    \ int> = 0>\n        size_t operator() (const Iterable &iterable) const {\n  \
-    \          size_t hash = 0;\n            for (const auto &item : iterable) {\n\
-    \                hash ^= (*this)(item) + 0x9e3779b9 + (hash << 6) + (hash >> 2);\n\
-    \            }\n            return hash;\n        }\n    };\n} // namespace ugilib\n"
+    \                                                  std::is_same_v<typename std::iterator_traits<typename\
+    \ Iterable::iterator>::iterator_category, std::input_iterator_tag>, int> = 0>\n\
+    \        size_t operator() (const Iterable &iterable) const {\n            size_t\
+    \ hash = 0;\n            for (const auto &item : iterable) {\n               \
+    \ hash ^= (*this)(item) + 0x9e3779b9 + (hash << 6) + (hash >> 2);\n          \
+    \  }\n            return hash;\n        }\n    };\n} // namespace ugilib\n"
   dependsOn: []
   isVerificationFile: false
   path: ugilib/std_util/hashes.hpp
   requiredBy: []
-  timestamp: '2024-05-18 23:39:51+09:00'
+  timestamp: '2024-05-11 00:20:01+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/std_util/array_hash.test.cpp

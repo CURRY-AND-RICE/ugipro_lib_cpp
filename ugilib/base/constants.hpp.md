@@ -6,9 +6,6 @@ data:
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy:
   - icon: ':warning:'
-    path: tests/awesome_external_lib/rolling_hash.notest.cpp
-    title: tests/awesome_external_lib/rolling_hash.notest.cpp
-  - icon: ':warning:'
     path: tests/graph/topological_sort.notest.cpp
     title: tests/graph/topological_sort.notest.cpp
   - icon: ':heavy_check_mark:'
@@ -90,9 +87,6 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/std_util/array_hash.test.cpp
     title: tests/std_util/array_hash.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: tests/string/palindrome.test.cpp
-    title: tests/string/palindrome.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -122,7 +116,6 @@ data:
   - ugilib/bit/bit_exhaustive_search.hpp
   - ugilib/dp/edit_distance.hpp
   - ugilib/dp/lis.hpp
-  - tests/awesome_external_lib/rolling_hash.notest.cpp
   - tests/graph/topological_sort.notest.cpp
   timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: LIBRARY_ALL_AC
@@ -131,7 +124,6 @@ data:
   - tests/graph/minimum_spanning.test.cpp
   - tests/graph/tsp.test.cpp
   - tests/graph/bfs.test.cpp
-  - tests/string/palindrome.test.cpp
   - tests/std_util/array_hash.test.cpp
   - tests/math/enum_divisors.test.cpp
   - tests/math/prime_fuctorization.test.cpp

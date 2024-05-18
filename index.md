@@ -1,25 +1,11 @@
 ---
 data:
   libraryCategories:
-  - name: tests/awesome_external_lib
-    pages:
-    - icon: ':warning:'
-      path: tests/awesome_external_lib/rolling_hash.notest.cpp
-      title: tests/awesome_external_lib/rolling_hash.notest.cpp
   - name: tests/graph
     pages:
     - icon: ':warning:'
       path: tests/graph/topological_sort.notest.cpp
       title: tests/graph/topological_sort.notest.cpp
-  - name: ugilib/awesome_external_lib/rainbou-kpr
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: ugilib/awesome_external_lib/rainbou-kpr/rolling-hash.hpp
-      title: "\u30ED\u30FC\u30EA\u30F3\u30B0\u30CF\u30C3\u30B7\u30E5\u3092\u6271\u3046\
-        \u30D8\u30C3\u30C0"
-    - icon: ':heavy_check_mark:'
-      path: ugilib/awesome_external_lib/rainbou-kpr/traits.hpp
-      title: "\u578B\u7279\u6027\u3092\u6271\u3046\u30D8\u30C3\u30C0"
   - name: ugilib/base
     pages:
     - icon: ':heavy_check_mark:'
@@ -120,12 +106,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: ugilib/std_util/hashes.hpp
       title: "\u30CF\u30C3\u30B7\u30E5\u69CB\u9020\u4F53\u306E\u5B9A\u7FA9"
-  - name: ugilib/string
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: ugilib/string/palindrome.hpp
-      title: "\u5217\u306E[l, r)\u304C\u56DE\u6587\u304B\u3069\u3046\u304B\u3092\u5224\
-        \u5B9A\u3059\u308B"
   verificationCategories:
   - name: tests/bit
     pages:
@@ -186,10 +166,5 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/std_util/array_hash.test.cpp
       title: tests/std_util/array_hash.test.cpp
-  - name: tests/string
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: tests/string/palindrome.test.cpp
-      title: tests/string/palindrome.test.cpp
 layout: toppage
 ---
