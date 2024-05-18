@@ -6,6 +6,9 @@ data:
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy:
   - icon: ':warning:'
+    path: tests/awesome_external_lib/rolling_hash.notest.cpp
+    title: tests/awesome_external_lib/rolling_hash.notest.cpp
+  - icon: ':warning:'
     path: tests/graph/topological_sort.notest.cpp
     title: tests/graph/topological_sort.notest.cpp
   - icon: ':heavy_check_mark:'
@@ -87,6 +90,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/std_util/array_hash.test.cpp
     title: tests/std_util/array_hash.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: tests/string/palindrome.test.cpp
+    title: tests/string/palindrome.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -106,35 +112,37 @@ data:
   isVerificationFile: false
   path: ugilib/base/constants.hpp
   requiredBy:
-  - ugilib/dp/lis.hpp
-  - ugilib/dp/edit_distance.hpp
   - ugilib/graph/dijkstra.hpp
+  - ugilib/graph/tsp.hpp
   - ugilib/graph/bfs.hpp
   - ugilib/graph/minimum_spanning.hpp
-  - ugilib/graph/tsp.hpp
-  - ugilib/math/invmod.hpp
   - ugilib/math/combinatorics.hpp
-  - ugilib/bit/bit_exhaustive_search.hpp
+  - ugilib/math/invmod.hpp
   - ugilib/bit/bit_util.hpp
+  - ugilib/bit/bit_exhaustive_search.hpp
+  - ugilib/dp/edit_distance.hpp
+  - ugilib/dp/lis.hpp
+  - tests/awesome_external_lib/rolling_hash.notest.cpp
   - tests/graph/topological_sort.notest.cpp
   timestamp: '2024-04-03 22:46:30+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - tests/graph/dijkstra.test.cpp
+  - tests/graph/minimum_spanning.test.cpp
+  - tests/graph/tsp.test.cpp
+  - tests/graph/bfs.test.cpp
+  - tests/string/palindrome.test.cpp
+  - tests/std_util/array_hash.test.cpp
+  - tests/math/enum_divisors.test.cpp
+  - tests/math/prime_fuctorization.test.cpp
+  - tests/math/prime_enumerate.test.cpp
+  - tests/math/pow.test.cpp
+  - tests/bit/bit_exhaustive_search.test.cpp
+  - tests/geometry/rectangle_overlap.test.cpp
   - tests/iteration/combinations.test.cpp
   - tests/iteration/counter.test.cpp
-  - tests/std_util/array_hash.test.cpp
   - tests/dp/edit_distance.test.cpp
   - tests/dp/lis.test.cpp
-  - tests/graph/bfs.test.cpp
-  - tests/graph/minimum_spanning.test.cpp
-  - tests/graph/dijkstra.test.cpp
-  - tests/graph/tsp.test.cpp
-  - tests/math/pow.test.cpp
-  - tests/math/prime_fuctorization.test.cpp
-  - tests/math/enum_divisors.test.cpp
-  - tests/math/prime_enumerate.test.cpp
-  - tests/geometry/rectangle_overlap.test.cpp
-  - tests/bit/bit_exhaustive_search.test.cpp
 documentation_of: ugilib/base/constants.hpp
 layout: document
 redirect_from:
