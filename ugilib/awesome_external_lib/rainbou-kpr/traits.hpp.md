@@ -52,8 +52,8 @@ data:
   isVerificationFile: false
   path: ugilib/awesome_external_lib/rainbou-kpr/traits.hpp
   requiredBy:
-  - ugilib/awesome_external_lib/rainbou-kpr/rolling-hash.hpp
   - ugilib/string/palindrome.hpp
+  - ugilib/awesome_external_lib/rainbou-kpr/rolling-hash.hpp
   - tests/awesome_external_lib/rolling_hash.notest.cpp
   timestamp: '2024-05-18 17:31:22+09:00'
   verificationStatus: LIBRARY_ALL_AC

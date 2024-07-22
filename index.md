@@ -70,6 +70,10 @@ data:
       path: ugilib/graph/topological_sort.hpp
       title: "\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8\uFF0C\u5165\u6B21\
         \u6570\u8A08\u7B97\u95A2\u6570\u306E\u5B9A\u7FA9"
+    - icon: ':warning:'
+      path: ugilib/graph/tree_diameter.hpp
+      title: "\u6728\u306E\u76F4\u5F84\u3092\u6C42\u3081\u308B\u95A2\u6570\u306E\u5B9A\
+        \u7FA9"
     - icon: ':heavy_check_mark:'
       path: ugilib/graph/tsp.hpp
       title: "\u5DE1\u56DE\u30BB\u30FC\u30EB\u30B9\u30DE\u30F3\u554F\u984C\u3092\u89E3\
