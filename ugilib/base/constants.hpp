@@ -1,5 +1,6 @@
 #pragma once
 #include "ugilib/base/definitions.hpp"
+#include <limits>
 
 namespace ugilib::constants {
     template<typename T>
