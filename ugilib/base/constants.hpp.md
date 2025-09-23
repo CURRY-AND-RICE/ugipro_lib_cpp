@@ -9,6 +9,9 @@ data:
     path: tests/awesome_external_lib/rolling_hash.notest.cpp
     title: tests/awesome_external_lib/rolling_hash.notest.cpp
   - icon: ':warning:'
+    path: tests/graph/minimum_spanning.notest.cpp
+    title: tests/graph/minimum_spanning.notest.cpp
+  - icon: ':warning:'
     path: tests/graph/topological_sort.notest.cpp
     title: tests/graph/topological_sort.notest.cpp
   - icon: ':heavy_check_mark:'
@@ -29,7 +32,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/dijkstra.hpp
     title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
-  - icon: ':x:'
+  - icon: ':warning:'
     path: ugilib/graph/minimum_spanning.hpp
     title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\u3092\
       \u63D0\u4F9B"
@@ -63,9 +66,6 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/graph/dijkstra.test.cpp
     title: tests/graph/dijkstra.test.cpp
-  - icon: ':x:'
-    path: tests/graph/minimum_spanning.test.cpp
-    title: tests/graph/minimum_spanning.test.cpp
   - icon: ':heavy_check_mark:'
     path: tests/graph/tsp.test.cpp
     title: tests/graph/tsp.test.cpp
@@ -119,6 +119,7 @@ data:
   path: ugilib/base/constants.hpp
   requiredBy:
   - tests/awesome_external_lib/rolling_hash.notest.cpp
+  - tests/graph/minimum_spanning.notest.cpp
   - tests/graph/topological_sort.notest.cpp
   - ugilib/math/combinatorics.hpp
   - ugilib/math/invmod.hpp
@@ -139,7 +140,6 @@ data:
   - tests/math/prime_enumerate.test.cpp
   - tests/math/enum_divisors.test.cpp
   - tests/graph/tsp.test.cpp
-  - tests/graph/minimum_spanning.test.cpp
   - tests/graph/dijkstra.test.cpp
   - tests/graph/bfs.test.cpp
   - tests/string/palindrome.test.cpp

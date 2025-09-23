@@ -7,17 +7,19 @@ data:
   - icon: ':question:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
-  - icon: ':x:'
+  - icon: ':warning:'
     path: ugilib/graph/minimum_spanning.hpp
     title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\u3092\
       \u63D0\u4F9B"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
-  attributes: {}
-  bundledCode: "#line 1 \"tests/graph/minimum_spanning.test.cpp\"\n#include <bits/stdc++.h>\n\
+  _verificationStatusIcon: ':warning:'
+  attributes:
+    links:
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/2/GRL_2_A
+  bundledCode: "#line 1 \"tests/graph/minimum_spanning.notest.cpp\"\n#include <bits/stdc++.h>\n\
     #line 2 \"ugilib/graph/minimum_spanning.hpp\"\n\n/**\n * @file minimum_spanning.hpp\n\
     \ * @brief \u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\u3092\
     \u63D0\u4F9B\n *\n * ## \u95A2\u6570\u4E00\u89A7\n * - `kruskal(n, edges)` : \u30AF\
@@ -57,7 +59,7 @@ data:
     \ // \u5168\u57DF\u6728\u304C\u3067\u304D\u306A\u304B\u3063\u305F\u5834\u5408\n\
     \        if (uf.size(0) != n) return {-1, {}};\n        // \u6700\u5C0F\u5168\u57DF\
     \u6728\u306E\u91CD\u307F\u3068\u8FBA\u306E\u30EA\u30B9\u30C8\u3092\u8FD4\u3059\
-    \n        return {res, mst_edges};\n    }\n}\n#line 3 \"tests/graph/minimum_spanning.test.cpp\"\
+    \n        return {res, mst_edges};\n    }\n}\n#line 3 \"tests/graph/minimum_spanning.notest.cpp\"\
     \n\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/2/GRL_2_A\"\
     \n\nusing namespace std;\n\nint main() {\n    // speed up io\n    cin.tie(nullptr);\n\
     \    ios::sync_with_stdio(false);\n\n    // code\n    int V, E;\n    cin >> V\
@@ -77,16 +79,16 @@ data:
   - ugilib/graph/minimum_spanning.hpp
   - ugilib/base/constants.hpp
   - ugilib/base/definitions.hpp
-  isVerificationFile: true
-  path: tests/graph/minimum_spanning.test.cpp
+  isVerificationFile: false
+  path: tests/graph/minimum_spanning.notest.cpp
   requiredBy: []
-  timestamp: '2025-09-23 20:38:32+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2025-09-23 20:47:37+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: tests/graph/minimum_spanning.test.cpp
+documentation_of: tests/graph/minimum_spanning.notest.cpp
 layout: document
 redirect_from:
-- /verify/tests/graph/minimum_spanning.test.cpp
-- /verify/tests/graph/minimum_spanning.test.cpp.html
-title: tests/graph/minimum_spanning.test.cpp
+- /library/tests/graph/minimum_spanning.notest.cpp
+- /library/tests/graph/minimum_spanning.notest.cpp.html
+title: tests/graph/minimum_spanning.notest.cpp
 ---

@@ -7,14 +7,14 @@ data:
   - icon: ':question:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
-  _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':x:'
-    path: tests/graph/minimum_spanning.test.cpp
-    title: tests/graph/minimum_spanning.test.cpp
-  _isVerificationFailed: true
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: tests/graph/minimum_spanning.notest.cpp
+    title: tests/graph/minimum_spanning.notest.cpp
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     document_title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\
       \u3092\u63D0\u4F9B"
@@ -94,11 +94,11 @@ data:
   - ugilib/base/definitions.hpp
   isVerificationFile: false
   path: ugilib/graph/minimum_spanning.hpp
-  requiredBy: []
+  requiredBy:
+  - tests/graph/minimum_spanning.notest.cpp
   timestamp: '2025-09-23 20:38:32+09:00'
-  verificationStatus: LIBRARY_ALL_WA
-  verifiedWith:
-  - tests/graph/minimum_spanning.test.cpp
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: ugilib/graph/minimum_spanning.hpp
 layout: document
 redirect_from:
