@@ -2,6 +2,7 @@
 "tests/bit/bit_exhaustive_search.test.cpp": "2025-09-23 20:38:32 +0900",
 "tests/dp/edit_distance.test.cpp": "2025-09-23 20:38:32 +0900",
 "tests/dp/lis.test.cpp": "2025-09-23 20:38:32 +0900",
+"tests/geometry/rectangle_overlap.test.cpp": "2025-09-23 20:54:24 +0900",
 "tests/graph/bfs.test.cpp": "2025-09-23 20:38:32 +0900",
 "tests/graph/dijkstra.test.cpp": "2025-09-23 20:38:32 +0900",
 "tests/graph/tsp.test.cpp": "2025-09-23 20:38:32 +0900",
