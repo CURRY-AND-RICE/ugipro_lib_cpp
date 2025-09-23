@@ -1,10 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   - icon: ':heavy_check_mark:'
@@ -22,53 +22,58 @@ data:
     - https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/13/ALDS1_13_C
   bundledCode: "#line 1 \"tests/std_util/array_hash.test.cpp\"\n#define PROBLEM \"\
     https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/13/ALDS1_13_C\"\n\n#include\
-    \ <bits/stdc++.h>\n#line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long\
-    \ long;\nusing ull = unsigned long long;\nusing ld = long double;\n#define rep(i,\
-    \ n) for(size_t i = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)\
-    \  // all iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants\
-    \ {\n    template<typename T>\n    inline constexpr T INF = std::numeric_limits<T>::max()\
-    \ / 2;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n\
-    #line 2 \"ugilib/std_util/hashes.hpp\"\n\n/**\n * @file hashes.hpp\n * @brief\
-    \ \u30CF\u30C3\u30B7\u30E5\u69CB\u9020\u4F53\u306E\u5B9A\u7FA9\n * @note pair<T1,\
-    \ T2>, iterable<T>\u306B\u5BFE\u3059\u308B\u30CF\u30C3\u30B7\u30E5\u95A2\u6570\
-    \u3092\u5B9A\u7FA9\n*/\n\n#line 10 \"ugilib/std_util/hashes.hpp\"\n#include <type_traits>\n\
-    using namespace std;\n\nnamespace ugilib {\n    /**\n     * @brief pair<T1, T2>\u306B\
-    \u5BFE\u3059\u308B\u30CF\u30C3\u30B7\u30E5\u95A2\u6570\n     * @tparam T1 pair\u306E\
-    1\u3064\u76EE\u306E\u8981\u7D20\u306E\u578B\n     * @tparam T2 pair\u306E2\u3064\
-    \u76EE\u306E\u8981\u7D20\u306E\u578B\n    */\n    struct pair_hash {\n       \
-    \ template <class T1, class T2>\n        size_t operator() (const pair<T1, T2>\
-    \ &pair) const {\n            auto hash1 = hash<T1>{}(pair.first);\n         \
-    \   auto hash2 = hash<T2>{}(pair.second);\n            return hash1 ^ (hash2 <<\
-    \ 1);\n        }\n    };\n\n    /**\n     * @brief Iterable\u306B\u5BFE\u3059\u308B\
-    \u30CF\u30C3\u30B7\u30E5\u95A2\u6570\n     * @tparam Iterable \u30A4\u30C6\u30E9\
-    \u30D6\u30EB\u306A\u30B3\u30F3\u30C6\u30CA\n    */\n    struct array_hash {\n\
-    \        /**\n         * @brief \u30A4\u30C6\u30E9\u30D6\u30EB\u578B\u306E\u30CF\
-    \u30C3\u30B7\u30E5\u8A08\u7B97\n         * @tparam T \u30A4\u30C6\u30E9\u30D6\u30EB\
-    \u306E\u8981\u7D20\u306E\u578B\n         * @param value \u30A4\u30C6\u30E9\u30D6\
-    \u30EB\u306E\u8981\u7D20\n         * @return size_t \u30CF\u30C3\u30B7\u30E5\u5024\
-    \n         * @note \u518D\u5E30\u7684\u547C\u3073\u51FA\u3057\u3067\u7B97\u8853\
-    \u578B\u306B\u8FBF\u308A\u7740\u3044\u305F\u5834\u5408\u306E\u30CF\u30C3\u30B7\
-    \u30E5\n        */\n        template <typename T, std::enable_if_t<std::is_arithmetic_v<T>,\
-    \ int> = 0>\n        size_t operator() (const T& value) const {\n            size_t\
-    \ hash = 0;\n            hash ^= std::hash<T>{}(value) + 0x9e3779b9 + (hash <<\
-    \ 6) + (hash >> 2);\n            return hash;\n        }\n\n        /**\n    \
-    \     * @brief \u30A4\u30C6\u30EC\u30FC\u30BF\u7279\u6027\u3092\u6301\u305F\u306A\
-    \u3044array<T, N>\u306B\u5BFE\u3059\u308B\u7279\u6B8A\u5316\n         * @tparam\
-    \ T array\u306E\u8981\u7D20\u306E\u578B\n         * @tparam N array\u306E\u8981\
-    \u7D20\u6570\n         * @param array array\n         * @return size_t \u30CF\u30C3\
-    \u30B7\u30E5\u5024\n        */\n        template <typename T, size_t N>\n    \
-    \    size_t operator() (const array<T, N> &array) const {\n            size_t\
-    \ hash = 0;\n            for (const auto& item : array) {\n                hash\
-    \ ^= (*this)(item) + 0x9e3779b9 + (hash << 6) + (hash >> 2);\n            }\n\
-    \            return hash;\n        }\n\n        /**\n         * @brief \u30A4\u30C6\
-    \u30E9\u30D6\u30EB\u578B\u306E\u30CF\u30C3\u30B7\u30E5\u8A08\u7B97\n         *\
-    \ @tparam Iterable \u30A4\u30C6\u30E9\u30D6\u30EB\u306A\u30B3\u30F3\u30C6\u30CA\
-    \n         * @param iterable \u30A4\u30C6\u30E9\u30D6\u30EB\n         * @return\
-    \ size_t \u30CF\u30C3\u30B7\u30E5\u5024\n         * @note \u518D\u5E30\u7684\u547C\
-    \u3073\u51FA\u3057\u3092\u884C\u3044\u3001\u591A\u6B21\u5143\u30B3\u30F3\u30C6\
-    \u30CA\u306B\u5BFE\u3057\u3066\u3082\u30CF\u30C3\u30B7\u30E5\u53EF\u80FD\n   \
-    \     */\n        template <typename Iterable, std::enable_if_t<!std::is_arithmetic_v<Iterable>\
-    \ &&\n                                                    std::is_base_of_v<std::input_iterator_tag,\
+    \ <bits/stdc++.h>\n#line 3 \"ugilib/base/definitions.hpp\"\n\n// old (compat)\n\
+    using ll = long long;\nusing ull = unsigned long long;\nusing ld = long double;\n\
+    \n// new\nusing u8 = uint8_t;\nusing u16 = uint16_t;\nusing u32 = uint32_t;\n\
+    using u64 = uint64_t;\nusing u128 = __uint128_t;\nusing i8 = int8_t;\nusing i16\
+    \ = int16_t;\nusing i32 = int32_t;\nusing i64 = int64_t;\nusing i128 = __int128_t;\n\
+    using f32 = float;\nusing f64 = double;\nusing f128 = long double;\n\n#define\
+    \ rep(i, n) for(size_t i = 0; i < n; i++)  // rep macro\n#define all(v) begin(v),\
+    \ end(v)  // all iterator\n#line 4 \"ugilib/base/constants.hpp\"\n\nnamespace\
+    \ ugilib::constants {\n    template<typename T>\n    inline constexpr T INF =\
+    \ std::numeric_limits<T>::max() / 2;\n} // namespace ugilib::constants\n\nconst\
+    \ ll INF = ugilib::constants::INF<ll>;\n#line 2 \"ugilib/std_util/hashes.hpp\"\
+    \n\n/**\n * @file hashes.hpp\n * @brief \u30CF\u30C3\u30B7\u30E5\u69CB\u9020\u4F53\
+    \u306E\u5B9A\u7FA9\n * @note pair<T1, T2>, iterable<T>\u306B\u5BFE\u3059\u308B\
+    \u30CF\u30C3\u30B7\u30E5\u95A2\u6570\u3092\u5B9A\u7FA9\n*/\n\n#line 10 \"ugilib/std_util/hashes.hpp\"\
+    \n#include <type_traits>\nusing namespace std;\n\nnamespace ugilib {\n    /**\n\
+    \     * @brief pair<T1, T2>\u306B\u5BFE\u3059\u308B\u30CF\u30C3\u30B7\u30E5\u95A2\
+    \u6570\n     * @tparam T1 pair\u306E1\u3064\u76EE\u306E\u8981\u7D20\u306E\u578B\
+    \n     * @tparam T2 pair\u306E2\u3064\u76EE\u306E\u8981\u7D20\u306E\u578B\n  \
+    \  */\n    struct pair_hash {\n        template <class T1, class T2>\n       \
+    \ size_t operator() (const pair<T1, T2> &pair) const {\n            auto hash1\
+    \ = hash<T1>{}(pair.first);\n            auto hash2 = hash<T2>{}(pair.second);\n\
+    \            return hash1 ^ (hash2 << 1);\n        }\n    };\n\n    /**\n    \
+    \ * @brief Iterable\u306B\u5BFE\u3059\u308B\u30CF\u30C3\u30B7\u30E5\u95A2\u6570\
+    \n     * @tparam Iterable \u30A4\u30C6\u30E9\u30D6\u30EB\u306A\u30B3\u30F3\u30C6\
+    \u30CA\n    */\n    struct array_hash {\n        /**\n         * @brief \u30A4\
+    \u30C6\u30E9\u30D6\u30EB\u578B\u306E\u30CF\u30C3\u30B7\u30E5\u8A08\u7B97\n   \
+    \      * @tparam T \u30A4\u30C6\u30E9\u30D6\u30EB\u306E\u8981\u7D20\u306E\u578B\
+    \n         * @param value \u30A4\u30C6\u30E9\u30D6\u30EB\u306E\u8981\u7D20\n \
+    \        * @return size_t \u30CF\u30C3\u30B7\u30E5\u5024\n         * @note \u518D\
+    \u5E30\u7684\u547C\u3073\u51FA\u3057\u3067\u7B97\u8853\u578B\u306B\u8FBF\u308A\
+    \u7740\u3044\u305F\u5834\u5408\u306E\u30CF\u30C3\u30B7\u30E5\n        */\n   \
+    \     template <typename T, std::enable_if_t<std::is_arithmetic_v<T>, int> = 0>\n\
+    \        size_t operator() (const T& value) const {\n            size_t hash =\
+    \ 0;\n            hash ^= std::hash<T>{}(value) + 0x9e3779b9 + (hash << 6) + (hash\
+    \ >> 2);\n            return hash;\n        }\n\n        /**\n         * @brief\
+    \ \u30A4\u30C6\u30EC\u30FC\u30BF\u7279\u6027\u3092\u6301\u305F\u306A\u3044array<T,\
+    \ N>\u306B\u5BFE\u3059\u308B\u7279\u6B8A\u5316\n         * @tparam T array\u306E\
+    \u8981\u7D20\u306E\u578B\n         * @tparam N array\u306E\u8981\u7D20\u6570\n\
+    \         * @param array array\n         * @return size_t \u30CF\u30C3\u30B7\u30E5\
+    \u5024\n        */\n        template <typename T, size_t N>\n        size_t operator()\
+    \ (const array<T, N> &array) const {\n            size_t hash = 0;\n         \
+    \   for (const auto& item : array) {\n                hash ^= (*this)(item) +\
+    \ 0x9e3779b9 + (hash << 6) + (hash >> 2);\n            }\n            return hash;\n\
+    \        }\n\n        /**\n         * @brief \u30A4\u30C6\u30E9\u30D6\u30EB\u578B\
+    \u306E\u30CF\u30C3\u30B7\u30E5\u8A08\u7B97\n         * @tparam Iterable \u30A4\
+    \u30C6\u30E9\u30D6\u30EB\u306A\u30B3\u30F3\u30C6\u30CA\n         * @param iterable\
+    \ \u30A4\u30C6\u30E9\u30D6\u30EB\n         * @return size_t \u30CF\u30C3\u30B7\
+    \u30E5\u5024\n         * @note \u518D\u5E30\u7684\u547C\u3073\u51FA\u3057\u3092\
+    \u884C\u3044\u3001\u591A\u6B21\u5143\u30B3\u30F3\u30C6\u30CA\u306B\u5BFE\u3057\
+    \u3066\u3082\u30CF\u30C3\u30B7\u30E5\u53EF\u80FD\n        */\n        template\
+    \ <typename Iterable, std::enable_if_t<!std::is_arithmetic_v<Iterable> &&\n  \
+    \                                                  std::is_base_of_v<std::input_iterator_tag,\
     \ typename std::iterator_traits<typename Iterable::iterator>::iterator_category>,\
     \ int> = 0>\n        size_t operator() (const Iterable &iterable) const {\n  \
     \          size_t hash = 0;\n            for (const auto &item : iterable) {\n\
@@ -219,7 +224,7 @@ data:
   isVerificationFile: true
   path: tests/std_util/array_hash.test.cpp
   requiredBy: []
-  timestamp: '2024-05-18 23:39:51+09:00'
+  timestamp: '2025-09-23 20:38:32+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/std_util/array_hash.test.cpp

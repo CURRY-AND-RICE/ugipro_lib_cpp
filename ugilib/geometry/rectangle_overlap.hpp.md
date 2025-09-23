@@ -1,25 +1,29 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: tests/geometry/rectangle_overlap.test.cpp
     title: tests/geometry/rectangle_overlap.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     document_title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\
       \u5224\u5B9A"
     links: []
   bundledCode: "#line 2 \"ugilib/geometry/rectangle_overlap.hpp\"\n#include <bits/stdc++.h>\n\
-    #line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\nusing ull =\
-    \ unsigned long long;\nusing ld = long double;\n#define rep(i, n) for(size_t i\
-    \ = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n\
+    #line 3 \"ugilib/base/definitions.hpp\"\n\n// old (compat)\nusing ll = long long;\n\
+    using ull = unsigned long long;\nusing ld = long double;\n\n// new\nusing u8 =\
+    \ uint8_t;\nusing u16 = uint16_t;\nusing u32 = uint32_t;\nusing u64 = uint64_t;\n\
+    using u128 = __uint128_t;\nusing i8 = int8_t;\nusing i16 = int16_t;\nusing i32\
+    \ = int32_t;\nusing i64 = int64_t;\nusing i128 = __int128_t;\nusing f32 = float;\n\
+    using f64 = double;\nusing f128 = long double;\n\n#define rep(i, n) for(size_t\
+    \ i = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n\
     #line 4 \"ugilib/geometry/rectangle_overlap.hpp\"\n\nnamespace ugilib {\n    /**\n\
     \     * @brief \u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\
     \u5224\u5B9A\n     * @param a \u9577\u65B9\u5F621\u306E\u5EA7\u6A19 (ymin, xmin,\
@@ -51,8 +55,8 @@ data:
   isVerificationFile: false
   path: ugilib/geometry/rectangle_overlap.hpp
   requiredBy: []
-  timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  timestamp: '2025-09-23 20:38:32+09:00'
+  verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - tests/geometry/rectangle_overlap.test.cpp
 documentation_of: ugilib/geometry/rectangle_overlap.hpp

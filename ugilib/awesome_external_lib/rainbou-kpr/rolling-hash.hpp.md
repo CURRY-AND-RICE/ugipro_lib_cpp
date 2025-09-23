@@ -318,8 +318,8 @@ data:
   isVerificationFile: false
   path: ugilib/awesome_external_lib/rainbou-kpr/rolling-hash.hpp
   requiredBy:
-  - ugilib/string/palindrome.hpp
   - tests/awesome_external_lib/rolling_hash.notest.cpp
+  - ugilib/string/palindrome.hpp
   timestamp: '2024-05-18 17:31:22+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:

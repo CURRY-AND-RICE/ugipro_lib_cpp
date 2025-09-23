@@ -1,10 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy:
@@ -22,11 +22,15 @@ data:
     links: []
   bundledCode: "#line 2 \"ugilib/math/invmod.hpp\"\n\n/**\n * @file invmod.hpp\n *\
     \ @brief \u9006\u5143\u8A08\u7B97\u306E\u95A2\u6570\u306E\u5B9A\u7FA9. invmod().\n\
-    */\n\n#include <bits/stdc++.h>\n#line 2 \"ugilib/base/definitions.hpp\"\n\nusing\
-    \ ll = long long;\nusing ull = unsigned long long;\nusing ld = long double;\n\
-    #define rep(i, n) for(size_t i = 0; i < n; i++)  // rep macro\n#define all(v)\
-    \ begin(v), end(v)  // all iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\n\
-    namespace ugilib::constants {\n    template<typename T>\n    inline constexpr\
+    */\n\n#include <bits/stdc++.h>\n#line 3 \"ugilib/base/definitions.hpp\"\n\n//\
+    \ old (compat)\nusing ll = long long;\nusing ull = unsigned long long;\nusing\
+    \ ld = long double;\n\n// new\nusing u8 = uint8_t;\nusing u16 = uint16_t;\nusing\
+    \ u32 = uint32_t;\nusing u64 = uint64_t;\nusing u128 = __uint128_t;\nusing i8\
+    \ = int8_t;\nusing i16 = int16_t;\nusing i32 = int32_t;\nusing i64 = int64_t;\n\
+    using i128 = __int128_t;\nusing f32 = float;\nusing f64 = double;\nusing f128\
+    \ = long double;\n\n#define rep(i, n) for(size_t i = 0; i < n; i++)  // rep macro\n\
+    #define all(v) begin(v), end(v)  // all iterator\n#line 4 \"ugilib/base/constants.hpp\"\
+    \n\nnamespace ugilib::constants {\n    template<typename T>\n    inline constexpr\
     \ T INF = std::numeric_limits<T>::max() / 2;\n} // namespace ugilib::constants\n\
     \nconst ll INF = ugilib::constants::INF<ll>;\n#line 11 \"ugilib/math/invmod.hpp\"\
     \n\nusing namespace std;\n\nnamespace ugilib {\n    /**\n     * @brief \u62E1\u5F35\
@@ -73,7 +77,7 @@ data:
   path: ugilib/math/invmod.hpp
   requiredBy:
   - ugilib/math/combinatorics.hpp
-  timestamp: '2024-04-26 23:52:15+09:00'
+  timestamp: '2025-09-23 20:38:32+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: ugilib/math/invmod.hpp

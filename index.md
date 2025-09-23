@@ -22,10 +22,10 @@ data:
       title: "\u578B\u7279\u6027\u3092\u6271\u3046\u30D8\u30C3\u30C0"
   - name: ugilib/base
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: ugilib/base/constants.hpp
       title: ugilib/base/constants.hpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: ugilib/base/definitions.hpp
       title: ugilib/base/definitions.hpp
   - name: ugilib/bit
@@ -46,7 +46,7 @@ data:
       title: "\u6700\u9577\u5897\u52A0\u90E8\u5206\u5217"
   - name: ugilib/geometry
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: ugilib/geometry/rectangle_overlap.hpp
       title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\u5224\
         \u5B9A"
@@ -62,7 +62,7 @@ data:
       path: ugilib/graph/longest_path.hpp
       title: "DAG\u306E\u6700\u9577\u30D1\u30B9\u9577\u3092\u6C42\u3081\u308B\u95A2\
         \u6570\u306E\u5B9A\u7FA9"
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: ugilib/graph/minimum_spanning.hpp
       title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\u3092\
         \u63D0\u4F9B"
@@ -146,7 +146,7 @@ data:
       title: tests/dp/lis.test.cpp
   - name: tests/geometry
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: tests/geometry/rectangle_overlap.test.cpp
       title: tests/geometry/rectangle_overlap.test.cpp
   - name: tests/graph
@@ -157,7 +157,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/graph/dijkstra.test.cpp
       title: tests/graph/dijkstra.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: tests/graph/minimum_spanning.test.cpp
       title: tests/graph/minimum_spanning.test.cpp
     - icon: ':heavy_check_mark:'

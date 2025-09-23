@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   - icon: ':heavy_check_mark:'
@@ -29,9 +29,13 @@ data:
     \u307E\u3059.\n * - `exec_all_permutations(num_items, num_pick, f)` : \u5168\u3066\
     \u306E\u9806\u5217\u306B\u5BFE\u3057\u3066\u6307\u5B9A\u3055\u308C\u305F\u95A2\
     \u6570\u3092\u5B9F\u884C\u3057\u307E\u3059.\n */\n\n#include <bits/stdc++.h>\n\
-    #line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\nusing ull =\
-    \ unsigned long long;\nusing ld = long double;\n#define rep(i, n) for(size_t i\
-    \ = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n\
+    #line 3 \"ugilib/base/definitions.hpp\"\n\n// old (compat)\nusing ll = long long;\n\
+    using ull = unsigned long long;\nusing ld = long double;\n\n// new\nusing u8 =\
+    \ uint8_t;\nusing u16 = uint16_t;\nusing u32 = uint32_t;\nusing u64 = uint64_t;\n\
+    using u128 = __uint128_t;\nusing i8 = int8_t;\nusing i16 = int16_t;\nusing i32\
+    \ = int32_t;\nusing i64 = int64_t;\nusing i128 = __int128_t;\nusing f32 = float;\n\
+    using f64 = double;\nusing f128 = long double;\n\n#define rep(i, n) for(size_t\
+    \ i = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n\
     #line 4 \"ugilib/iteration/next_combination.hpp\"\n\nusing namespace std;\n\n\
     namespace ugilib {\n    /**\n     * @brief \u6B21\u306E\u7D44\u307F\u5408\u308F\
     \u305B\u3092\u751F\u6210\u3059\u308B\n     * @param indices \u73FE\u5728\u306E\
@@ -186,7 +190,7 @@ data:
   isVerificationFile: false
   path: ugilib/iteration/all_combinations.hpp
   requiredBy: []
-  timestamp: '2024-05-03 21:18:09+09:00'
+  timestamp: '2025-09-23 20:38:32+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/iteration/combinations.test.cpp

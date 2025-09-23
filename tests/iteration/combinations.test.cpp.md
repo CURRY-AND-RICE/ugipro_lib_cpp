@@ -1,10 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   - icon: ':heavy_check_mark:'
@@ -26,10 +26,14 @@ data:
     - https://onlinejudge.u-aizu.ac.jp/problems/ITP1_7_B
   bundledCode: "#line 1 \"tests/iteration/combinations.test.cpp\"\n#define PROBLEM\
     \ \"https://onlinejudge.u-aizu.ac.jp/problems/ITP1_7_B\"\n\n#include <bits/stdc++.h>\n\
-    #line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\nusing ull =\
-    \ unsigned long long;\nusing ld = long double;\n#define rep(i, n) for(size_t i\
-    \ = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n\
-    #line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants {\n    template<typename\
+    #line 3 \"ugilib/base/definitions.hpp\"\n\n// old (compat)\nusing ll = long long;\n\
+    using ull = unsigned long long;\nusing ld = long double;\n\n// new\nusing u8 =\
+    \ uint8_t;\nusing u16 = uint16_t;\nusing u32 = uint32_t;\nusing u64 = uint64_t;\n\
+    using u128 = __uint128_t;\nusing i8 = int8_t;\nusing i16 = int16_t;\nusing i32\
+    \ = int32_t;\nusing i64 = int64_t;\nusing i128 = __int128_t;\nusing f32 = float;\n\
+    using f64 = double;\nusing f128 = long double;\n\n#define rep(i, n) for(size_t\
+    \ i = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n\
+    #line 4 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants {\n    template<typename\
     \ T>\n    inline constexpr T INF = std::numeric_limits<T>::max() / 2;\n} // namespace\
     \ ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n#line 2 \"\
     ugilib/iteration/all_combinations.hpp\"\n\n/**\n * @file all_combinations.hpp\n\
@@ -225,7 +229,7 @@ data:
   isVerificationFile: true
   path: tests/iteration/combinations.test.cpp
   requiredBy: []
-  timestamp: '2024-05-03 21:18:09+09:00'
+  timestamp: '2025-09-23 20:38:32+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/iteration/combinations.test.cpp

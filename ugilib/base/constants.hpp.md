@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy:
@@ -29,7 +29,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/dijkstra.hpp
     title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: ugilib/graph/minimum_spanning.hpp
     title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\u3092\
       \u63D0\u4F9B"
@@ -54,7 +54,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/dp/lis.test.cpp
     title: tests/dp/lis.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: tests/geometry/rectangle_overlap.test.cpp
     title: tests/geometry/rectangle_overlap.test.cpp
   - icon: ':heavy_check_mark:'
@@ -63,7 +63,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/graph/dijkstra.test.cpp
     title: tests/graph/dijkstra.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: tests/graph/minimum_spanning.test.cpp
     title: tests/graph/minimum_spanning.test.cpp
   - icon: ':heavy_check_mark:'
@@ -93,56 +93,62 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/string/palindrome.test.cpp
     title: tests/string/palindrome.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"ugilib/base/definitions.hpp\"\n\nusing ll = long long;\n\
-    using ull = unsigned long long;\nusing ld = long double;\n#define rep(i, n) for(size_t\
-    \ i = 0; i < n; i++)  // rep macro\n#define all(v) begin(v), end(v)  // all iterator\n\
-    #line 3 \"ugilib/base/constants.hpp\"\n\nnamespace ugilib::constants {\n    template<typename\
-    \ T>\n    inline constexpr T INF = std::numeric_limits<T>::max() / 2;\n} // namespace\
+  bundledCode: "#line 2 \"ugilib/base/definitions.hpp\"\n#include <cstdint>\n\n//\
+    \ old (compat)\nusing ll = long long;\nusing ull = unsigned long long;\nusing\
+    \ ld = long double;\n\n// new\nusing u8 = uint8_t;\nusing u16 = uint16_t;\nusing\
+    \ u32 = uint32_t;\nusing u64 = uint64_t;\nusing u128 = __uint128_t;\nusing i8\
+    \ = int8_t;\nusing i16 = int16_t;\nusing i32 = int32_t;\nusing i64 = int64_t;\n\
+    using i128 = __int128_t;\nusing f32 = float;\nusing f64 = double;\nusing f128\
+    \ = long double;\n\n#define rep(i, n) for(size_t i = 0; i < n; i++)  // rep macro\n\
+    #define all(v) begin(v), end(v)  // all iterator\n#line 3 \"ugilib/base/constants.hpp\"\
+    \n#include <limits>\n\nnamespace ugilib::constants {\n    template<typename T>\n\
+    \    inline constexpr T INF = std::numeric_limits<T>::max() / 2;\n} // namespace\
     \ ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n"
-  code: "#pragma once\n#include \"ugilib/base/definitions.hpp\"\n\nnamespace ugilib::constants\
-    \ {\n    template<typename T>\n    inline constexpr T INF = std::numeric_limits<T>::max()\
-    \ / 2;\n} // namespace ugilib::constants\n\nconst ll INF = ugilib::constants::INF<ll>;\n"
+  code: "#pragma once\n#include \"ugilib/base/definitions.hpp\"\n#include <limits>\n\
+    \nnamespace ugilib::constants {\n    template<typename T>\n    inline constexpr\
+    \ T INF = std::numeric_limits<T>::max() / 2;\n} // namespace ugilib::constants\n\
+    \nconst ll INF = ugilib::constants::INF<ll>;\n"
   dependsOn:
   - ugilib/base/definitions.hpp
   isVerificationFile: false
   path: ugilib/base/constants.hpp
   requiredBy:
-  - ugilib/dp/edit_distance.hpp
-  - ugilib/dp/lis.hpp
-  - ugilib/graph/bfs.hpp
-  - ugilib/graph/dijkstra.hpp
-  - ugilib/graph/minimum_spanning.hpp
-  - ugilib/graph/tsp.hpp
-  - ugilib/bit/bit_exhaustive_search.hpp
-  - ugilib/bit/bit_util.hpp
-  - ugilib/math/invmod.hpp
-  - ugilib/math/combinatorics.hpp
   - tests/awesome_external_lib/rolling_hash.notest.cpp
   - tests/graph/topological_sort.notest.cpp
-  timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  - ugilib/math/combinatorics.hpp
+  - ugilib/math/invmod.hpp
+  - ugilib/graph/minimum_spanning.hpp
+  - ugilib/graph/tsp.hpp
+  - ugilib/graph/dijkstra.hpp
+  - ugilib/graph/bfs.hpp
+  - ugilib/bit/bit_exhaustive_search.hpp
+  - ugilib/bit/bit_util.hpp
+  - ugilib/dp/lis.hpp
+  - ugilib/dp/edit_distance.hpp
+  timestamp: '2025-09-23 20:38:32+09:00'
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
-  - tests/iteration/counter.test.cpp
-  - tests/iteration/combinations.test.cpp
   - tests/geometry/rectangle_overlap.test.cpp
-  - tests/string/palindrome.test.cpp
-  - tests/std_util/array_hash.test.cpp
-  - tests/dp/lis.test.cpp
-  - tests/dp/edit_distance.test.cpp
-  - tests/graph/dijkstra.test.cpp
-  - tests/graph/tsp.test.cpp
-  - tests/graph/minimum_spanning.test.cpp
-  - tests/graph/bfs.test.cpp
-  - tests/bit/bit_exhaustive_search.test.cpp
-  - tests/math/enum_divisors.test.cpp
+  - tests/math/pow.test.cpp
   - tests/math/prime_fuctorization.test.cpp
   - tests/math/prime_enumerate.test.cpp
-  - tests/math/pow.test.cpp
+  - tests/math/enum_divisors.test.cpp
+  - tests/graph/tsp.test.cpp
+  - tests/graph/minimum_spanning.test.cpp
+  - tests/graph/dijkstra.test.cpp
+  - tests/graph/bfs.test.cpp
+  - tests/string/palindrome.test.cpp
+  - tests/bit/bit_exhaustive_search.test.cpp
+  - tests/std_util/array_hash.test.cpp
+  - tests/dp/edit_distance.test.cpp
+  - tests/dp/lis.test.cpp
+  - tests/iteration/counter.test.cpp
+  - tests/iteration/combinations.test.cpp
 documentation_of: ugilib/base/constants.hpp
 layout: document
 redirect_from:

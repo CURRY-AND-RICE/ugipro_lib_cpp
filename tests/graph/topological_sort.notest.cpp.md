@@ -1,10 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   - icon: ':warning:'
@@ -22,10 +22,14 @@ data:
   bundledCode: "#line 1 \"tests/graph/topological_sort.notest.cpp\"\n// \u7D50\u679C\
     \u304C\u4E00\u610F\u3067\u306A\u3044\u305F\u3081\u3001\u30C6\u30B9\u30C8\u306F\
     \u884C\u308F\u306A\u3044\n// #define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/GRL_4_B\"\
-    \n\n#include <bits/stdc++.h>\n#line 2 \"ugilib/base/definitions.hpp\"\n\nusing\
-    \ ll = long long;\nusing ull = unsigned long long;\nusing ld = long double;\n\
-    #define rep(i, n) for(size_t i = 0; i < n; i++)  // rep macro\n#define all(v)\
-    \ begin(v), end(v)  // all iterator\n#line 3 \"ugilib/base/constants.hpp\"\n\n\
+    \n\n#include <bits/stdc++.h>\n#line 3 \"ugilib/base/definitions.hpp\"\n\n// old\
+    \ (compat)\nusing ll = long long;\nusing ull = unsigned long long;\nusing ld =\
+    \ long double;\n\n// new\nusing u8 = uint8_t;\nusing u16 = uint16_t;\nusing u32\
+    \ = uint32_t;\nusing u64 = uint64_t;\nusing u128 = __uint128_t;\nusing i8 = int8_t;\n\
+    using i16 = int16_t;\nusing i32 = int32_t;\nusing i64 = int64_t;\nusing i128 =\
+    \ __int128_t;\nusing f32 = float;\nusing f64 = double;\nusing f128 = long double;\n\
+    \n#define rep(i, n) for(size_t i = 0; i < n; i++)  // rep macro\n#define all(v)\
+    \ begin(v), end(v)  // all iterator\n#line 4 \"ugilib/base/constants.hpp\"\n\n\
     namespace ugilib::constants {\n    template<typename T>\n    inline constexpr\
     \ T INF = std::numeric_limits<T>::max() / 2;\n} // namespace ugilib::constants\n\
     \nconst ll INF = ugilib::constants::INF<ll>;\n#line 2 \"ugilib/graph/topological_sort.hpp\"\
@@ -165,7 +169,7 @@ data:
   isVerificationFile: false
   path: tests/graph/topological_sort.notest.cpp
   requiredBy: []
-  timestamp: '2024-04-04 16:06:20+09:00'
+  timestamp: '2025-09-23 20:38:32+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: tests/graph/topological_sort.notest.cpp

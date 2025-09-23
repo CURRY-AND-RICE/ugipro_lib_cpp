@@ -8,7 +8,7 @@ data:
   - icon: ':warning:'
     path: tests/graph/topological_sort.notest.cpp
     title: tests/graph/topological_sort.notest.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
   - icon: ':heavy_check_mark:'
@@ -23,7 +23,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/dp/lis.hpp
     title: "\u6700\u9577\u5897\u52A0\u90E8\u5206\u5217"
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: ugilib/geometry/rectangle_overlap.hpp
     title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\u5224\
       \u5B9A"
@@ -33,7 +33,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/graph/dijkstra.hpp
     title: "\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5"
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: ugilib/graph/minimum_spanning.hpp
     title: "\u6700\u5C0F\u5168\u57DF\u6728\u3092\u6C42\u3081\u308B\u95A2\u6570\u3092\
       \u63D0\u4F9B"
@@ -73,7 +73,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/dp/lis.test.cpp
     title: tests/dp/lis.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: tests/geometry/rectangle_overlap.test.cpp
     title: tests/geometry/rectangle_overlap.test.cpp
   - icon: ':heavy_check_mark:'
@@ -82,7 +82,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/graph/dijkstra.test.cpp
     title: tests/graph/dijkstra.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: tests/graph/minimum_spanning.test.cpp
     title: tests/graph/minimum_spanning.test.cpp
   - icon: ':heavy_check_mark:'
@@ -112,19 +112,53 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/string/palindrome.test.cpp
     title: tests/string/palindrome.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: '#line 2 "ugilib/base/definitions.hpp"
 
+    #include <cstdint>
+
+
+    // old (compat)
 
     using ll = long long;
 
     using ull = unsigned long long;
 
     using ld = long double;
+
+
+    // new
+
+    using u8 = uint8_t;
+
+    using u16 = uint16_t;
+
+    using u32 = uint32_t;
+
+    using u64 = uint64_t;
+
+    using u128 = __uint128_t;
+
+    using i8 = int8_t;
+
+    using i16 = int16_t;
+
+    using i32 = int32_t;
+
+    using i64 = int64_t;
+
+    using i128 = __int128_t;
+
+    using f32 = float;
+
+    using f64 = double;
+
+    using f128 = long double;
+
 
     #define rep(i, n) for(size_t i = 0; i < n; i++)  // rep macro
 
@@ -133,12 +167,46 @@ data:
     '
   code: '#pragma once
 
+    #include <cstdint>
+
+
+    // old (compat)
 
     using ll = long long;
 
     using ull = unsigned long long;
 
     using ld = long double;
+
+
+    // new
+
+    using u8 = uint8_t;
+
+    using u16 = uint16_t;
+
+    using u32 = uint32_t;
+
+    using u64 = uint64_t;
+
+    using u128 = __uint128_t;
+
+    using i8 = int8_t;
+
+    using i16 = int16_t;
+
+    using i32 = int32_t;
+
+    using i64 = int64_t;
+
+    using i128 = __int128_t;
+
+    using f32 = float;
+
+    using f64 = double;
+
+    using f128 = long double;
+
 
     #define rep(i, n) for(size_t i = 0; i < n; i++)  // rep macro
 
@@ -149,43 +217,43 @@ data:
   isVerificationFile: false
   path: ugilib/base/definitions.hpp
   requiredBy:
+  - tests/awesome_external_lib/rolling_hash.notest.cpp
+  - tests/graph/topological_sort.notest.cpp
+  - ugilib/base/constants.hpp
+  - ugilib/geometry/rectangle_overlap.hpp
+  - ugilib/math/pow.hpp
+  - ugilib/math/combinatorics.hpp
+  - ugilib/math/invmod.hpp
+  - ugilib/graph/minimum_spanning.hpp
+  - ugilib/graph/tsp.hpp
+  - ugilib/graph/dijkstra.hpp
+  - ugilib/graph/bfs.hpp
+  - ugilib/bit/bit_exhaustive_search.hpp
+  - ugilib/bit/bit_util.hpp
+  - ugilib/dp/lis.hpp
+  - ugilib/dp/edit_distance.hpp
   - ugilib/iteration/counter.hpp
   - ugilib/iteration/next_combination.hpp
   - ugilib/iteration/all_combinations.hpp
-  - ugilib/base/constants.hpp
-  - ugilib/geometry/rectangle_overlap.hpp
-  - ugilib/dp/edit_distance.hpp
-  - ugilib/dp/lis.hpp
-  - ugilib/graph/bfs.hpp
-  - ugilib/graph/dijkstra.hpp
-  - ugilib/graph/minimum_spanning.hpp
-  - ugilib/graph/tsp.hpp
-  - ugilib/bit/bit_exhaustive_search.hpp
-  - ugilib/bit/bit_util.hpp
-  - ugilib/math/pow.hpp
-  - ugilib/math/invmod.hpp
-  - ugilib/math/combinatorics.hpp
-  - tests/awesome_external_lib/rolling_hash.notest.cpp
-  - tests/graph/topological_sort.notest.cpp
-  timestamp: '2024-04-03 22:46:30+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  timestamp: '2025-09-23 20:38:32+09:00'
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
-  - tests/iteration/counter.test.cpp
-  - tests/iteration/combinations.test.cpp
   - tests/geometry/rectangle_overlap.test.cpp
-  - tests/string/palindrome.test.cpp
-  - tests/std_util/array_hash.test.cpp
-  - tests/dp/lis.test.cpp
-  - tests/dp/edit_distance.test.cpp
-  - tests/graph/dijkstra.test.cpp
-  - tests/graph/tsp.test.cpp
-  - tests/graph/minimum_spanning.test.cpp
-  - tests/graph/bfs.test.cpp
-  - tests/bit/bit_exhaustive_search.test.cpp
-  - tests/math/enum_divisors.test.cpp
+  - tests/math/pow.test.cpp
   - tests/math/prime_fuctorization.test.cpp
   - tests/math/prime_enumerate.test.cpp
-  - tests/math/pow.test.cpp
+  - tests/math/enum_divisors.test.cpp
+  - tests/graph/tsp.test.cpp
+  - tests/graph/minimum_spanning.test.cpp
+  - tests/graph/dijkstra.test.cpp
+  - tests/graph/bfs.test.cpp
+  - tests/string/palindrome.test.cpp
+  - tests/bit/bit_exhaustive_search.test.cpp
+  - tests/std_util/array_hash.test.cpp
+  - tests/dp/edit_distance.test.cpp
+  - tests/dp/lis.test.cpp
+  - tests/iteration/counter.test.cpp
+  - tests/iteration/combinations.test.cpp
 documentation_of: ugilib/base/definitions.hpp
 layout: document
 redirect_from:
