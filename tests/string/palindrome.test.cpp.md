@@ -8,10 +8,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/awesome_external_lib/rainbou-kpr/traits.hpp
     title: "\u578B\u7279\u6027\u3092\u6271\u3046\u30D8\u30C3\u30C0"
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   - icon: ':heavy_check_mark:'

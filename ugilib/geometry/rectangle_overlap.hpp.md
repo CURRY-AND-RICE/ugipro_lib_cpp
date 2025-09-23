@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: tests/geometry/rectangle_overlap.test.cpp
     title: tests/geometry/rectangle_overlap.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\
       \u5224\u5B9A"
@@ -56,7 +56,7 @@ data:
   path: ugilib/geometry/rectangle_overlap.hpp
   requiredBy: []
   timestamp: '2025-09-23 20:38:32+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/geometry/rectangle_overlap.test.cpp
 documentation_of: ugilib/geometry/rectangle_overlap.hpp

@@ -25,10 +25,10 @@ data:
       title: "\u578B\u7279\u6027\u3092\u6271\u3046\u30D8\u30C3\u30C0"
   - name: ugilib/base
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/base/constants.hpp
       title: ugilib/base/constants.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/base/definitions.hpp
       title: ugilib/base/definitions.hpp
   - name: ugilib/bit
@@ -49,7 +49,7 @@ data:
       title: "\u6700\u9577\u5897\u52A0\u90E8\u5206\u5217"
   - name: ugilib/geometry
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: ugilib/geometry/rectangle_overlap.hpp
       title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\u5224\
         \u5B9A"
@@ -149,7 +149,7 @@ data:
       title: tests/dp/lis.test.cpp
   - name: tests/geometry
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: tests/geometry/rectangle_overlap.test.cpp
       title: tests/geometry/rectangle_overlap.test.cpp
   - name: tests/graph

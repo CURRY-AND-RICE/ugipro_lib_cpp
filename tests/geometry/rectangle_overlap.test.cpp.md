@@ -1,21 +1,21 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/definitions.hpp
     title: ugilib/base/definitions.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/geometry/rectangle_overlap.hpp
     title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\u5224\
       \u5B9A"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/0059
@@ -89,12 +89,10 @@ data:
     \           }\n            if constexpr (isArithmeticContainer<T>()) cout << endl;\n\
     \        }\n    }\n};  // namespace deb\n\nint main() {\n    auto& cin = _cin;\n\
     \    // speed up io\n    cin.tie(nullptr);\n    ios::sync_with_stdio(false);\n\
-    \n    // code\n    // checked by submitting by myself\n    cout << \"/* Test case\
-    \ #1 for problem 0059 is not available. */\";\n    exit(0);\n\n    array<ld, 4>\
-    \ a, b;\n    ld temp;\n    while (cin >> temp) {\n        a[0] = temp;\n     \
-    \   rep(i, 3) cin >> a[i + 1];\n        rep(i, 4) cin >> b[i];\n\n        cout\
-    \ << (ugilib::is_overlapping(a, b) ? \"YES\" : \"NO\") << endl;\n    }\n\n   \
-    \ return 0;\n}\n"
+    \n    array<ld, 4> a, b;\n    ld temp;\n    while (cin >> temp) {\n        a[0]\
+    \ = temp;\n        rep(i, 3) cin >> a[i + 1];\n        rep(i, 4) cin >> b[i];\n\
+    \n        cout << (ugilib::is_overlapping(a, b) ? \"YES\" : \"NO\") << endl;\n\
+    \    }\n\n    return 0;\n}\n"
   code: "// this problem is not available for download\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/0059\"\
     \n\n#include <bits/stdc++.h>\n#include \"ugilib/base/constants.hpp\"\n#include\
     \ \"ugilib/base/definitions.hpp\"\n#include \"ugilib/geometry/rectangle_overlap.hpp\"\
@@ -140,12 +138,10 @@ data:
     \ ++it) {\n                p(*it);\n            }\n            if constexpr (isArithmeticContainer<T>())\
     \ cout << endl;\n        }\n    }\n};  // namespace deb\n\nint main() {\n    auto&\
     \ cin = _cin;\n    // speed up io\n    cin.tie(nullptr);\n    ios::sync_with_stdio(false);\n\
-    \n    // code\n    // checked by submitting by myself\n    cout << \"/* Test case\
-    \ #1 for problem 0059 is not available. */\";\n    exit(0);\n\n    array<ld, 4>\
-    \ a, b;\n    ld temp;\n    while (cin >> temp) {\n        a[0] = temp;\n     \
-    \   rep(i, 3) cin >> a[i + 1];\n        rep(i, 4) cin >> b[i];\n\n        cout\
-    \ << (ugilib::is_overlapping(a, b) ? \"YES\" : \"NO\") << endl;\n    }\n\n   \
-    \ return 0;\n}\n"
+    \n    array<ld, 4> a, b;\n    ld temp;\n    while (cin >> temp) {\n        a[0]\
+    \ = temp;\n        rep(i, 3) cin >> a[i + 1];\n        rep(i, 4) cin >> b[i];\n\
+    \n        cout << (ugilib::is_overlapping(a, b) ? \"YES\" : \"NO\") << endl;\n\
+    \    }\n\n    return 0;\n}\n"
   dependsOn:
   - ugilib/base/constants.hpp
   - ugilib/base/definitions.hpp
@@ -153,8 +149,8 @@ data:
   isVerificationFile: true
   path: tests/geometry/rectangle_overlap.test.cpp
   requiredBy: []
-  timestamp: '2025-09-23 20:38:32+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2025-09-23 20:54:24+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/geometry/rectangle_overlap.test.cpp
 layout: document

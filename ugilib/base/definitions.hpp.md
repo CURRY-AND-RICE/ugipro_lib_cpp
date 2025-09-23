@@ -11,7 +11,7 @@ data:
   - icon: ':warning:'
     path: tests/graph/topological_sort.notest.cpp
     title: tests/graph/topological_sort.notest.cpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/base/constants.hpp
     title: ugilib/base/constants.hpp
   - icon: ':heavy_check_mark:'
@@ -26,7 +26,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: ugilib/dp/lis.hpp
     title: "\u6700\u9577\u5897\u52A0\u90E8\u5206\u5217"
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: ugilib/geometry/rectangle_overlap.hpp
     title: "\u4E8C\u3064\u306E\u9577\u65B9\u5F62\u306E\u91CD\u306A\u308A\u3092\u5224\
       \u5B9A"
@@ -76,7 +76,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/dp/lis.test.cpp
     title: tests/dp/lis.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: tests/geometry/rectangle_overlap.test.cpp
     title: tests/geometry/rectangle_overlap.test.cpp
   - icon: ':heavy_check_mark:'
@@ -112,9 +112,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: tests/string/palindrome.test.cpp
     title: tests/string/palindrome.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 2 "ugilib/base/definitions.hpp"
@@ -237,7 +237,7 @@ data:
   - ugilib/iteration/next_combination.hpp
   - ugilib/iteration/all_combinations.hpp
   timestamp: '2025-09-23 20:38:32+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/geometry/rectangle_overlap.test.cpp
   - tests/math/pow.test.cpp
