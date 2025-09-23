@@ -101,11 +101,6 @@ int main() {
     cin.tie(nullptr);
     ios::sync_with_stdio(false);
 
-    // code
-    // checked by submitting by myself
-    cout << "/* Test case #1 for problem 0059 is not available. */";
-    exit(0);
-
     array<ld, 4> a, b;
     ld temp;
     while (cin >> temp) {
